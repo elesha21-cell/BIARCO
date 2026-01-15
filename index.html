@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дайджест канала</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1 { text-align: center; color: #1a1a1a; }
+        .post { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .post-date { color: #888; font-size: 0.9em; }
+        .post-summary { margin-top: 10px; font-weight: 500; }
+        .post-tags { margin-top: 15px; }
+        .tag { display: inline-block; background-color: #eef; color: #557; padding: 5px 10px; border-radius: 15px; font-size: 0.85em; margin-right: 5px; cursor: pointer; }
+        .tag.active { background-color: #557; color: #fff; }
+        #tag-filter { margin-bottom: 30px; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Дайджест новостей</h1>
+    <div id="tag-filter">
+        <span class="tag" onclick="filterByTag('all')">Все теги</span>
+<span class="tag" onclick="filterByTag('AIBusines')">AIBusines</span><span class="tag" onclick="filterByTag('AIagent')">AIagent</span><span class="tag" onclick="filterByTag('Bank')">Bank</span><span class="tag" onclick="filterByTag('BioTech')">BioTech</span><span class="tag" onclick="filterByTag('Claude Code')">Claude Code</span><span class="tag" onclick="filterByTag('Claude Code Cowork')">Claude Code Cowork</span><span class="tag" onclick="filterByTag('Commerce Protocol')">Commerce Protocol</span><span class="tag" onclick="filterByTag('CryptCurr')">CryptCurr</span><span class="tag" onclick="filterByTag('DeepSeek')">DeepSeek</span><span class="tag" onclick="filterByTag('DigEc')">DigEc</span><span class="tag" onclick="filterByTag('DigPay')">DigPay</span><span class="tag" onclick="filterByTag('DigSociety')">DigSociety</span><span class="tag" onclick="filterByTag('ERP')">ERP</span><span class="tag" onclick="filterByTag('EWM')">EWM</span><span class="tag" onclick="filterByTag('EWM смогла напрямую')">EWM смогла напрямую</span><span class="tag" onclick="filterByTag('Economy')">Economy</span><span class="tag" onclick="filterByTag('Economy Пост')">Economy Пост</span><span class="tag" onclick="filterByTag('Ethereum Экономист Банка')">Ethereum Экономист Банка</span><span class="tag" onclick="filterByTag('HRM')">HRM</span><span class="tag" onclick="filterByTag('ITArchitect')">ITArchitect</span><span class="tag" onclick="filterByTag('ITBusines')">ITBusines</span><span class="tag" onclick="filterByTag('ITInfrastructure')">ITInfrastructure</span><span class="tag" onclick="filterByTag('Internet')">Internet</span><span class="tag" onclick="filterByTag('Microsoft')">Microsoft</span><span class="tag" onclick="filterByTag('Money')">Money</span><span class="tag" onclick="filterByTag('NewMaterials')">NewMaterials</span><span class="tag" onclick="filterByTag('Oracle')">Oracle</span><span class="tag" onclick="filterByTag('Robots')">Robots</span><span class="tag" onclick="filterByTag('SAP')">SAP</span><span class="tag" onclick="filterByTag('SAP EWM смогла')">SAP EWM смогла</span><span class="tag" onclick="filterByTag('SocialPhilosophy')">SocialPhilosophy</span><span class="tag" onclick="filterByTag('Space')">Space</span><span class="tag" onclick="filterByTag('StableCoin')">StableCoin</span><span class="tag" onclick="filterByTag('Standards')">Standards</span><span class="tag" onclick="filterByTag('Tokenization')">Tokenization</span><span class="tag" onclick="filterByTag('Universal Commerce')">Universal Commerce</span><span class="tag" onclick="filterByTag('Universal Commerce Protocol')">Universal Commerce Protocol</span><span class="tag" onclick="filterByTag('Амин Лукил')">Амин Лукил</span><span class="tag" onclick="filterByTag('Анализ исторического влияния')">Анализ исторического влияния</span><span class="tag" onclick="filterByTag('Банка Италии Клаудия')">Банка Италии Клаудия</span><span class="tag" onclick="filterByTag('Италии опубликовал доклад')">Италии опубликовал доклад</span><span class="tag" onclick="filterByTag('МВФ')">МВФ</span><span class="tag" onclick="filterByTag('Министерством финансов США')">Министерством финансов США</span><span class="tag" onclick="filterByTag('Настоящая ценность заключается')">Настоящая ценность заключается</span><span class="tag" onclick="filterByTag('Начало')">Начало</span><span class="tag" onclick="filterByTag('Ницше')">Ницше</span><span class="tag" onclick="filterByTag('Пост')">Пост</span><span class="tag" onclick="filterByTag('Процентная ставка')">Процентная ставка</span><span class="tag" onclick="filterByTag('Пёс должен')">Пёс должен</span><span class="tag" onclick="filterByTag('Пёс должен моему')">Пёс должен моему</span><span class="tag" onclick="filterByTag('Согласно результатам пилотного')">Согласно результатам пилотного</span><span class="tag" onclick="filterByTag('Сознательная деградация')">Сознательная деградация</span><span class="tag" onclick="filterByTag('Сознательная деградация образа')">Сознательная деградация образа</span><span class="tag" onclick="filterByTag('Центробанк Италии опубликовал')">Центробанк Италии опубликовал</span><span class="tag" onclick="filterByTag('Часть III')">Часть III</span><span class="tag" onclick="filterByTag('Читать часть')">Читать часть</span><span class="tag" onclick="filterByTag('Экономист Банка Италии')">Экономист Банка Италии</span><span class="tag" onclick="filterByTag('Ямайке')">Ямайке</span><span class="tag" onclick="filterByTag('американского доллара')">американского доллара</span><span class="tag" onclick="filterByTag('версию Claude Code')">версию Claude Code</span><span class="tag" onclick="filterByTag('влияния философских систем')">влияния философских систем</span><span class="tag" onclick="filterByTag('выдал крутые релизы')">выдал крутые релизы</span><span class="tag" onclick="filterByTag('выпустил Universal Commerce')">выпустил Universal Commerce</span><span class="tag" onclick="filterByTag('деградация образа')">деградация образа</span><span class="tag" onclick="filterByTag('деградация образа человека')">деградация образа человека</span><span class="tag" onclick="filterByTag('деньги')">деньги</span><span class="tag" onclick="filterByTag('должен моему другу')">должен моему другу</span><span class="tag" onclick="filterByTag('другим Представьте')">другим Представьте</span><span class="tag" onclick="filterByTag('играть частные компании')">играть частные компании</span><span class="tag" onclick="filterByTag('исторического влияния философских')">исторического влияния философских</span><span class="tag" onclick="filterByTag('клиентом коммерческой космической')">клиентом коммерческой космической</span><span class="tag" onclick="filterByTag('команда выпустила mHC')">команда выпустила mHC</span><span class="tag" onclick="filterByTag('коммерческой космической станции')">коммерческой космической станции</span><span class="tag" onclick="filterByTag('концентрация убыточных стартапов')">концентрация убыточных стартапов</span><span class="tag" onclick="filterByTag('крупным клиентом коммерческой')">крупным клиентом коммерческой</span><span class="tag" onclick="filterByTag('моему другу деньги')">моему другу деньги</span><span class="tag" onclick="filterByTag('надуй пузырь')">надуй пузырь</span><span class="tag" onclick="filterByTag('недели выдал')">недели выдал</span><span class="tag" onclick="filterByTag('недели выдал крутые')">недели выдал крутые</span><span class="tag" onclick="filterByTag('новый открытый стандарт')">новый открытый стандарт</span><span class="tag" onclick="filterByTag('облачной завязкой')">облачной завязкой</span><span class="tag" onclick="filterByTag('обработке счетов-фактур поставщиков')">обработке счетов-фактур поставщиков</span><span class="tag" onclick="filterByTag('операций Согласно результатам')">операций Согласно результатам</span><span class="tag" onclick="filterByTag('офисных работников Anthropic')">офисных работников Anthropic</span><span class="tag" onclick="filterByTag('первых экранов')">первых экранов</span><span class="tag" onclick="filterByTag('первых экранов SAP')">первых экранов SAP</span><span class="tag" onclick="filterByTag('работников Anthropic запустил')">работников Anthropic запустил</span><span class="tag" onclick="filterByTag('рекордная концентрация убыточных')">рекордная концентрация убыточных</span><span class="tag" onclick="filterByTag('решения')">решения</span><span class="tag" onclick="filterByTag('серьезную инженерную статью')">серьезную инженерную статью</span><span class="tag" onclick="filterByTag('складских операций Согласно')">складских операций Согласно</span><span class="tag" onclick="filterByTag('сознания Анализ исторического')">сознания Анализ исторического</span><span class="tag" onclick="filterByTag('ставка')">ставка</span><span class="tag" onclick="filterByTag('стандарта Читать часть')">стандарта Читать часть</span><span class="tag" onclick="filterByTag('становится крупным клиентом')">становится крупным клиентом</span><span class="tag" onclick="filterByTag('стартапов с госфинансированием')">стартапов с госфинансированием</span><span class="tag" onclick="filterByTag('статья')">статья</span><span class="tag" onclick="filterByTag('статья про целеполагание')">статья про целеполагание</span><span class="tag" onclick="filterByTag('счетов-фактур поставщиков')">счетов-фактур поставщиков</span><span class="tag" onclick="filterByTag('целеполагание')">целеполагание</span><span class="tag" onclick="filterByTag('человеческого сознания Анализ')">человеческого сознания Анализ</span><span class="tag" onclick="filterByTag('экранов SAP')">экранов SAP</span></div><div id='posts-container'>
+        <div class="post" data-tags='["Standards", "AIagent"]'>
+            <div class="post-date">13 January 2026, 09:07</div>
+            <div class="post-summary">#AIagent #Standards</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Standards')">Standards</span><span class="tag" onclick="filterByTag('AIagent')">AIagent</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Universal Commerce Protocol", "\u0432\u044b\u043f\u0443\u0441\u0442\u0438\u043b Universal Commerce", "\u043d\u043e\u0432\u044b\u0439 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u0439 \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442", "Commerce Protocol", "Universal Commerce"]'>
+            <div class="post-date">13 January 2026, 09:07</div>
+            <div class="post-summary">Google выпустил Universal Commerce Protocol (UCP) - новый открытый стандарт для коммерции ИИ-агентов, который работает на всём пути покупателя: от открытия и покупки до постпродажной поддержки. Более 20 компаний поддержали протокол: Adyen, American Express, Best Buy, Flipkart, Macy's Inc., Mastercard, Stripe, The Home Depot, Visa и Zalando.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Universal Commerce Protocol')">Universal Commerce Protocol</span><span class="tag" onclick="filterByTag('выпустил Universal Commerce')">выпустил Universal Commerce</span><span class="tag" onclick="filterByTag('новый открытый стандарт')">новый открытый стандарт</span><span class="tag" onclick="filterByTag('Commerce Protocol')">Commerce Protocol</span><span class="tag" onclick="filterByTag('Universal Commerce')">Universal Commerce</span></div>
+        </div>
+        
+        <div class="post" data-tags='["SocialPhilosophy"]'>
+            <div class="post-date">13 January 2026, 16:50</div>
+            <div class="post-summary">#SocialPhilosophy</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('SocialPhilosophy')">SocialPhilosophy</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0410\u043d\u0430\u043b\u0438\u0437 \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0432\u043b\u0438\u044f\u043d\u0438\u044f", "\u0447\u0435\u043b\u043e\u0432\u0435\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0441\u043e\u0437\u043d\u0430\u043d\u0438\u044f \u0410\u043d\u0430\u043b\u0438\u0437", "\u0441\u043e\u0437\u043d\u0430\u043d\u0438\u044f \u0410\u043d\u0430\u043b\u0438\u0437 \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e", "\u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u043e\u0433\u043e \u0432\u043b\u0438\u044f\u043d\u0438\u044f \u0444\u0438\u043b\u043e\u0441\u043e\u0444\u0441\u043a\u0438\u0445", "\u0432\u043b\u0438\u044f\u043d\u0438\u044f \u0444\u0438\u043b\u043e\u0441\u043e\u0444\u0441\u043a\u0438\u0445 \u0441\u0438\u0441\u0442\u0435\u043c"]'>
+            <div class="post-date">13 January 2026, 16:50</div>
+            <div class="post-summary">С позиций Московского консенсуса (МК), ориентированного на сознательное развитие человека к уровню Творца, учения Гегеля и Ницше предстают не просто как умозрительные ошибки, а как целенаправленные программы по консервации низших типов психики и блокировке духовно-интеллектуального роста. В итоге Гегель не ошибся — он создал идеологическое оружие для массового производства управляемого, догматического сознания, отсекая возможность развития к уровню самостоятельного, ответственного Творца.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Анализ исторического влияния')">Анализ исторического влияния</span><span class="tag" onclick="filterByTag('человеческого сознания Анализ')">человеческого сознания Анализ</span><span class="tag" onclick="filterByTag('сознания Анализ исторического')">сознания Анализ исторического</span><span class="tag" onclick="filterByTag('исторического влияния философских')">исторического влияния философских</span><span class="tag" onclick="filterByTag('влияния философских систем')">влияния философских систем</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0421\u043e\u0437\u043d\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0434\u0435\u0433\u0440\u0430\u0434\u0430\u0446\u0438\u044f \u043e\u0431\u0440\u0430\u0437\u0430", "\u0421\u043e\u0437\u043d\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0434\u0435\u0433\u0440\u0430\u0434\u0430\u0446\u0438\u044f", "\u0434\u0435\u0433\u0440\u0430\u0434\u0430\u0446\u0438\u044f \u043e\u0431\u0440\u0430\u0437\u0430 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430", "\u0434\u0435\u0433\u0440\u0430\u0434\u0430\u0446\u0438\u044f \u043e\u0431\u0440\u0430\u0437\u0430", "\u041d\u0438\u0446\u0448\u0435"]'>
+            <div class="post-date">13 January 2026, 16:51</div>
+            <div class="post-summary">Связка с Марксом и общий вред — это конвейер по производству управляемого человечества Гегель, Маркс и Ницше, вместе, создали взаимодополняющий идеологический комплекс для управления разными пластами человеческой психики: Их совокупное наследие — это мир, где: • Боль и скорбь становятся нормой, так как высшие типы психики (Творец) подавлены, а низшие («животное», «зомби», «демоническое») доминируют и конфликтуют между собой.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Сознательная деградация образа')">Сознательная деградация образа</span><span class="tag" onclick="filterByTag('Сознательная деградация')">Сознательная деградация</span><span class="tag" onclick="filterByTag('деградация образа человека')">деградация образа человека</span><span class="tag" onclick="filterByTag('деградация образа')">деградация образа</span><span class="tag" onclick="filterByTag('Ницше')">Ницше</span></div>
+        </div>
+        
+        <div class="post" data-tags='[]'>
+            <div class="post-date">13 January 2026, 16:59</div>
+            <div class="post-summary">Текст слишком короткий для суммаризации</div>
+            <div class="post-tags"></div>
+        </div>
+        
+        <div class="post" data-tags='["\u043e\u0444\u0438\u0441\u043d\u044b\u0445 \u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432 Anthropic", "\u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432 Anthropic \u0437\u0430\u043f\u0443\u0441\u0442\u0438\u043b", "\u0432\u0435\u0440\u0441\u0438\u044e Claude Code", "Claude Code Cowork", "Claude Code"]'>
+            <div class="post-date">13 January 2026, 16:59</div>
+            <div class="post-summary">От обычного Claude Code Cowork слегка отличается интерфейсом и немного другой политикой пермишенов. Пока что Cowork доступен только Max подписчикам в MacOS приложении.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('офисных работников Anthropic')">офисных работников Anthropic</span><span class="tag" onclick="filterByTag('работников Anthropic запустил')">работников Anthropic запустил</span><span class="tag" onclick="filterByTag('версию Claude Code')">версию Claude Code</span><span class="tag" onclick="filterByTag('Claude Code Cowork')">Claude Code Cowork</span><span class="tag" onclick="filterByTag('Claude Code')">Claude Code</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Economy \u041f\u043e\u0441\u0442", "\u041f\u043e\u0441\u0442", "Economy", "DigSociety", "DigEc"]'>
+            <div class="post-date">13 January 2026, 17:00</div>
+            <div class="post-summary">#DigSociety #DigEc #EconomyHistory #Economy Пост 1: https://t.me/c/1220337955/6885 Пост 2: https://t.me/c/1220337955/6911 Пост 3, 4: https://t.me/c/1220337955/6926 Пост 5: https://t.me/c/1220337955/6934 Пост 6: https://t.me/c/1220337955/6962 Пост 7: https://t.me/c/1220337955/6972 Пост 8: https://t.me/c/1220337955/6995 Пост 9: https://t.me/c/1220337955/7011 Пост 10: https://t.me/c/1220337955/7032 Пост 11: https://t.me/c/1220337955/7051 Пост 12: https://t.me/c/1220337955/7076</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Economy Пост')">Economy Пост</span><span class="tag" onclick="filterByTag('Пост')">Пост</span><span class="tag" onclick="filterByTag('Economy')">Economy</span><span class="tag" onclick="filterByTag('DigSociety')">DigSociety</span><span class="tag" onclick="filterByTag('DigEc')">DigEc</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0434\u0435\u043d\u044c\u0433\u0438", "\u041f\u0440\u043e\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u0441\u0442\u0430\u0432\u043a\u0430", "\u0434\u0440\u0443\u0433\u0438\u043c \u041f\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u044c\u0442\u0435", "\u0441\u0442\u0430\u0432\u043a\u0430", "\u041c\u0412\u0424"]'>
+            <div class="post-date">13 January 2026, 17:00</div>
+            <div class="post-summary">Чтобы получить доверие (и кредит), они должны следовать чужим правилам: открывать рынки, урезать социальные расходы, приватизировать активы. Он даёт дорогие и короткие кредиты на латание дыр — чтобы они могли расплатиться по старым долгам перед теми же «хозяевами времени».</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('деньги')">деньги</span><span class="tag" onclick="filterByTag('Процентная ставка')">Процентная ставка</span><span class="tag" onclick="filterByTag('другим Представьте')">другим Представьте</span><span class="tag" onclick="filterByTag('ставка')">ставка</span><span class="tag" onclick="filterByTag('МВФ')">МВФ</span></div>
+        </div>
+        
+        <div class="post" data-tags='["StableCoin"]'>
+            <div class="post-date">13 January 2026, 17:02</div>
+            <div class="post-summary">#StableCoin</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('StableCoin')">StableCoin</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u041f\u0451\u0441 \u0434\u043e\u043b\u0436\u0435\u043d \u043c\u043e\u0435\u043c\u0443", "\u043c\u043e\u0435\u043c\u0443 \u0434\u0440\u0443\u0433\u0443 \u0434\u0435\u043d\u044c\u0433\u0438", "\u0434\u043e\u043b\u0436\u0435\u043d \u043c\u043e\u0435\u043c\u0443 \u0434\u0440\u0443\u0433\u0443", "\u041c\u0438\u043d\u0438\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e\u043c \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432 \u0421\u0428\u0410", "\u041f\u0451\u0441 \u0434\u043e\u043b\u0436\u0435\u043d"]'>
+            <div class="post-date">13 January 2026, 17:02</div>
+            <div class="post-summary">Проблема заключается в том, что столь широко разрекламированная инфраструктура расчетов, построенная ПСБ на базе А7А5, базируется на обмене своих векселей главным образом на стейблкоины USDT и чуть-чуть на USDC от чисто американской компании Circle. Поэтому в текущей обстановке, когда американцы могут безнаказанно захватывать суда в море, президентов независимых стран у них дома или, возможно, бомбить дом лидера Ирана, то о такой мелочи как принятие плана санкций по РФ имени Трампа с блокировкой расчетов в номинированных в долларах стейблкоинах и говорить не приходится.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Пёс должен моему')">Пёс должен моему</span><span class="tag" onclick="filterByTag('моему другу деньги')">моему другу деньги</span><span class="tag" onclick="filterByTag('должен моему другу')">должен моему другу</span><span class="tag" onclick="filterByTag('Министерством финансов США')">Министерством финансов США</span><span class="tag" onclick="filterByTag('Пёс должен')">Пёс должен</span></div>
+        </div>
+        
+        <div class="post" data-tags='["AIBusines", "ITBusines"]'>
+            <div class="post-date">13 January 2026, 17:11</div>
+            <div class="post-summary">#AIBusines #ITBusines</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('AIBusines')">AIBusines</span><span class="tag" onclick="filterByTag('ITBusines')">ITBusines</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0440\u0435\u043a\u043e\u0440\u0434\u043d\u0430\u044f \u043a\u043e\u043d\u0446\u0435\u043d\u0442\u0440\u0430\u0446\u0438\u044f \u0443\u0431\u044b\u0442\u043e\u0447\u043d\u044b\u0445", "\u043a\u043e\u043d\u0446\u0435\u043d\u0442\u0440\u0430\u0446\u0438\u044f \u0443\u0431\u044b\u0442\u043e\u0447\u043d\u044b\u0445 \u0441\u0442\u0430\u0440\u0442\u0430\u043f\u043e\u0432", "\u043d\u0430\u0434\u0443\u0439 \u043f\u0443\u0437\u044b\u0440\u044c", "\u0441\u0442\u0430\u0440\u0442\u0430\u043f\u043e\u0432 \u0441 \u0433\u043e\u0441\u0444\u0438\u043d\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435\u043c", "\u043e\u0431\u043b\u0430\u0447\u043d\u043e\u0439 \u0437\u0430\u0432\u044f\u0437\u043a\u043e\u0439"]'>
+            <div class="post-date">13 January 2026, 17:11</div>
+            <div class="post-summary">Все играют в «надуй пузырь» ИИ-индустрия сегодня - это рекордная концентрация убыточных стартапов с госфинансированием, облачной завязкой и инвестициями друг в друга. Встраиваясь в ВПК США, вот так, в открытую - это ещё и попытка убедить рынок, что процесс идёт и обвал далеко</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('рекордная концентрация убыточных')">рекордная концентрация убыточных</span><span class="tag" onclick="filterByTag('концентрация убыточных стартапов')">концентрация убыточных стартапов</span><span class="tag" onclick="filterByTag('надуй пузырь')">надуй пузырь</span><span class="tag" onclick="filterByTag('стартапов с госфинансированием')">стартапов с госфинансированием</span><span class="tag" onclick="filterByTag('облачной завязкой')">облачной завязкой</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Economy", "Money", "DigEc"]'>
+            <div class="post-date">13 January 2026, 17:17</div>
+            <div class="post-summary">#Economy #DigEc #Money</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Economy')">Economy</span><span class="tag" onclick="filterByTag('Money')">Money</span><span class="tag" onclick="filterByTag('DigEc')">DigEc</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u0430 \u0427\u0438\u0442\u0430\u0442\u044c \u0447\u0430\u0441\u0442\u044c", "\u0427\u0430\u0441\u0442\u044c III", "\u042f\u043c\u0430\u0439\u043a\u0435", "\u0427\u0438\u0442\u0430\u0442\u044c \u0447\u0430\u0441\u0442\u044c", "\u0430\u043c\u0435\u0440\u0438\u043a\u0430\u043d\u0441\u043a\u043e\u0433\u043e \u0434\u043e\u043b\u043b\u0430\u0440\u0430"]'>
+            <div class="post-date">13 January 2026, 17:17</div>
+            <div class="post-summary">Этому, безусловно, способствовало такое событие, как гибель Советского Союза, который был главным экономическим, политическим и военным конкурентом Соединенных Штатов в мире. В какой-то момент времени казалось, что после краха СССР мир стал однополярным – единственным полюсом стали Соединенные Штаты Америки, мировая империя Pax Americana.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('стандарта Читать часть')">стандарта Читать часть</span><span class="tag" onclick="filterByTag('Часть III')">Часть III</span><span class="tag" onclick="filterByTag('Ямайке')">Ямайке</span><span class="tag" onclick="filterByTag('Читать часть')">Читать часть</span><span class="tag" onclick="filterByTag('американского доллара')">американского доллара</span></div>
+        </div>
+        
+        <div class="post" data-tags='["DeepSeek"]'>
+            <div class="post-date">13 January 2026, 17:25</div>
+            <div class="post-summary">#AI_DeepSeek</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('DeepSeek')">DeepSeek</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0432\u044b\u0434\u0430\u043b \u043a\u0440\u0443\u0442\u044b\u0435 \u0440\u0435\u043b\u0438\u0437\u044b", "\u043d\u0435\u0434\u0435\u043b\u0438 \u0432\u044b\u0434\u0430\u043b \u043a\u0440\u0443\u0442\u044b\u0435", "\u0441\u0435\u0440\u044c\u0435\u0437\u043d\u0443\u044e \u0438\u043d\u0436\u0435\u043d\u0435\u0440\u043d\u0443\u044e \u0441\u0442\u0430\u0442\u044c\u044e", "\u043a\u043e\u043c\u0430\u043d\u0434\u0430 \u0432\u044b\u043f\u0443\u0441\u0442\u0438\u043b\u0430 mHC", "\u043d\u0435\u0434\u0435\u043b\u0438 \u0432\u044b\u0434\u0430\u043b"]'>
+            <div class="post-date">13 January 2026, 17:25</div>
+            <div class="post-summary">Логика простая - зачем модели каждый раз вычислять факты и типовые конструкции, если их можно просто хранить в быстрой таблице и мгновенно доставать? Оба релиза подчёркивают, что #DeepSeek продолжает агрессивно двигать границы как в архитектурах моделей, так и в системном инженерном обеспечении.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('выдал крутые релизы')">выдал крутые релизы</span><span class="tag" onclick="filterByTag('недели выдал крутые')">недели выдал крутые</span><span class="tag" onclick="filterByTag('серьезную инженерную статью')">серьезную инженерную статью</span><span class="tag" onclick="filterByTag('команда выпустила mHC')">команда выпустила mHC</span><span class="tag" onclick="filterByTag('недели выдал')">недели выдал</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Microsoft", "ITInfrastructure"]'>
+            <div class="post-date">13 January 2026, 17:32</div>
+            <div class="post-summary">#ITInfrastructure #Microsoft https://www.cnews.ru/news/top/2026-01-13_milliony_lyudej_po_vsemu_miru</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Microsoft')">Microsoft</span><span class="tag" onclick="filterByTag('ITInfrastructure')">ITInfrastructure</span></div>
+        </div>
+        
+        <div class="post" data-tags='["SAP", "ERP", "Oracle"]'>
+            <div class="post-date">13 January 2026, 17:35</div>
+            <div class="post-summary">#SAP #ERP #Oracle https://gov.cnews.ru/news/top/2026-01-13_gorod-millionnik_ostanovil</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('SAP')">SAP</span><span class="tag" onclick="filterByTag('ERP')">ERP</span><span class="tag" onclick="filterByTag('Oracle')">Oracle</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Space", "Internet", "ITInfrastructure"]'>
+            <div class="post-date">13 January 2026, 17:36</div>
+            <div class="post-summary">#Space #Internet #ITInfrastructure https://gov.cnews.ru/news/top/2026-01-13_kitaj_planiruet_zapustit</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Space')">Space</span><span class="tag" onclick="filterByTag('Internet')">Internet</span><span class="tag" onclick="filterByTag('ITInfrastructure')">ITInfrastructure</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Space", "NewMaterials", "BioTech"]'>
+            <div class="post-date">13 January 2026, 17:37</div>
+            <div class="post-summary">#Space #NewMaterials #BioTech</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Space')">Space</span><span class="tag" onclick="filterByTag('NewMaterials')">NewMaterials</span><span class="tag" onclick="filterByTag('BioTech')">BioTech</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u043a\u0440\u0443\u043f\u043d\u044b\u043c \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u043c \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0439", "\u043a\u043b\u0438\u0435\u043d\u0442\u043e\u043c \u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0439 \u043a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439", "\u0438\u0433\u0440\u0430\u0442\u044c \u0447\u0430\u0441\u0442\u043d\u044b\u0435 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u0438", "\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0441\u044f \u043a\u0440\u0443\u043f\u043d\u044b\u043c \u043a\u043b\u0438\u0435\u043d\u0442\u043e\u043c", "\u043a\u043e\u043c\u043c\u0435\u0440\u0447\u0435\u0441\u043a\u043e\u0439 \u043a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u0441\u0442\u0430\u043d\u0446\u0438\u0438"]'>
+            <div class="post-date">13 January 2026, 17:37</div>
+            <div class="post-summary">Один из крупнейших японских промышленных конгломератов Mitsubishi увеличивает свои инвестиции в Starlab и становится одним из ключевых клиентов, резервируя и предоплачивая значительную ёмкость для полезной нагрузки на будущей станции. Это соглашение — 1 из первых крупных коммерческих контрактов на использование будущей станции, оно также показывает, что крупные корпорации готовы инвестировать в коммерческий космос задолго до запуска.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('крупным клиентом коммерческой')">крупным клиентом коммерческой</span><span class="tag" onclick="filterByTag('клиентом коммерческой космической')">клиентом коммерческой космической</span><span class="tag" onclick="filterByTag('играть частные компании')">играть частные компании</span><span class="tag" onclick="filterByTag('становится крупным клиентом')">становится крупным клиентом</span><span class="tag" onclick="filterByTag('коммерческой космической станции')">коммерческой космической станции</span></div>
+        </div>
+        
+        <div class="post" data-tags='["HRM", "ITBusines"]'>
+            <div class="post-date">13 January 2026, 17:39</div>
+            <div class="post-summary">#ITBusines #AI #HRM https://internet.cnews.ru/news/top/2026-01-12_softline_venture_vlozhilsya_millionami</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('HRM')">HRM</span><span class="tag" onclick="filterByTag('ITBusines')">ITBusines</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Tokenization", "Bank", "CryptCurr", "StableCoin", "DigPay"]'>
+            <div class="post-date">13 January 2026, 17:42</div>
+            <div class="post-summary">#CryptCurr #StableCoin #Tokenization #DigPay #Bank</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Tokenization')">Tokenization</span><span class="tag" onclick="filterByTag('Bank')">Bank</span><span class="tag" onclick="filterByTag('CryptCurr')">CryptCurr</span><span class="tag" onclick="filterByTag('StableCoin')">StableCoin</span><span class="tag" onclick="filterByTag('DigPay')">DigPay</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u0441\u0442 \u0411\u0430\u043d\u043a\u0430 \u0418\u0442\u0430\u043b\u0438\u0438", "\u0411\u0430\u043d\u043a\u0430 \u0418\u0442\u0430\u043b\u0438\u0438 \u041a\u043b\u0430\u0443\u0434\u0438\u044f", "Ethereum \u042d\u043a\u043e\u043d\u043e\u043c\u0438\u0441\u0442 \u0411\u0430\u043d\u043a\u0430", "\u0426\u0435\u043d\u0442\u0440\u043e\u0431\u0430\u043d\u043a \u0418\u0442\u0430\u043b\u0438\u0438 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043b", "\u0418\u0442\u0430\u043b\u0438\u0438 \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043b \u0434\u043e\u043a\u043b\u0430\u0434"]'>
+            <div class="post-date">13 January 2026, 17:42</div>
+            <div class="post-summary">В работе отмечается, что в таком сценарии пострадают платежные системы, стейблкоины, ончейн кредитование и другие сервисы, которые используют Ethereum для проведения транзакций и подтверждения владения активами на миллиарды долларов. Бьянкотти не предлагает конкретных мер регулирования, но отмечает, что регуляторам придется выбирать между запретом использования публичных блокчейнов в регулируемых финансах или введением дополнительных защитных требований, включая резервные схемы расчетов и минимальные стандарты экономической устойчивости сети.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Экономист Банка Италии')">Экономист Банка Италии</span><span class="tag" onclick="filterByTag('Банка Италии Клаудия')">Банка Италии Клаудия</span><span class="tag" onclick="filterByTag('Ethereum Экономист Банка')">Ethereum Экономист Банка</span><span class="tag" onclick="filterByTag('Центробанк Италии опубликовал')">Центробанк Италии опубликовал</span><span class="tag" onclick="filterByTag('Италии опубликовал доклад')">Италии опубликовал доклад</span></div>
+        </div>
+        
+        <div class="post" data-tags='["ITArchitect"]'>
+            <div class="post-date">13 January 2026, 18:29</div>
+            <div class="post-summary">#ITArchitect</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('ITArchitect')">ITArchitect</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0441\u0442\u0430\u0442\u044c\u044f \u043f\u0440\u043e \u0446\u0435\u043b\u0435\u043f\u043e\u043b\u0430\u0433\u0430\u043d\u0438\u0435", "\u0446\u0435\u043b\u0435\u043f\u043e\u043b\u0430\u0433\u0430\u043d\u0438\u0435", "\u0441\u0442\u0430\u0442\u044c\u044f"]'>
+            <div class="post-date">13 January 2026, 18:29</div>
+            <div class="post-summary">Еще статья про целеполагание https://habr.com/ru/companies/otus/articles/978388/</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('статья про целеполагание')">статья про целеполагание</span><span class="tag" onclick="filterByTag('целеполагание')">целеполагание</span><span class="tag" onclick="filterByTag('статья')">статья</span></div>
+        </div>
+        
+        <div class="post" data-tags='["ERP", "SAP"]'>
+            <div class="post-date">13 January 2026, 21:01</div>
+            <div class="post-summary">#ERP #SAP #AI</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('ERP')">ERP</span><span class="tag" onclick="filterByTag('SAP')">SAP</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u043f\u0435\u0440\u0432\u044b\u0445 \u044d\u043a\u0440\u0430\u043d\u043e\u0432 SAP", "\u043f\u0435\u0440\u0432\u044b\u0445 \u044d\u043a\u0440\u0430\u043d\u043e\u0432", "\u044d\u043a\u0440\u0430\u043d\u043e\u0432 SAP", "\u0410\u043c\u0438\u043d \u041b\u0443\u043a\u0438\u043b", "SAP"]'>
+            <div class="post-date">13 January 2026, 21:01</div>
+            <div class="post-summary">Приведем лишь самые показательные примеры: во многих организациях согласование внутрикорпоративных финансовых потоков традиционно требовало участия целых команд в период закрытия отчетности. ИИ идеально подходит для облегчения построчного согласования внутрикорпоративных финансовых потоков по большим объемам счетов-фактур, тем самым выявляя несоответствия, которые необходимо устранить, и поддерживая принятие решений для разрешения потенциальных споров или исправления ошибок.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('первых экранов SAP')">первых экранов SAP</span><span class="tag" onclick="filterByTag('первых экранов')">первых экранов</span><span class="tag" onclick="filterByTag('экранов SAP')">экранов SAP</span><span class="tag" onclick="filterByTag('Амин Лукил')">Амин Лукил</span><span class="tag" onclick="filterByTag('SAP')">SAP</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0441\u0447\u0435\u0442\u043e\u0432-\u0444\u0430\u043a\u0442\u0443\u0440 \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u043e\u0432", "\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0430\u044f \u0446\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0437\u0430\u043a\u043b\u044e\u0447\u0430\u0435\u0442\u0441\u044f", "\u041d\u0430\u0447\u0430\u043b\u043e", "\u0441\u0447\u0435\u0442\u043e\u0432-\u0444\u0430\u043a\u0442\u0443\u0440 \u043f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a\u043e\u0432", "\u0440\u0435\u0448\u0435\u043d\u0438\u044f"]'>
+            <div class="post-date">13 January 2026, 21:01</div>
+            <div class="post-summary">Для Амина именно это отличает релевантное использование ИИ от мимолетных демонстраций: «Настоящая ценность заключается не в «вау-эффекте», а в возможности высвободить время для действительно важных дел». Взаимодействие с системой в режиме диалога представляется логическим продолжением движения, начавшегося десятилетия назад: сделать информацию более доступной и понятной, а также усовершенствовать человеко-машинный интерфейс для подлинного и, прежде всего, полезного понимания.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('обработке счетов-фактур поставщиков')">обработке счетов-фактур поставщиков</span><span class="tag" onclick="filterByTag('Настоящая ценность заключается')">Настоящая ценность заключается</span><span class="tag" onclick="filterByTag('Начало')">Начало</span><span class="tag" onclick="filterByTag('счетов-фактур поставщиков')">счетов-фактур поставщиков</span><span class="tag" onclick="filterByTag('решения')">решения</span></div>
+        </div>
+        
+        <div class="post" data-tags='["SAP", "Robots", "EWM"]'>
+            <div class="post-date">13 January 2026, 21:03</div>
+            <div class="post-summary">#SAP #AI #Robots #EWM</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('SAP')">SAP</span><span class="tag" onclick="filterByTag('Robots')">Robots</span><span class="tag" onclick="filterByTag('EWM')">EWM</span></div>
+        </div>
+        
+        <div class="post" data-tags='["\u0421\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0430\u043c \u043f\u0438\u043b\u043e\u0442\u043d\u043e\u0433\u043e", "EWM \u0441\u043c\u043e\u0433\u043b\u0430 \u043d\u0430\u043f\u0440\u044f\u043c\u0443\u044e", "SAP EWM \u0441\u043c\u043e\u0433\u043b\u0430", "\u0441\u043a\u043b\u0430\u0434\u0441\u043a\u0438\u0445 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0439 \u0421\u043e\u0433\u043b\u0430\u0441\u043d\u043e", "\u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0439 \u0421\u043e\u0433\u043b\u0430\u0441\u043d\u043e \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0430\u043c"]'>
+            <div class="post-date">13 January 2026, 21:03</div>
+            <div class="post-summary">Согласно результатам пилотного проекта для оценки практической ценности воплощенного искусственного интеллекта в производственных процессах и того, как когнитивная робототехника может функционировать в рамках существующих систем управления складом, SAP EWM смогла напрямую взаимодействовать с физическими складскими операциями без необходимости использования дорогостоящего или трудоемкого промежуточного программного обеспечения. Роботы могут работать круглосуточно, адаптируясь к колебаниям спроса и выполняя производственные задачи, обеспечивая гибкость и оперативность, необходимые для производства, ориентированного на спрос.</div>
+            <div class="post-tags"><span class="tag" onclick="filterByTag('Согласно результатам пилотного')">Согласно результатам пилотного</span><span class="tag" onclick="filterByTag('EWM смогла напрямую')">EWM смогла напрямую</span><span class="tag" onclick="filterByTag('SAP EWM смогла')">SAP EWM смогла</span><span class="tag" onclick="filterByTag('складских операций Согласно')">складских операций Согласно</span><span class="tag" onclick="filterByTag('операций Согласно результатам')">операций Согласно результатам</span></div>
+        </div>
+        
+    </div>
+    <script>
+        let currentFilter = 'all';
+        const tagButtons = document.querySelectorAll('#tag-filter .tag');
+
+        function filterByTag(tag) {
+            currentFilter = tag;
+            const posts = document.querySelectorAll('.post');
+
+            posts.forEach(post => {
+                if (tag === 'all') {
+                    post.style.display = 'block';
+                } else {
+                    const postTags = JSON.parse(post.getAttribute('data-tags'));
+                    if (postTags.includes(tag)) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                }
+            });
+
+            // Подсветка активного тега
+            tagButtons.forEach(button => {
+                if(button.textContent === tag || (tag === 'all' && button.textContent === 'Все теги')) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+        // Изначально подсвечиваем "Все теги"
+        filterByTag('all');
+    </script>
+</body>
+</html>
