@@ -6,282 +6,596 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дайджест канала</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 20px; 
-            background-color: #f9f9f9; 
-        }
-        h1 { 
-            text-align: center; 
-            color: #1a1a1a;
-            margin-bottom: 30px;
-        }
-        .post { 
-            background-color: #fff; 
-            border: 1px solid #ddd; 
-            border-radius: 8px; 
-            padding: 25px; 
-            margin-bottom: 25px; 
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .post:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
-        .post-date { 
-            color: #666; 
-            font-size: 0.9em; 
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-        .post-summary { 
-            margin-top: 15px; 
-            font-weight: 500;
-            line-height: 1.7;
-            white-space: pre-line;
-        }
-        .post-tags { 
-            margin-top: 20px; 
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-        }
-        .tag { 
-            display: inline-block; 
-            background-color: #eef6ff; 
-            color: #2c5282; 
-            padding: 6px 12px; 
-            border-radius: 20px; 
-            font-size: 0.85em; 
-            margin-right: 8px; 
-            margin-bottom: 8px;
-            cursor: pointer; 
-            transition: all 0.2s ease;
-            border: 1px solid #bee3f8;
-        }
-        .tag:hover {
-            background-color: #bee3f8;
-            transform: translateY(-1px);
-        }
-        .tag.active { 
-            background-color: #2c5282; 
-            color: #fff;
-            border-color: #2c5282;
-        }
-        #tag-filter { 
-            margin-bottom: 30px; 
-            text-align: center;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-        .filter-title {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: #4a5568;
-        }
-        .post-meta {
-            font-size: 0.9em;
-            color: #718096;
-            margin-top: 5px;
-        }
-        .summary-line {
-            display: block;
-            margin-bottom: 8px;
-            padding-left: 10px;
-            border-left: 3px solid #e2e8f0;
-        }
-        .summary-line:before {
-            content: "•";
-            margin-right: 8px;
-            color: #4299e1;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
+        h1 { text-align: center; color: #1a1a1a; margin-bottom: 30px; }
+        .post { background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 25px; margin-bottom: 25px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .post:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .post-date { color: #666; font-size: 0.9em; margin-bottom: 10px; font-weight: 500; }
+        .post-summary { margin-top: 15px; font-weight: 500; line-height: 1.7; white-space: pre-line; }
+        .post-tags { margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; }
+        .tag { display: inline-block; background-color: #eef6ff; color: #2c5282; padding: 6px 12px; border-radius: 20px; font-size: 0.85em; margin-right: 8px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s ease; border: 1px solid #bee3f8; }
+        .tag:hover { background-color: #bee3f8; transform: translateY(-1px); }
+        .tag.active { background-color: #2c5282; color: #fff; border-color: #2c5282; }
+        #tag-filter, #time-filter { margin-bottom: 20px; text-align: center; padding: 15px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .filter-title { display: block; margin-bottom: 10px; font-weight: 600; color: #4a5568; }
+        .filter-controls { display: flex; justify-content: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+        .filter-controls select, .filter-controls input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; min-width: 150px; }
+        .filter-controls button { padding: 8px 20px; background-color: #2c5282; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 14px; }
+        .filter-controls button:hover { background-color: #1a365d; }
+        #date-input, #year-input, #quarter-input, #month-input, #week-input { display: none; }
     </style>
 </head>
 <body>
     <h1>📰 Дайджест новостей</h1>
+    
+    <div id="time-filter">
+        <span class="filter-title">Фильтр по времени:</span>
+        <div class="filter-controls">
+            <select id="period-select" onchange="togglePeriodInputs()">
+                <option value="all">Всё</option>
+                <option value="year">За год</option>
+                <option value="quarter">За квартал</option>
+                <option value="month">За месяц</option>
+                <option value="week">За неделю</option>
+                <option value="date">На конкретную дату</option>
+            </select>
+            
+            <select id="year-input">
+                <option value="">Выберите год</option>
+            </select>
+            
+            <select id="quarter-input">
+                <option value="">Выберите квартал</option>
+                <option value="1">1 квартал</option>
+                <option value="2">2 квартал</option>
+                <option value="3">3 квартал</option>
+                <option value="4">4 квартал</option>
+            </select>
+            
+            <select id="month-input">
+                <option value="">Выберите месяц</option>
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+                <option value="6">Июнь</option>
+                <option value="7">Июль</option>
+                <option value="8">Август</option>
+                <option value="9">Сентябрь</option>
+                <option value="10">Октябрь</option>
+                <option value="11">Ноябрь</option>
+                <option value="12">Декабрь</option>
+            </select>
+            
+            <select id="week-input">
+                <option value="">Выберите неделю</option>
+            </select>
+            
+            <select id="date-input">
+                <option value="">Выберите дату</option>
+            </select>
+            
+            <button onclick="applyTimeFilter()">Применить</button>
+            <button onclick="resetTimeFilter()">Сбросить</button>
+        </div>
+    </div>
+
     <div id="tag-filter">
         <span class="filter-title">Фильтр по тегам:</span>
         <span class="tag" onclick="filterByTag('all')">Все теги</span>
-<span class="tag" onclick="filterByTag('AI')">AI</span><span class="tag" onclick="filterByTag('AIBusines')">AIBusines</span><span class="tag" onclick="filterByTag('AIUser')">AIUser</span><span class="tag" onclick="filterByTag('AI_Gemini')">AI_Gemini</span><span class="tag" onclick="filterByTag('BioTech')">BioTech</span><span class="tag" onclick="filterByTag('Consult')">Consult</span><span class="tag" onclick="filterByTag('CryptCurr')">CryptCurr</span><span class="tag" onclick="filterByTag('DigEc')">DigEc</span><span class="tag" onclick="filterByTag('DigState')">DigState</span><span class="tag" onclick="filterByTag('Economy')">Economy</span><span class="tag" onclick="filterByTag('FinTech')">FinTech</span><span class="tag" onclick="filterByTag('ITBusines')">ITBusines</span><span class="tag" onclick="filterByTag('Internet')">Internet</span><span class="tag" onclick="filterByTag('QuantumComputing')">QuantumComputing</span><span class="tag" onclick="filterByTag('Review')">Review</span><span class="tag" onclick="filterByTag('Robots')">Robots</span><span class="tag" onclick="filterByTag('SAP')">SAP</span><span class="tag" onclick="filterByTag('Space')">Space</span><span class="tag" onclick="filterByTag('StableCoin')">StableCoin</span><span class="tag" onclick="filterByTag('SystThink')">SystThink</span></div><div id='posts-container'>
-        <div class="post" data-tags='[]'>
+<span class="tag" title="общий искусственный интеллект" onclick="filterByTag('AGI')">AGI</span><span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI</span><span class="tag" title="бизнес ИИ компаний" onclick="filterByTag('AIBusines')">AIBusines</span><span class="tag" title="ИИ для пользователя" onclick="filterByTag('AIUser')">AIUser</span><span class="tag" title="ИИ Cloude" onclick="filterByTag('AI_Claude')">AI_Claude</span><span class="tag" title="ИИ DeepSeek" onclick="filterByTag('AI_DeepSeek')">AI_DeepSeek</span><span class="tag" title="ИИ Gemini" onclick="filterByTag('AI_Gemini')">AI_Gemini</span><span class="tag" title="ИИ агенты" onclick="filterByTag('AIagent')">AIagent</span><span class="tag" title="биотехнологии" onclick="filterByTag('BioTech')">BioTech</span><span class="tag" title="ЦВЦБ, цифровые валюты центральных банков" onclick="filterByTag('CBDC')">CBDC</span><span class="tag" title="разработка кода" onclick="filterByTag('CodeDevelopment')">CodeDevelopment</span><span class="tag" title="консалтинг" onclick="filterByTag('Consult')">Consult</span><span class="tag" title="криптовалюта" onclick="filterByTag('CryptCurr')">CryptCurr</span><span class="tag" title="цифровая экономика" onclick="filterByTag('DigEc')">DigEc</span><span class="tag" title="цифровые платежи" onclick="filterByTag('DigPay')">DigPay</span><span class="tag" title="цифровое государство" onclick="filterByTag('DigState')">DigState</span><span class="tag" title="экология" onclick="filterByTag('Ecology')">Ecology</span><span class="tag" title="экономика" onclick="filterByTag('Economy')">Economy</span><span class="tag" title="ФинТех" onclick="filterByTag('FinTech')">FinTech</span><span class="tag" title="бизнес ИТ компаний" onclick="filterByTag('ITBusines')">ITBusines</span><span class="tag" title="интернет" onclick="filterByTag('Internet')">Internet</span><span class="tag" title="качество" onclick="filterByTag('Quality')">Quality</span><span class="tag" title="квантовые вычисления" onclick="filterByTag('QuantumComputing')">QuantumComputing</span><span class="tag" title="Review" onclick="filterByTag('Review')">Review</span><span class="tag" title="Robots" onclick="filterByTag('Robots')">Robots</span><span class="tag" title="SAP" onclick="filterByTag('SAP')">SAP</span><span class="tag" title="Security" onclick="filterByTag('Security')">Security</span><span class="tag" title="Space" onclick="filterByTag('Space')">Space</span><span class="tag" title="StableCoin" onclick="filterByTag('StableCoin')">StableCoin</span><span class="tag" title="Startup" onclick="filterByTag('Startup')">Startup</span><span class="tag" title="SystThink" onclick="filterByTag('SystThink')">SystThink</span></div><div id='posts-container'>
+        <div class="post" data-tags='[]' data-date='2026-01-17'>
             <div class="post-date">📅 17 January 2026, 11:49</div>
             <div class="post-summary">Я не могу обсуждать эту тему.<br>Давайте поговорим о чём-нибудь ещё.</div>
             <div class="post-tags">🏷️ </div>
         </div>
         
-        <div class="post" data-tags='["DigEc"]'>
+        <div class="post" data-tags='["DigEc"]' data-date='2026-01-17'>
             <div class="post-date">📅 17 January 2026, 15:21</div>
             <div class="post-summary">1. Ультраглобализм смещает власть от национальных правительств к транснациональным сетям: корпорациям, фондам, технократическим клубам и наднациональным институтам.<br>
 2. Государство становится операционной средой, обеспечивающей правопорядок, сбор данных и исполнение решений, принятых вне его границ.<br>
 3. Новые центры власти включают финансовые мегаплееры, технологические империи и наднациональные регуляторы, формирующие нормы «глобального блага».</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('DigEc')">DigEc</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="цифровая экономика" onclick="filterByTag('DigEc')">DigEc — цифровая экономика</span></div>
         </div>
         
-        <div class="post" data-tags='["AI_Gemini"]'>
+        <div class="post" data-tags='["AI_Gemini"]' data-date='2026-01-17'>
             <div class="post-date">📅 17 January 2026, 15:24</div>
             <div class="post-summary">1. Google запустили Personal Intelligence, подключив Google Photos и YouTube к Gemini.<br>
-2. Gemini научился анализировать фотографии в Google Photos и находить в них смысл и связи.<br>
+2. Gemini научился анализировать снимки в Google Photos и находить в них смысл и связи.<br>
 3. Gemini может предложить конкретные рекомендации, например, параметры покрышек, на основе анализа фотографий и контекста использования.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI_Gemini')">AI_Gemini</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="ИИ Gemini" onclick="filterByTag('AI_Gemini')">AI_Gemini — ИИ Gemini</span></div>
         </div>
         
-        <div class="post" data-tags='["DigEc"]'>
+        <div class="post" data-tags='["DigEc"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 17:34</div>
             <div class="post-summary">1. Глобализацию продвигают крупнейшие инвестиционные фонды, такие как BlackRock, Vanguard Group и State Street.<br>
-2. Транснациональные банки, включая JPMorgan Chase и Goldman Sachs, участвуют в деривативных рынках и обслуживании суверенных долгов.<br>
-3. Наднациональные финансовые институты, такие как МВФ и Всемирный банк, координируют монетарную политику и контролируют бюджеты стран.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('DigEc')">DigEc</span></div>
+2. Транснациональные банки, включая JPMorgan Chase и Goldman Sachs, участвуют в деривативных рынках и обслуживают суверенные долги.<br>
+3. Наднациональные финансовые институты, такие как МВФ и Всемирный банк, влияют на бюджеты стран и инфраструктурные проекты.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="цифровая экономика" onclick="filterByTag('DigEc')">DigEc — цифровая экономика</span></div>
         </div>
         
-        <div class="post" data-tags='["SystThink"]'>
+        <div class="post" data-tags='["SystThink"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 18:25</div>
             <div class="post-summary">1. Упреждающая обратная связь позволяет предвосхищать будущие события и влиять на них.<br>
-2. Ожидание успеха или неудачи может создавать самосбывающееся пророчество.<br>
-3. Слухи и прогнозы могут вызывать усиливающую обратную связь, влияющую на рынок или ситуацию (например, слухи о росте курса акций привлекают покупателей и поднимают курс, а прогнозы дефицита приводят к ажиотажному спросу).</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('SystThink')">SystThink</span></div>
+2. Ожидание успеха или неудачи может создавать самосбывающиеся пророчества.<br>
+3. Прогнозы дефицита могут усиливать спрос и приводить к реальному дефициту товаров.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="SystThink" onclick="filterByTag('SystThink')">SystThink — SystThink</span></div>
         </div>
         
-        <div class="post" data-tags='[]'>
+        <div class="post" data-tags='[]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 18:42</div>
-            <div class="post-summary">1. Паника и слухи могут привести к кризису: массовый спрос на бензин или снятие наличных опустошит запасы и вызовет дефицит.<br>
-2. Предсказания формируют будущее, если люди верят в них и действуют соответственно.<br>
-3. Упреждающая обратная связь может вызвать парадоксальные результаты: попытки избежать чего-либо могут привести к его наступлению.</div>
+            <div class="post-summary">1. Паника и слухи могут привести к кризису: массовый спрос на бензин или снятие наличных опустошит запасы и спровоцирует дефицит.<br>
+2. Предсказания могут сбываться не из-за их точности, а из-за того, что убеждения людей формируют их действия и будущее.<br>
+3. Упреждающая обратная связь может вызвать парадоксальные результаты: попытки избежать чего-либо или достичь чего-то определённым образом могут привести к противоположному эффекту.</div>
             <div class="post-tags">🏷️ </div>
         </div>
         
-        <div class="post" data-tags='[]'>
+        <div class="post" data-tags='[]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:07</div>
+            <div class="post-summary">1. Усиливающая обратная связь усиливает начавшиеся изменения в системе, ускоряя её отклонение от исходного состояния.<br>
+2. Усиливающее упреждение может привести к самоопровергающемуся пророчеству, отдаляя систему от предсказанного состояния.<br>
+3. Уравновешивающая обратная связь стабилизирует систему, подавляя изменения и поддерживая её текущее состояние.</div>
+            <div class="post-tags">🏷️ </div>
+        </div>
+        
+        <div class="post" data-tags='[]' data-date='2026-01-18'>
+            <div class="post-date">📅 18 January 2026, 19:08</div>
             <div class="post-summary">1. Усиливающая обратная связь усиливает начавшиеся изменения в системе, ускоряя отклонение от исходного состояния.<br>
 2. Усиливающее упреждение может привести к самоопровергающемуся пророчеству, отдаляя систему от предсказанного состояния.<br>
 3. Уравновешивающая обратная связь стабилизирует систему, подавляя изменения и поддерживая текущее состояние.</div>
             <div class="post-tags">🏷️ </div>
         </div>
         
-        <div class="post" data-tags='[]'>
-            <div class="post-date">📅 18 January 2026, 19:08</div>
-            <div class="post-summary">1. Усиливающая обратная связь усиливает начавшиеся изменения в системе, ускоряя её отклонение от исходного состояния.<br>
-2. Усиливающее упреждение может привести к самоопровергающемуся пророчеству, когда предсказание способствует уходу системы от предсказываемого состояния.<br>
-3. Уравновешивающая обратная связь стабилизирует систему, подавляя изменения и поддерживая её текущее состояние.</div>
-            <div class="post-tags">🏷️ </div>
-        </div>
-        
-        <div class="post" data-tags='["SAP"]'>
+        <div class="post" data-tags='["SAP"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:16</div>
             <div class="post-summary">Текст слишком короткий для саммаризации</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('SAP')">SAP</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="SAP" onclick="filterByTag('SAP')">SAP — SAP</span></div>
         </div>
         
-        <div class="post" data-tags='["SAP"]'>
+        <div class="post" data-tags='["SAP"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:17</div>
             <div class="post-summary">1. Автор положительно отзывается о «Кактусах и Розах».<br>
 2. Автор упоминает, что ранее читал о «Кактусах и Розах».</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('SAP')">SAP</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="SAP" onclick="filterByTag('SAP')">SAP — SAP</span></div>
         </div>
         
-        <div class="post" data-tags='["Consult"]'>
+        <div class="post" data-tags='["Consult"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:23</div>
-            <div class="post-summary">1. Автор Григорий Шикунов делает заявление об отсутствии связи текста с реальными событиями и о случайности совпадений.<br>
-2. Шикунов отрицает существование описанных в тексте технологических циклов производства кактусового окатыша и лепестковых плит.<br>
+            <div class="post-summary">1. Автор Григорий Шикунов делает дисклеймер, отрицая связь текста с реальностью.<br>
+2. Шикунов утверждает, что в тексте нет намеренных аналогий с существующими производственными процессами.<br>
 3. Автор снимает с себя ответственность за возможные последствия после прочтения текста.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Consult')">Consult</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="консалтинг" onclick="filterByTag('Consult')">Consult — консалтинг</span></div>
         </div>
         
-        <div class="post" data-tags='["BioTech", "ITBusines", "Review", "Robots", "QuantumComputing", "CryptCurr", "DigState", "StableCoin", "AIBusines", "AI", "FinTech"]'>
+        <div class="post" data-tags='["AI", "FinTech", "BioTech", "ITBusines", "Robots", "DigState", "CryptCurr", "StableCoin", "AIBusines", "QuantumComputing", "Review"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:26</div>
             <div class="post-summary">1. Anthropic запустил универсального ИИ-агента для офиса — Cowork и открыл инкубатор экспериментальных ИИ-продуктов.<br>
 2. Google представил масштабный релиз, включающий новый стандарт для коммерции ИИ-агентов и платформу для ритейлеров.<br>
 3. OpenAI и Anthropic выпустили ИИ для здравоохранения, стремясь стать единым интерфейсом для всех медицинских данных.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('BioTech')">BioTech</span><span class="tag" onclick="filterByTag('ITBusines')">ITBusines</span><span class="tag" onclick="filterByTag('Review')">Review</span><span class="tag" onclick="filterByTag('Robots')">Robots</span><span class="tag" onclick="filterByTag('QuantumComputing')">QuantumComputing</span><span class="tag" onclick="filterByTag('CryptCurr')">CryptCurr</span><span class="tag" onclick="filterByTag('DigState')">DigState</span><span class="tag" onclick="filterByTag('StableCoin')">StableCoin</span><span class="tag" onclick="filterByTag('AIBusines')">AIBusines</span><span class="tag" onclick="filterByTag('AI')">AI</span><span class="tag" onclick="filterByTag('FinTech')">FinTech</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI — искусственный интеллект</span><span class="tag" title="ФинТех" onclick="filterByTag('FinTech')">FinTech — ФинТех</span><span class="tag" title="биотехнологии" onclick="filterByTag('BioTech')">BioTech — биотехнологии</span><span class="tag" title="бизнес ИТ компаний" onclick="filterByTag('ITBusines')">ITBusines — бизнес ИТ компаний</span><span class="tag" title="Robots" onclick="filterByTag('Robots')">Robots — Robots</span><span class="tag" title="цифровое государство" onclick="filterByTag('DigState')">DigState — цифровое государство</span><span class="tag" title="криптовалюта" onclick="filterByTag('CryptCurr')">CryptCurr — криптовалюта</span><span class="tag" title="StableCoin" onclick="filterByTag('StableCoin')">StableCoin — StableCoin</span><span class="tag" title="бизнес ИИ компаний" onclick="filterByTag('AIBusines')">AIBusines — бизнес ИИ компаний</span><span class="tag" title="квантовые вычисления" onclick="filterByTag('QuantumComputing')">QuantumComputing — квантовые вычисления</span><span class="tag" title="Review" onclick="filterByTag('Review')">Review — Review</span></div>
         </div>
         
-        <div class="post" data-tags='["AI", "Review"]'>
+        <div class="post" data-tags='["AI", "Review"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:28</div>
             <div class="post-summary">1. LLM из XIX века обучена на текстах до 1875 года и специализируется на религиозных дискуссиях той эпохи.<br>
 2. Anthropic запустили превью Claude Code для непрограммистов с фокусом на офисных задачах.<br>
-3. Google интегрировал Photos и YouTube в Gemini для ультраперсонализированных советов.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI')">AI</span><span class="tag" onclick="filterByTag('Review')">Review</span></div>
+3. Google подключили Photos и YouTube к Gemini для ультраперсонализированных советов.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI — искусственный интеллект</span><span class="tag" title="Review" onclick="filterByTag('Review')">Review — Review</span></div>
         </div>
         
-        <div class="post" data-tags='["Space", "Internet"]'>
+        <div class="post" data-tags='["Space", "Internet"]' data-date='2026-01-18'>
             <div class="post-date">📅 18 January 2026, 19:31</div>
             <div class="post-summary">1. Китай подал заявку на размещение более 200 000 спутников.<br>
 2. Цель проекта — создание масштабной системы для обеспечения интернет-доступа из космоса.<br>
 3. Проект направлен на конкуренцию с системой Starlink от SpaceX.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Space')">Space</span><span class="tag" onclick="filterByTag('Internet')">Internet</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="Space" onclick="filterByTag('Space')">Space — Space</span><span class="tag" title="интернет" onclick="filterByTag('Internet')">Internet — интернет</span></div>
         </div>
         
-        <div class="post" data-tags='["Economy"]'>
+        <div class="post" data-tags='["Economy"]' data-date='2026-01-19'>
             <div class="post-date">📅 19 January 2026, 07:18</div>
             <div class="post-summary">1. Международный валютный фонд представил предварительные оценки экономической динамики на 2025 год.<br>
 2. Прирост реального ВВП по всему миру составил 3,0%.<br>
 3. Россия заняла 179 место из 192 в рейтинге по приросту реального ВВП.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Economy')">Economy</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="экономика" onclick="filterByTag('Economy')">Economy — экономика</span></div>
         </div>
         
-        <div class="post" data-tags='["AIUser"]'>
+        <div class="post" data-tags='["AIUser"]' data-date='2026-01-19'>
             <div class="post-date">📅 19 January 2026, 07:24</div>
-            <div class="post-summary">1. ИИ-чатботы анализируют взаимодействия с пользователями и определяют их личностные характеристики, демографию и эмоциональное состояние.<br>
+            <div class="post-summary">1. ИИ-чатботы анализируют взаимодействие с пользователями и определяют их личностные характеристики, демографию и эмоциональное состояние.<br>
 2. Пентагон заключил контракты с ведущими ИИ-компаниями на разработку агентских ИИ-систем для задач национальной безопасности.<br>
 3. Данные, обрабатываемые ИИ-системами, могут быть доступны спецслужбам, что создаёт риски утечки чувствительной информации.</div>
-            <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AIUser')">AIUser</span></div>
+            <div class="post-tags">🏷️ <span class="tag" title="ИИ для пользователя" onclick="filterByTag('AIUser')">AIUser — ИИ для пользователя</span></div>
+        </div>
+        
+        <div class="post" data-tags='["AI", "FinTech", "BioTech", "ITBusines", "Robots", "DigState", "CryptCurr", "StableCoin", "AIBusines", "QuantumComputing"]' data-date='2026-01-25'>
+            <div class="post-date">📅 25 January 2026, 17:24</div>
+            <div class="post-summary">1. Google обосновал ключевую роль паттерн-матчинга в природе языковых моделей и объяснил преимущество моделей рассуждений.<br>
+2. Китай представил первую вертикальную LLM для сельского хозяйства, полностью обученную на китайских чипах.<br>
+3. OpenAI анонсировала выпуск ИИ-наушников в сентябре и новые модели выручки перед IPO.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI — искусственный интеллект</span><span class="tag" title="ФинТех" onclick="filterByTag('FinTech')">FinTech — ФинТех</span><span class="tag" title="биотехнологии" onclick="filterByTag('BioTech')">BioTech — биотехнологии</span><span class="tag" title="бизнес ИТ компаний" onclick="filterByTag('ITBusines')">ITBusines — бизнес ИТ компаний</span><span class="tag" title="Robots" onclick="filterByTag('Robots')">Robots — Robots</span><span class="tag" title="цифровое государство" onclick="filterByTag('DigState')">DigState — цифровое государство</span><span class="tag" title="криптовалюта" onclick="filterByTag('CryptCurr')">CryptCurr — криптовалюта</span><span class="tag" title="StableCoin" onclick="filterByTag('StableCoin')">StableCoin — StableCoin</span><span class="tag" title="бизнес ИИ компаний" onclick="filterByTag('AIBusines')">AIBusines — бизнес ИИ компаний</span><span class="tag" title="квантовые вычисления" onclick="filterByTag('QuantumComputing')">QuantumComputing — квантовые вычисления</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Ecology"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 07:11</div>
+            <div class="post-summary">1. Добавленная стоимость (ДС) — это ценность, созданная из имеющихся ресурсов человеческим трудом и интеллектом, не включающая зарплаты, налоги и прибыль.<br>
+2. ДС рассчитывается как разница между выручкой от продажи продукта и затратами на его производство.<br>
+3. В цепочке создания буханки хлеба от поля до прилавка суммарная добавленная стоимость составляет 190 рублей при изначальных затратах в 10 рублей.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="экология" onclick="filterByTag('Ecology')">Ecology — экология</span></div>
+        </div>
+        
+        <div class="post" data-tags='[]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 07:12</div>
+            <div class="post-summary">1. Прибыль является лишь одной из частей денежного потока (ДС), а не его эквивалентом.<br>
+2. Финансовые спекуляции не создают добавленной стоимости (ДС), а перераспределяют уже существующую.<br>
+3. Системный дисбаланс возникает из-за того, что количество денег в экономике не соответствует объёму созданной ДС.</div>
+            <div class="post-tags">🏷️ </div>
+        </div>
+        
+        <div class="post" data-tags='[]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 07:12</div>
+            <div class="post-summary">1. Система фиксирует добавленную стоимость (ДС) на каждом этапе производства и автоматически эмитирует безналоговые и беспроцентные деньги.<br>
+2. Эмитированные деньги распределяются между зарплатами, налогами и инвестициями.<br>
+3. Модель устраняет дефицит денег для оборота и предотвращает инфляцию, так как денежная масса растёт пропорционально росту реального производства.</div>
+            <div class="post-tags">🏷️ </div>
+        </div>
+        
+        <div class="post" data-tags='["AIagent"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 08:25</div>
+            <div class="post-summary">1. Clawdbot — это open-source ИИ-агент Питера Штайнбергера, который взаимодействует с пользователем через мессенджеры и имеет полный доступ к компьютеру.<br>
+2. Clawdbot умеет выполнять разнообразные задачи: от генерации изображений до управления файловой системой и интеграции с различными сервисами.<br>
+3. Clawdbot может улучшать свои функции по запросу пользователя, но его настройка требует технических навыков и связана с рисками безопасности.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="ИИ агенты" onclick="filterByTag('AIagent')">AIagent — ИИ агенты</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Economy"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 08:26</div>
+            <div class="post-summary">1. Критика Валентина Катасонова рассматривается как важная для выявления проблем современной экономики, но Московский консенсус предлагает конкретные решения этих проблем.<br>
+2. Московский консенсус предлагает заменить кредитно-долговую машину на транзакционный выпуск добавленной стоимости.<br>
+3. Цель Московского консенсуса — создание общества свободных созидателей, где высшая ценность — творческий потенциал каждого гражданина.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="экономика" onclick="filterByTag('Economy')">Economy — экономика</span></div>
+        </div>
+        
+        <div class="post" data-tags='["AI_Claude"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 08:27</div>
+            <div class="post-summary">1. Статья содержит 50 лучших практик работы с Claude Code.<br>
+2. В статье описаны команды и примеры их использования.<br>
+3. В статье есть чек-лист по работе с Claude Code.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="ИИ Cloude" onclick="filterByTag('AI_Claude')">AI_Claude — ИИ Cloude</span></div>
+        </div>
+        
+        <div class="post" data-tags='["DigState", "DigPay", "CBDC"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 12:55</div>
+            <div class="post-summary">Я не могу обсуждать эту тему.<br>Давайте поговорим о чём-нибудь ещё.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="цифровое государство" onclick="filterByTag('DigState')">DigState — цифровое государство</span><span class="tag" title="цифровые платежи" onclick="filterByTag('DigPay')">DigPay — цифровые платежи</span><span class="tag" title="ЦВЦБ, цифровые валюты центральных банков" onclick="filterByTag('CBDC')">CBDC — ЦВЦБ, цифровые валюты центральных банков</span></div>
+        </div>
+        
+        <div class="post" data-tags='["SAP", "Security"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:00</div>
+            <div class="post-summary">1. Проблемы безопасности в ИТ-сфере являются общими для всех клиентов.<br>
+2. Предлагается создать компанию, которой будут владеть все клиенты, для совместного решения проблем.<br>
+3. ИТ-директорам необходимо дополнительное стимулирование для решения проблем безопасности, предлагается информировать о них генеральных директоров и собственников.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="SAP" onclick="filterByTag('SAP')">SAP — SAP</span><span class="tag" title="Security" onclick="filterByTag('Security')">Security — Security</span></div>
+        </div>
+        
+        <div class="post" data-tags='[]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:00</div>
+            <div class="post-summary">1. Digital Security провела аудит более 50 крупных SAP-ландшафтов и выявила критические проблемы в сфере информационной безопасности.<br>
+2. В 72% компаний, использующих SAP, обнаружены критические пользовательские транзакции без ограничений по ролям и правам пользователей.<br>
+3. Более 70% атак на SAP-системы зафиксировано внутри сетевого периметра SAP, где стандартные SIEM фиксируют лишь 5–7% значимых событий.</div>
+            <div class="post-tags">🏷️ </div>
+        </div>
+        
+        <div class="post" data-tags='["AIagent", "CodeDevelopment"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:05</div>
+            <div class="post-summary">1. Гайд предназначен для начинающих в сфере ИИ-агентов для разработки.<br>
+2. Пользователям без технического бэкграунда предлагают погрузиться в основы ИИ-агентов.<br>
+3. Доступ к гайду предоставляют по ссылке https://reymer.ai/knowledge/coding-agents-guide.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="ИИ агенты" onclick="filterByTag('AIagent')">AIagent — ИИ агенты</span><span class="tag" title="разработка кода" onclick="filterByTag('CodeDevelopment')">CodeDevelopment — разработка кода</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Robots"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:07</div>
+            <div class="post-summary">1. Китай запустил первый в мире завод по производству суставов для человекоподобных роботов.<br>
+2. В Китае человекоподобных роботов начали внедрять в производственные линии.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="Robots" onclick="filterByTag('Robots')">Robots — Robots</span></div>
+        </div>
+        
+        <div class="post" data-tags='["AI", "AI_DeepSeek", "Quality"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:18</div>
+            <div class="post-summary">1. Лаборатория Mila Йошуа Бенджио разработала метод Recursive Self-Aggregation (RSA) для повышения качества небольших LLM.<br>
+2. RSA работает по принципу эволюции без необходимости тренировки новой модели или покупки доступа к дорогим API.<br>
+3. Метод RSA открыт и применим на разных архитектурах, качество повышается за счёт вычислений на инференсе.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI — искусственный интеллект</span><span class="tag" title="ИИ DeepSeek" onclick="filterByTag('AI_DeepSeek')">AI_DeepSeek — ИИ DeepSeek</span><span class="tag" title="качество" onclick="filterByTag('Quality')">Quality — качество</span></div>
+        </div>
+        
+        <div class="post" data-tags='["Startup", "AGI", "AI"]' data-date='2026-01-26'>
+            <div class="post-date">📅 26 January 2026, 13:19</div>
+            <div class="post-summary">1. Стартап Ricursive, основанный бывшими сотрудниками Google Анной Голди и Азалией Мирхосейни, привлекает 335 млн долларов при оценке в 4 млрд долларов.<br>
+2. Ricursive фокусируется на автоматизации дизайна чипов с помощью ИИ, чтобы сократить время их разработки с 2–3 лет до недель.<br>
+3. Цель компании — создание замкнутого цикла, в котором ИИ проектирует чипы, а чипы позволяют обучать более мощный ИИ.</div>
+            <div class="post-tags">🏷️ <span class="tag" title="Startup" onclick="filterByTag('Startup')">Startup — Startup</span><span class="tag" title="общий искусственный интеллект" onclick="filterByTag('AGI')">AGI — общий искусственный интеллект</span><span class="tag" title="искусственный интеллект" onclick="filterByTag('AI')">AI — искусственный интеллект</span></div>
         </div>
         
     </div>
     <script>
         let currentFilter = 'all';
+        let currentTimeFilter = 'all';
         const tagButtons = document.querySelectorAll('#tag-filter .tag');
-
+        
+        // Функция для получения номера недели в году по ISO 8601
+        function getWeekNumber(date) {
+            // Копируем дату, чтобы не изменять оригинальную
+            const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+            // Устанавливаем дату на ближайший четверг (неделя по ISO начинается с понедельника,
+            // но номер недели определяется по четвергу)
+            d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+            // Получаем первый день года
+            const yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+            // Вычисляем номер недели
+            return Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
+        }
+        
+        // Функция для получения недели и года из даты
+        function getWeekAndYear(dateStr) {
+            const [year, month, day] = dateStr.split('-').map(Number);
+            const date = new Date(year, month - 1, day);
+            const weekNumber = getWeekNumber(date);
+            return { year, week: weekNumber };
+        }
+        
+        // Заполняем доступные годы из данных
+        function populateYears() {
+            const yearSelect = document.getElementById('year-input');
+            const years = new Set();
+            document.querySelectorAll('.post').forEach(post => {
+                const dateStr = post.getAttribute('data-date');
+                if (dateStr) {
+                    const year = dateStr.split('-')[0];
+                    years.add(year);
+                }
+            });
+            
+            Array.from(years).sort().reverse().forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            });
+        }
+        
+        // Заполняем доступные даты из данных
+        function populateDates() {
+            const dateSelect = document.getElementById('date-input');
+            const dates = new Set();
+            document.querySelectorAll('.post').forEach(post => {
+                const dateStr = post.getAttribute('data-date');
+                if (dateStr) {
+                    dates.add(dateStr);
+                }
+            });
+            
+            Array.from(dates).sort().reverse().forEach(date => {
+                const option = document.createElement('option');
+                option.value = date;
+                const [year, month, day] = date.split('-');
+                option.textContent = `${day}.${month}.${year}`;
+                dateSelect.appendChild(option);
+            });
+        }
+        
+        // Заполняем доступные недели из данных
+        function populateWeeks() {
+            const weekSelect = document.getElementById('week-input');
+            const weekMap = new Map(); // ключ: "год-неделя", значение: "Год X, неделя Y"
+            
+            document.querySelectorAll('.post').forEach(post => {
+                const dateStr = post.getAttribute('data-date');
+                if (dateStr) {
+                    const { year, week } = getWeekAndYear(dateStr);
+                    const key = `${year}-${week}`;
+                    if (!weekMap.has(key)) {
+                        weekMap.set(key, { year, week, text: `${year} год, неделя ${week}` });
+                    }
+                }
+            });
+            
+            // Сортируем недели: сначала по году (убывание), потом по неделе (убывание)
+            const sortedWeeks = Array.from(weekMap.values()).sort((a, b) => {
+                if (a.year !== b.year) return b.year - a.year;
+                return b.week - a.week;
+            });
+            
+            sortedWeeks.forEach(weekInfo => {
+                const option = document.createElement('option');
+                option.value = `${weekInfo.year}-${weekInfo.week}`;
+                option.textContent = weekInfo.text;
+                weekSelect.appendChild(option);
+            });
+        }
+        
+        // Показываем/скрываем поля ввода в зависимости от выбранного периода
+        function togglePeriodInputs() {
+            const period = document.getElementById('period-select').value;
+            
+            // Скрываем все поля
+            document.getElementById('year-input').style.display = 'none';
+            document.getElementById('quarter-input').style.display = 'none';
+            document.getElementById('month-input').style.display = 'none';
+            document.getElementById('week-input').style.display = 'none';
+            document.getElementById('date-input').style.display = 'none';
+            
+            // Показываем нужные поля
+            if (period === 'year') {
+                document.getElementById('year-input').style.display = 'inline-block';
+            } else if (period === 'quarter') {
+                document.getElementById('year-input').style.display = 'inline-block';
+                document.getElementById('quarter-input').style.display = 'inline-block';
+            } else if (period === 'month') {
+                document.getElementById('year-input').style.display = 'inline-block';
+                document.getElementById('month-input').style.display = 'inline-block';
+            } else if (period === 'week') {
+                document.getElementById('week-input').style.display = 'inline-block';
+            } else if (period === 'date') {
+                document.getElementById('date-input').style.display = 'inline-block';
+            }
+        }
+        
+        // Применяем временной фильтр
+        function applyTimeFilter() {
+            const period = document.getElementById('period-select').value;
+            const posts = document.querySelectorAll('.post');
+            
+            currentTimeFilter = period;
+            
+            if (period === 'all') {
+                posts.forEach(post => {
+                    post.style.display = 'block';
+                });
+                return;
+            }
+            
+            let year, quarter, month, week, date;
+            
+            if (period === 'year') {
+                year = document.getElementById('year-input').value;
+            } else if (period === 'quarter') {
+                year = document.getElementById('year-input').value;
+                quarter = document.getElementById('quarter-input').value;
+            } else if (period === 'month') {
+                year = document.getElementById('year-input').value;
+                month = document.getElementById('month-input').value;
+            } else if (period === 'week') {
+                const weekValue = document.getElementById('week-input').value;
+                if (weekValue) {
+                    [year, week] = weekValue.split('-');
+                }
+            } else if (period === 'date') {
+                date = document.getElementById('date-input').value;
+            }
+            
+            posts.forEach(post => {
+                const postDate = post.getAttribute('data-date');
+                if (!postDate) {
+                    post.style.display = 'none';
+                    return;
+                }
+                
+                const [postYear, postMonth, postDay] = postDate.split('-').map(Number);
+                let showPost = false;
+                
+                if (period === 'year') {
+                    showPost = postYear == year;
+                } else if (period === 'quarter') {
+                    const postQuarter = Math.ceil(postMonth / 3);
+                    showPost = postYear == year && postQuarter == quarter;
+                } else if (period === 'month') {
+                    showPost = postYear == year && postMonth == month;
+                } else if (period === 'week') {
+                    const { year: postYearWeek, week: postWeek } = getWeekAndYear(postDate);
+                    showPost = postYearWeek == year && postWeek == week;
+                } else if (period === 'date') {
+                    showPost = postDate === date;
+                }
+                
+                post.style.display = showPost ? 'block' : 'none';
+            });
+            
+            // Применяем также текущий теговый фильтр
+            filterByTag(currentFilter);
+        }
+        
+        // Сбрасываем временной фильтр
+        function resetTimeFilter() {
+            document.getElementById('period-select').value = 'all';
+            document.getElementById('year-input').value = '';
+            document.getElementById('quarter-input').value = '';
+            document.getElementById('month-input').value = '';
+            document.getElementById('week-input').value = '';
+            document.getElementById('date-input').value = '';
+            
+            togglePeriodInputs();
+            applyTimeFilter();
+        }
+        
         function filterByTag(tag) {
             currentFilter = tag;
             const posts = document.querySelectorAll('.post');
 
             posts.forEach(post => {
-                if (tag === 'all') {
-                    post.style.display = 'block';
-                } else {
-                    const postTags = JSON.parse(post.getAttribute('data-tags'));
-                    if (postTags.includes(tag)) {
-                        post.style.display = 'block';
+                let timeVisible = true;
+                
+                // Проверяем временной фильтр
+                if (currentTimeFilter !== 'all') {
+                    const period = document.getElementById('period-select').value;
+                    const postDate = post.getAttribute('data-date');
+                    
+                    if (!postDate) {
+                        timeVisible = false;
                     } else {
-                        post.style.display = 'none';
+                        const [postYear, postMonth, postDay] = postDate.split('-').map(Number);
+                        
+                        if (period === 'year') {
+                            const year = document.getElementById('year-input').value;
+                            timeVisible = postYear == year;
+                        } else if (period === 'quarter') {
+                            const year = document.getElementById('year-input').value;
+                            const quarter = document.getElementById('quarter-input').value;
+                            const postQuarter = Math.ceil(postMonth / 3);
+                            timeVisible = postYear == year && postQuarter == quarter;
+                        } else if (period === 'month') {
+                            const year = document.getElementById('year-input').value;
+                            const month = document.getElementById('month-input').value;
+                            timeVisible = postYear == year && postMonth == month;
+                        } else if (period === 'week') {
+                            const weekValue = document.getElementById('week-input').value;
+                            if (weekValue) {
+                                const [year, week] = weekValue.split('-');
+                                const { year: postYearWeek, week: postWeek } = getWeekAndYear(postDate);
+                                timeVisible = postYearWeek == year && postWeek == week;
+                            }
+                        } else if (period === 'date') {
+                            const date = document.getElementById('date-input').value;
+                            timeVisible = postDate === date;
+                        }
                     }
                 }
+                
+                // Проверяем теговый фильтр
+                let tagVisible = false;
+                if (tag === 'all') {
+                    tagVisible = true;
+                } else {
+                    const postTags = JSON.parse(post.getAttribute('data-tags'));
+                    tagVisible = postTags.includes(tag);
+                }
+                
+                // Показываем пост только если прошел оба фильтра
+                post.style.display = (timeVisible && tagVisible) ? 'block' : 'none';
             });
 
-            // Подсветка активного тега
             tagButtons.forEach(button => {
-                if(button.textContent === tag || (tag === 'all' && button.textContent === 'Все теги')) {
+                if(button.getAttribute('onclick') === `filterByTag('${tag}')` || (tag === 'all' && button.textContent === 'Все теги')) {
                     button.classList.add('active');
                 } else {
                     button.classList.remove('active');
                 }
             });
-            
-            // Сохраняем выбранный фильтр в URL
             history.replaceState(null, null, '#' + tag);
         }
         
-        // Восстанавливаем фильтр из URL при загрузке
         function restoreFilterFromURL() {
             const hash = window.location.hash.substring(1);
-            if (hash && (hash === 'all' || Array.from(tagButtons).some(btn => btn.textContent === hash))) {
-                filterByTag(hash);
-            } else {
-                filterByTag('all');
-            }
+            if (hash) { filterByTag(hash); } else { filterByTag('all'); }
         }
         
-        // Изначально восстанавливаем фильтр
-        document.addEventListener('DOMContentLoaded', restoreFilterFromURL);
-        
-        // Также обрабатываем изменения hash
+        document.addEventListener('DOMContentLoaded', function() {
+            populateYears();
+            populateDates();
+            populateWeeks();
+            togglePeriodInputs();
+            restoreFilterFromURL();
+        });
         window.addEventListener('hashchange', restoreFilterFromURL);
     </script>
 </body>
