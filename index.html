@@ -1886,7 +1886,6 @@ Fidelity — один из крупнейших финансовых игрок�
                     
                     post.style.display = show ? 'block' : 'none';
                 });
-                filterByTag(currentFilter);
             }
 
             function resetTimeFilter() {
@@ -1895,7 +1894,9 @@ Fidelity — один из крупнейших финансовых игрок�
                     document.getElementById(id).value = '';
                 });
                 togglePeriodInputs();
-                applyTimeFilter();
+                document.querySelectorAll('.post').forEach(post => {
+                    post.style.display = 'block';
+                });
             }
 
             let currentFilter = 'all';
@@ -1905,13 +1906,6 @@ Fidelity — один из крупнейших финансовых игрок�
                 posts.forEach(post => {
                     const postTags = JSON.parse(post.getAttribute('data-tags'));
                     const show = (tag === 'all' || postTags.includes(tag));
-                    
-                    // Учитываем текущий временной фильтр
-                    if (post.style.display === 'none' && show) {
-                        // Не показываем, если скрыто временным фильтром
-                        return;
-                    }
-                    
                     post.style.display = show ? 'block' : 'none';
                 });
             }
@@ -1922,7 +1916,6 @@ Fidelity — один из крупнейших финансовых игрок�
                 populateMonths();
                 populateWeeks();
                 togglePeriodInputs();
-                filterByTag('all');
             });
         </script>
 </body>
