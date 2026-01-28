@@ -1740,91 +1740,190 @@ Fidelity — один из крупнейших финансовых игрок�
 <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('StableCoin')">StableCoin — StableCoin</span><span class="tag" onclick="filterByTag('GlobeBusines')">GlobeBusines — глобальный бизнес</span></div>
 </div></div>
 <script>
-        // Функция для переключения видимости исходного текста
-        function toggleFullText(id) {
-            const el = document.getElementById(id);
-            if (el.style.display === 'block') {
-                el.style.display = 'none';
-            } else {
-                el.style.display = 'block';
+            function toggleFullText(id) {
+                const el = document.getElementById(id);
+                if (el.style.display === 'block') {
+                    el.style.display = 'none';
+                } else {
+                    el.style.display = 'block';
+                }
             }
-        }
 
-        // Остальная логика фильтров (сокращена для краткости, оставьте как в вашем файле)
-        function populateYears() {
-            const yearSelect = document.getElementById('year-input');
-            const years = new Set();
-            document.querySelectorAll('.post').forEach(post => {
-                const dateStr = post.getAttribute('data-date');
-                if (dateStr) years.add(dateStr.split('-')[0]);
-            });
-            Array.from(years).sort().reverse().forEach(year => {
-                const option = document.createElement('option');
-                option.value = year; option.textContent = year;
-                yearSelect.appendChild(option);
-            });
-        }
-        
-        function populateDates() {
-            const dateSelect = document.getElementById('date-input');
-            const dates = new Set();
-            document.querySelectorAll('.post').forEach(post => {
-                const dateStr = post.getAttribute('data-date');
-                if (dateStr) dates.add(dateStr);
-            });
-            Array.from(dates).sort().reverse().forEach(date => {
-                const option = document.createElement('option');
-                option.value = date;
-                const [y, m, d] = date.split('-');
-                option.textContent = `${d}.${m}.${y}`;
-                dateSelect.appendChild(option);
-            });
-        }
-
-        function togglePeriodInputs() {
-            const period = document.getElementById('period-select').value;
-            ['year-input', 'quarter-input', 'month-input', 'week-input', 'date-input'].forEach(id => {
-                document.getElementById(id).style.display = 'none';
-            });
-            if (period !== 'all') {
-                document.getElementById('year-input').style.display = 'inline-block';
-                if (period !== 'year') document.getElementById(period + '-input').style.display = 'inline-block';
+            function getWeekNumber(date) {
+                const d = new Date(date);
+                d.setHours(0, 0, 0, 0);
+                d.setDate(d.getDate() + 4 - (d.getDay() || 7));
+                const yearStart = new Date(d.getFullYear(), 0, 1);
+                const weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+                return weekNo;
             }
-            if (period === 'date') {
-                document.getElementById('year-input').style.display = 'none';
-                document.getElementById('date-input').style.display = 'inline-block';
+
+            function populateYears() {
+                const yearSelect = document.getElementById('year-input');
+                const years = new Set();
+                document.querySelectorAll('.post').forEach(post => {
+                    const dateStr = post.getAttribute('data-date');
+                    if (dateStr) years.add(dateStr.split('-')[0]);
+                });
+                yearSelect.innerHTML = '<option value="">Выберите год</option>';
+                Array.from(years).sort().reverse().forEach(year => {
+                    const option = document.createElement('option');
+                    option.value = year; option.textContent = year;
+                    yearSelect.appendChild(option);
+                });
             }
-        }
+            
+            function populateDates() {
+                const dateSelect = document.getElementById('date-input');
+                const dates = new Set();
+                document.querySelectorAll('.post').forEach(post => {
+                    const dateStr = post.getAttribute('data-date');
+                    if (dateStr) dates.add(dateStr);
+                });
+                dateSelect.innerHTML = '<option value="">Выберите дату</option>';
+                Array.from(dates).sort().reverse().forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    const [y, m, d] = date.split('-');
+                    option.textContent = `${d}.${m}.${y}`;
+                    dateSelect.appendChild(option);
+                });
+            }
 
-        function applyTimeFilter() {
-            const period = document.getElementById('period-select').value;
-            const posts = document.querySelectorAll('.post');
-            const year = document.getElementById('year-input').value;
-            // ... (дальнейшая логика фильтрации аналогична вашей)
-            posts.forEach(post => {
-                // Упрощенный показ для примера
-                post.style.display = 'block'; 
+            function populateMonths() {
+                const monthSelect = document.getElementById('month-input');
+                monthSelect.innerHTML = '<option value="">Выберите месяц</option>';
+                const monthsSet = new Set();
+                document.querySelectorAll('.post').forEach(post => {
+                    const dateStr = post.getAttribute('data-date');
+                    if (dateStr) {
+                        const [year, month] = dateStr.split('-');
+                        monthsSet.add(`${year}-${month}`);
+                    }
+                });
+                const months = Array.from(monthsSet).sort().reverse();
+                months.forEach(month => {
+                    const [year, monthNum] = month.split('-');
+                    const monthNames = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                                      'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+                    const option = document.createElement('option');
+                    option.value = month;
+                    option.textContent = `${monthNames[parseInt(monthNum)-1]} ${year}`;
+                    monthSelect.appendChild(option);
+                });
+            }
+
+            function populateWeeks() {
+                const weekSelect = document.getElementById('week-input');
+                weekSelect.innerHTML = '<option value="">Выберите неделю</option>';
+                const weeksSet = new Set();
+                document.querySelectorAll('.post').forEach(post => {
+                    const dateStr = post.getAttribute('data-date');
+                    if (dateStr) {
+                        const week = getWeekNumber(new Date(dateStr));
+                        const year = new Date(dateStr).getFullYear();
+                        weeksSet.add(`${year}-${week}`);
+                    }
+                });
+                const weeks = Array.from(weeksSet).sort().reverse();
+                weeks.forEach(week => {
+                    const [year, weekNum] = week.split('-');
+                    const option = document.createElement('option');
+                    option.value = week;
+                    option.textContent = `Неделя ${weekNum}, ${year}`;
+                    weekSelect.appendChild(option);
+                });
+            }
+
+            function togglePeriodInputs() {
+                const period = document.getElementById('period-select').value;
+                ['year-input', 'quarter-input', 'month-input', 'week-input', 'date-input'].forEach(id => {
+                    document.getElementById(id).style.display = 'none';
+                });
+                if (period !== 'all') {
+                    document.getElementById('year-input').style.display = 'inline-block';
+                    if (period !== 'year') document.getElementById(period + '-input').style.display = 'inline-block';
+                }
+                if (period === 'date') {
+                    document.getElementById('year-input').style.display = 'none';
+                    document.getElementById('date-input').style.display = 'inline-block';
+                }
+            }
+
+            function applyTimeFilter() {
+                const period = document.getElementById('period-select').value;
+                const posts = document.querySelectorAll('.post');
+                const year = document.getElementById('year-input').value;
+                const quarter = document.getElementById('quarter-input').value;
+                const month = document.getElementById('month-input').value;
+                const week = document.getElementById('week-input').value;
+                const date = document.getElementById('date-input').value;
+                
+                posts.forEach(post => {
+                    let show = true;
+                    const postDate = new Date(post.getAttribute('data-date'));
+                    
+                    if (period === 'year' && year) {
+                        show = postDate.getFullYear().toString() === year;
+                    } else if (period === 'quarter' && year && quarter) {
+                        const postYear = postDate.getFullYear();
+                        const postMonth = postDate.getMonth();
+                        const postQuarter = Math.floor(postMonth / 3) + 1;
+                        show = postYear.toString() === year && postQuarter.toString() === quarter;
+                    } else if (period === 'month' && month) {
+                        const [selectedYear, selectedMonth] = month.split('-');
+                        const postYear = postDate.getFullYear();
+                        const postMonth = postDate.getMonth() + 1;
+                        show = postYear.toString() === selectedYear && postMonth.toString() === selectedMonth;
+                    } else if (period === 'week' && week) {
+                        const [selectedYear, selectedWeek] = week.split('-');
+                        const postYear = postDate.getFullYear();
+                        const postWeek = getWeekNumber(postDate);
+                        show = postYear.toString() === selectedYear && postWeek.toString() === selectedWeek;
+                    } else if (period === 'date' && date) {
+                        show = post.getAttribute('data-date') === date;
+                    }
+                    
+                    post.style.display = show ? 'block' : 'none';
+                });
+                filterByTag(currentFilter);
+            }
+
+            function resetTimeFilter() {
+                document.getElementById('period-select').value = 'all';
+                ['year-input', 'quarter-input', 'month-input', 'week-input', 'date-input'].forEach(id => {
+                    document.getElementById(id).value = '';
+                });
+                togglePeriodInputs();
+                applyTimeFilter();
+            }
+
+            let currentFilter = 'all';
+            function filterByTag(tag) {
+                currentFilter = tag;
+                const posts = document.querySelectorAll('.post');
+                posts.forEach(post => {
+                    const postTags = JSON.parse(post.getAttribute('data-tags'));
+                    const show = (tag === 'all' || postTags.includes(tag));
+                    
+                    // Учитываем текущий временной фильтр
+                    if (post.style.display === 'none' && show) {
+                        // Не показываем, если скрыто временным фильтром
+                        return;
+                    }
+                    
+                    post.style.display = show ? 'block' : 'none';
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                populateYears();
+                populateDates();
+                populateMonths();
+                populateWeeks();
+                togglePeriodInputs();
+                filterByTag('all');
             });
-            filterByTag(currentFilter);
-        }
-
-        let currentFilter = 'all';
-        function filterByTag(tag) {
-            currentFilter = tag;
-            const posts = document.querySelectorAll('.post');
-            posts.forEach(post => {
-                const postTags = JSON.parse(post.getAttribute('data-tags'));
-                const show = (tag === 'all' || postTags.includes(tag));
-                post.style.display = show ? 'block' : 'none';
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            populateYears();
-            populateDates();
-            togglePeriodInputs();
-            filterByTag('all');
-        });
-    </script>
+        </script>
 </body>
 </html>
