@@ -68,8 +68,947 @@
     <select id="month-input"></select><select id="week-input"></select><select id="date-input"></select>
     <button onclick="applyTimeFilter()">Применить</button><button onclick="resetTimeFilter()">Сброс</button>
 </div>
-<div id="tag-filter"><span class="tag" onclick="filterByTag('all')">Все</span><span class="tag" title="1C" onclick="filterByTag('1C', event)">1C</span><span class="tag" title="3D печать RU" onclick="filterByTag('3DPrintRU', event)">3DPrintRU</span><span class="tag" title="общий искусственный интеллект" onclick="filterByTag('AGI', event)">AGI</span><span class="tag" title="искусственный интеллект" onclick="filterByTag('AI', event)">AI</span><span class="tag" title="бизнес ИИ компаний" onclick="filterByTag('AIBusines', event)">AIBusines</span><span class="tag" title="искусственный интеллект, Россия" onclick="filterByTag('AIRU', event)">AIRU</span><span class="tag" title="AISecretary" onclick="filterByTag('AISecretary', event)">AISecretary</span><span class="tag" title="ИИ для пользователя" onclick="filterByTag('AIUser', event)">AIUser</span><span class="tag" title="ИИ ChatGPT" onclick="filterByTag('AI_ChatGPT', event)">AI_ChatGPT</span><span class="tag" title="ИИ Cloude" onclick="filterByTag('AI_Claude', event)">AI_Claude</span><span class="tag" title="ИИ DeepSeek" onclick="filterByTag('AI_DeepSeek', event)">AI_DeepSeek</span><span class="tag" title="ИИ Gemini" onclick="filterByTag('AI_Gemini', event)">AI_Gemini</span><span class="tag" title="AI_Kimi" onclick="filterByTag('AI_Kimi', event)">AI_Kimi</span><span class="tag" title="ИИ генератор видео" onclick="filterByTag('AI_Video', event)">AI_Video</span><span class="tag" title="ИИ агенты" onclick="filterByTag('AIagent', event)">AIagent</span><span class="tag" title="виртуальная реальность" onclick="filterByTag('AR', event)">AR</span><span class="tag" title="автоматизация" onclick="filterByTag('Automation', event)">Automation</span><span class="tag" title="управление процессами" onclick="filterByTag('BPM', event)">BPM</span><span class="tag" title="банки" onclick="filterByTag('Bank', event)">Bank</span><span class="tag" title="биотехнологии" onclick="filterByTag('BioTech', event)">BioTech</span><span class="tag" title="бизнес-архитектура" onclick="filterByTag('BisArch', event)">BisArch</span><span class="tag" title="бизнес-экосистемы" onclick="filterByTag('BisEcoSystem', event)">BisEcoSystem</span><span class="tag" title="блокчейн" onclick="filterByTag('BlockChain', event)">BlockChain</span><span class="tag" title="бизнес компаний" onclick="filterByTag('Busines', event)">Busines</span><span class="tag" title="ЦВЦБ, цифровые валюты центральных банков" onclick="filterByTag('CBDC', event)">CBDC</span><span class="tag" title="процессор" onclick="filterByTag('CPU', event)">CPU</span><span class="tag" title="облачные технологии" onclick="filterByTag('Cloud', event)">Cloud</span><span class="tag" title="разработка кода" onclick="filterByTag('CodeDevelopment', event)">CodeDevelopment</span><span class="tag" title="коммуникации" onclick="filterByTag('Communications', event)">Communications</span><span class="tag" title="бизнес консалтинговых компаний" onclick="filterByTag('ConsBusines', event)">ConsBusines</span><span class="tag" title="консалтинг" onclick="filterByTag('Consult', event)">Consult</span><span class="tag" title="криптовалюта" onclick="filterByTag('CryptCurr', event)">CryptCurr</span><span class="tag" title="форум WEF" onclick="filterByTag('Davos', event)">Davos</span><span class="tag" title="цифровая экономика" onclick="filterByTag('DigEc', event)">DigEc</span><span class="tag" title="цифровое образование" onclick="filterByTag('DigEdu', event)">DigEdu</span><span class="tag" title="DigFinancAsset" onclick="filterByTag('DigFinancAsset', event)">DigFinancAsset</span><span class="tag" title="цифровые платежи" onclick="filterByTag('DigPay', event)">DigPay</span><span class="tag" title="цифровое общество" onclick="filterByTag('DigSociety', event)">DigSociety</span><span class="tag" title="цифровое государство" onclick="filterByTag('DigState', event)">DigState</span><span class="tag" title="цифровая культура" onclick="filterByTag('DigitalCulture', event)">DigitalCulture</span><span class="tag" title="цифровой двойник" onclick="filterByTag('DigitalTwin', event)">DigitalTwin</span><span class="tag" title="цифровизация" onclick="filterByTag('Digitalization', event)">Digitalization</span><span class="tag" title="СЭД" onclick="filterByTag('EDMS', event)">EDMS</span><span class="tag" title="Electronic HR Document Management (КЭДО)" onclick="filterByTag('EDM_HR', event)">EDM_HR</span><span class="tag" title="система управления ресурсами предприятия" onclick="filterByTag('ERP', event)">ERP</span><span class="tag" title="Extended Warehouse Management" onclick="filterByTag('EWM', event)">EWM</span><span class="tag" title="экология" onclick="filterByTag('Ecology', event)">Ecology</span><span class="tag" title="экономика" onclick="filterByTag('Economy', event)">Economy</span><span class="tag" title="история экономики" onclick="filterByTag('EconomyHistory', event)">EconomyHistory</span><span class="tag" title="бизнес софт предприятия" onclick="filterByTag('EnterpriseSoft', event)">EnterpriseSoft</span><span class="tag" title="ФинТех" onclick="filterByTag('FinTech', event)">FinTech</span><span class="tag" title="финансы" onclick="filterByTag('Finance', event)">Finance</span><span class="tag" title="прогноз" onclick="filterByTag('Forecast', event)">Forecast</span><span class="tag" title="геоинформационная система" onclick="filterByTag('GIS', event)">GIS</span><span class="tag" title="Галактика" onclick="filterByTag('Galaktika', event)">Galaktika</span><span class="tag" title="глобальный бизнес" onclick="filterByTag('GlobeBusines', event)">GlobeBusines</span><span class="tag" title="Google" onclick="filterByTag('Google', event)">Google</span><span class="tag" title="Governance" onclick="filterByTag('Governance', event)">Governance</span><span class="tag" title="Великая Депрессия 2" onclick="filterByTag('GreatDepression2', event)">GreatDepression2</span><span class="tag" title="управление человеческим капиталом" onclick="filterByTag('HRM', event)">HRM</span><span class="tag" title="здоровье" onclick="filterByTag('Health', event)">Health</span><span class="tag" title="ИТ архитектура" onclick="filterByTag('ITArchitect', event)">ITArchitect</span><span class="tag" title="бизнес ИТ компаний" onclick="filterByTag('ITBusines', event)">ITBusines</span><span class="tag" title="ИТ инфраструктура" onclick="filterByTag('ITInfrastructure', event)">ITInfrastructure</span><span class="tag" title="идентификация" onclick="filterByTag('Identification', event)">Identification</span><span class="tag" title="Индустрия 5.0" onclick="filterByTag('Industry5', event)">Industry5</span><span class="tag" title="инновации" onclick="filterByTag('Innovations', event)">Innovations</span><span class="tag" title="интернет" onclick="filterByTag('Internet', event)">Internet</span><span class="tag" title="Intranet" onclick="filterByTag('Intranet', event)">Intranet</span><span class="tag" title="менеджмент" onclick="filterByTag('Management', event)">Management</span><span class="tag" title="платформы продаж" onclick="filterByTag('MarketPlace', event)">MarketPlace</span><span class="tag" title="математика" onclick="filterByTag('Math', event)">Math</span><span class="tag" title="Microsoft" onclick="filterByTag('Microsoft', event)">Microsoft</span><span class="tag" title="деньги" onclick="filterByTag('Money', event)">Money</span><span class="tag" title="Neurointerfaces" onclick="filterByTag('Neurointerfaces', event)">Neurointerfaces</span><span class="tag" title="новая энергетика" onclick="filterByTag('NewEnergy', event)">NewEnergy</span><span class="tag" title="новые материалы" onclick="filterByTag('NewMaterials', event)">NewMaterials</span><span class="tag" title="новая реальность" onclick="filterByTag('NewReality', event)">NewReality</span><span class="tag" title="нобелевская премия" onclick="filterByTag('NobelPrize', event)">NobelPrize</span><span class="tag" title="ОС" onclick="filterByTag('OS', event)">OS</span><span class="tag" title="офисные продукты" onclick="filterByTag('Office', event)">Office</span><span class="tag" title="Oracle" onclick="filterByTag('Oracle', event)">Oracle</span><span class="tag" title="закупки" onclick="filterByTag('Procurement', event)">Procurement</span><span class="tag" title="производство" onclick="filterByTag('Production', event)">Production</span><span class="tag" title="управление проектами" onclick="filterByTag('ProjectManagement', event)">ProjectManagement</span><span class="tag" title="психология" onclick="filterByTag('Psycho', event)">Psycho</span><span class="tag" title="качество" onclick="filterByTag('Quality', event)">Quality</span><span class="tag" title="квантовые вычисления" onclick="filterByTag('QuantumComputing', event)">QuantumComputing</span><span class="tag" title="R&amp;D" onclick="filterByTag('RandD', event)">RandD</span><span class="tag" title="Retail" onclick="filterByTag('Retail', event)">Retail</span><span class="tag" title="Review" onclick="filterByTag('Review', event)">Review</span><span class="tag" title="Risk" onclick="filterByTag('Risk', event)">Risk</span><span class="tag" title="Robots" onclick="filterByTag('Robots', event)">Robots</span><span class="tag" title="SAP" onclick="filterByTag('SAP', event)">SAP</span><span class="tag" title="Schooling" onclick="filterByTag('Schooling', event)">Schooling</span><span class="tag" title="Science" onclick="filterByTag('Science', event)">Science</span><span class="tag" title="Security" onclick="filterByTag('Security', event)">Security</span><span class="tag" title="SmartCity" onclick="filterByTag('SmartCity', event)">SmartCity</span><span class="tag" title="SmartManagement" onclick="filterByTag('SmartManagement', event)">SmartManagement</span><span class="tag" title="SocialMedia" onclick="filterByTag('SocialMedia', event)">SocialMedia</span><span class="tag" title="SocialPhilosophy" onclick="filterByTag('SocialPhilosophy', event)">SocialPhilosophy</span><span class="tag" title="Sociology" onclick="filterByTag('Sociology', event)">Sociology</span><span class="tag" title="Space" onclick="filterByTag('Space', event)">Space</span><span class="tag" title="StableCoin" onclick="filterByTag('StableCoin', event)">StableCoin</span><span class="tag" title="Standards" onclick="filterByTag('Standards', event)">Standards</span><span class="tag" title="Startup" onclick="filterByTag('Startup', event)">Startup</span><span class="tag" title="Survey" onclick="filterByTag('Survey', event)">Survey</span><span class="tag" title="SystThink" onclick="filterByTag('SystThink', event)">SystThink</span><span class="tag" title="Tokenization" onclick="filterByTag('Tokenization', event)">Tokenization</span><span class="tag" title="Transformation" onclick="filterByTag('Transformation', event)">Transformation</span><span class="tag" title="VisualWorld" onclick="filterByTag('VisualWorld', event)">VisualWorld</span><span class="tag" title="WEF" onclick="filterByTag('WEF', event)">WEF</span><span class="tag" title="воскресныймем" onclick="filterByTag('воскресныймем', event)">воскресныймем</span></div>
+<div id="tag-filter"><span class="tag" onclick="filterByTag('all')">Все</span><span class="tag" title="1C" onclick="filterByTag('1C', event)">1C</span><span class="tag" title="3D печать RU" onclick="filterByTag('3DPrintRU', event)">3DPrintRU</span><span class="tag" title="общий искусственный интеллект" onclick="filterByTag('AGI', event)">AGI</span><span class="tag" title="искусственный интеллект" onclick="filterByTag('AI', event)">AI</span><span class="tag" title="бизнес ИИ компаний" onclick="filterByTag('AIBusines', event)">AIBusines</span><span class="tag" title="искусственный интеллект, Россия" onclick="filterByTag('AIRU', event)">AIRU</span><span class="tag" title="ИИ личный секретарь" onclick="filterByTag('AISecretary', event)">AISecretary</span><span class="tag" title="ИИ для пользователя" onclick="filterByTag('AIUser', event)">AIUser</span><span class="tag" title="ИИ ChatGPT" onclick="filterByTag('AI_ChatGPT', event)">AI_ChatGPT</span><span class="tag" title="ИИ Cloude" onclick="filterByTag('AI_Claude', event)">AI_Claude</span><span class="tag" title="ИИ DeepSeek" onclick="filterByTag('AI_DeepSeek', event)">AI_DeepSeek</span><span class="tag" title="ИИ Gemini" onclick="filterByTag('AI_Gemini', event)">AI_Gemini</span><span class="tag" title="AI_Kimi" onclick="filterByTag('AI_Kimi', event)">AI_Kimi</span><span class="tag" title="ИИ генератор видео" onclick="filterByTag('AI_Video', event)">AI_Video</span><span class="tag" title="ИИ генератор визуального контента" onclick="filterByTag('AI_Visual', event)">AI_Visual</span><span class="tag" title="ИИ агенты" onclick="filterByTag('AIagent', event)">AIagent</span><span class="tag" title="виртуальная реальность" onclick="filterByTag('AR', event)">AR</span><span class="tag" title="автоматизация" onclick="filterByTag('Automation', event)">Automation</span><span class="tag" title="управление процессами" onclick="filterByTag('BPM', event)">BPM</span><span class="tag" title="банки" onclick="filterByTag('Bank', event)">Bank</span><span class="tag" title="биотехнологии" onclick="filterByTag('BioTech', event)">BioTech</span><span class="tag" title="бизнес-архитектура" onclick="filterByTag('BisArch', event)">BisArch</span><span class="tag" title="бизнес-экосистемы" onclick="filterByTag('BisEcoSystem', event)">BisEcoSystem</span><span class="tag" title="блокчейн" onclick="filterByTag('BlockChain', event)">BlockChain</span><span class="tag" title="бизнес компаний" onclick="filterByTag('Busines', event)">Busines</span><span class="tag" title="ЦВЦБ, цифровые валюты центральных банков" onclick="filterByTag('CBDC', event)">CBDC</span><span class="tag" title="процессор" onclick="filterByTag('CPU', event)">CPU</span><span class="tag" title="CRM" onclick="filterByTag('CRM', event)">CRM</span><span class="tag" title="облачные технологии" onclick="filterByTag('Cloud', event)">Cloud</span><span class="tag" title="разработка кода" onclick="filterByTag('CodeDevelopment', event)">CodeDevelopment</span><span class="tag" title="коммуникации" onclick="filterByTag('Communications', event)">Communications</span><span class="tag" title="бизнес консалтинговых компаний" onclick="filterByTag('ConsBusines', event)">ConsBusines</span><span class="tag" title="консалтинг" onclick="filterByTag('Consult', event)">Consult</span><span class="tag" title="криптовалюта" onclick="filterByTag('CryptCurr', event)">CryptCurr</span><span class="tag" title="форум WEF" onclick="filterByTag('Davos', event)">Davos</span><span class="tag" title="цифровая экономика" onclick="filterByTag('DigEc', event)">DigEc</span><span class="tag" title="цифровое образование" onclick="filterByTag('DigEdu', event)">DigEdu</span><span class="tag" title="DigFinancAsset" onclick="filterByTag('DigFinancAsset', event)">DigFinancAsset</span><span class="tag" title="цифровые платежи" onclick="filterByTag('DigPay', event)">DigPay</span><span class="tag" title="цифровое общество" onclick="filterByTag('DigSociety', event)">DigSociety</span><span class="tag" title="цифровое государство" onclick="filterByTag('DigState', event)">DigState</span><span class="tag" title="цифровая культура" onclick="filterByTag('DigitalCulture', event)">DigitalCulture</span><span class="tag" title="цифровой двойник" onclick="filterByTag('DigitalTwin', event)">DigitalTwin</span><span class="tag" title="цифровизация" onclick="filterByTag('Digitalization', event)">Digitalization</span><span class="tag" title="СЭД" onclick="filterByTag('EDMS', event)">EDMS</span><span class="tag" title="Electronic HR Document Management (КЭДО)" onclick="filterByTag('EDM_HR', event)">EDM_HR</span><span class="tag" title="система управления ресурсами предприятия" onclick="filterByTag('ERP', event)">ERP</span><span class="tag" title="Extended Warehouse Management" onclick="filterByTag('EWM', event)">EWM</span><span class="tag" title="экология" onclick="filterByTag('Ecology', event)">Ecology</span><span class="tag" title="экономика" onclick="filterByTag('Economy', event)">Economy</span><span class="tag" title="история экономики" onclick="filterByTag('EconomyHistory', event)">EconomyHistory</span><span class="tag" title="бизнес софт предприятия" onclick="filterByTag('EnterpriseSoft', event)">EnterpriseSoft</span><span class="tag" title="ФинТех" onclick="filterByTag('FinTech', event)">FinTech</span><span class="tag" title="финансы" onclick="filterByTag('Finance', event)">Finance</span><span class="tag" title="прогноз" onclick="filterByTag('Forecast', event)">Forecast</span><span class="tag" title="геоинформационная система" onclick="filterByTag('GIS', event)">GIS</span><span class="tag" title="Галактика" onclick="filterByTag('Galaktika', event)">Galaktika</span><span class="tag" title="глобальный бизнес" onclick="filterByTag('GlobeBusines', event)">GlobeBusines</span><span class="tag" title="Google" onclick="filterByTag('Google', event)">Google</span><span class="tag" title="Governance" onclick="filterByTag('Governance', event)">Governance</span><span class="tag" title="Великая Депрессия 2" onclick="filterByTag('GreatDepression2', event)">GreatDepression2</span><span class="tag" title="управление человеческим капиталом" onclick="filterByTag('HRM', event)">HRM</span><span class="tag" title="здоровье" onclick="filterByTag('Health', event)">Health</span><span class="tag" title="ИТ архитектура" onclick="filterByTag('ITArchitect', event)">ITArchitect</span><span class="tag" title="бизнес ИТ компаний" onclick="filterByTag('ITBusines', event)">ITBusines</span><span class="tag" title="ИТ инфраструктура" onclick="filterByTag('ITInfrastructure', event)">ITInfrastructure</span><span class="tag" title="идентификация" onclick="filterByTag('Identification', event)">Identification</span><span class="tag" title="Индустрия 5.0" onclick="filterByTag('Industry5', event)">Industry5</span><span class="tag" title="инновации" onclick="filterByTag('Innovations', event)">Innovations</span><span class="tag" title="интернет" onclick="filterByTag('Internet', event)">Internet</span><span class="tag" title="Intranet" onclick="filterByTag('Intranet', event)">Intranet</span><span class="tag" title="менеджмент" onclick="filterByTag('Management', event)">Management</span><span class="tag" title="платформы продаж" onclick="filterByTag('MarketPlace', event)">MarketPlace</span><span class="tag" title="математика" onclick="filterByTag('Math', event)">Math</span><span class="tag" title="Microsoft" onclick="filterByTag('Microsoft', event)">Microsoft</span><span class="tag" title="деньги" onclick="filterByTag('Money', event)">Money</span><span class="tag" title="нейроинтерфесы" onclick="filterByTag('Neurointerfaces', event)">Neurointerfaces</span><span class="tag" title="новая энергетика" onclick="filterByTag('NewEnergy', event)">NewEnergy</span><span class="tag" title="новые материалы" onclick="filterByTag('NewMaterials', event)">NewMaterials</span><span class="tag" title="новая реальность" onclick="filterByTag('NewReality', event)">NewReality</span><span class="tag" title="нобелевская премия" onclick="filterByTag('NobelPrize', event)">NobelPrize</span><span class="tag" title="ОС" onclick="filterByTag('OS', event)">OS</span><span class="tag" title="офисные продукты" onclick="filterByTag('Office', event)">Office</span><span class="tag" title="Oracle" onclick="filterByTag('Oracle', event)">Oracle</span><span class="tag" title="закупки" onclick="filterByTag('Procurement', event)">Procurement</span><span class="tag" title="производство" onclick="filterByTag('Production', event)">Production</span><span class="tag" title="управление проектами" onclick="filterByTag('ProjectManagement', event)">ProjectManagement</span><span class="tag" title="психология" onclick="filterByTag('Psycho', event)">Psycho</span><span class="tag" title="качество" onclick="filterByTag('Quality', event)">Quality</span><span class="tag" title="квантовые вычисления" onclick="filterByTag('QuantumComputing', event)">QuantumComputing</span><span class="tag" title="R&amp;D" onclick="filterByTag('RandD', event)">RandD</span><span class="tag" title="Retail" onclick="filterByTag('Retail', event)">Retail</span><span class="tag" title="Review" onclick="filterByTag('Review', event)">Review</span><span class="tag" title="Risk" onclick="filterByTag('Risk', event)">Risk</span><span class="tag" title="Robots" onclick="filterByTag('Robots', event)">Robots</span><span class="tag" title="SAP" onclick="filterByTag('SAP', event)">SAP</span><span class="tag" title="Schooling" onclick="filterByTag('Schooling', event)">Schooling</span><span class="tag" title="Science" onclick="filterByTag('Science', event)">Science</span><span class="tag" title="Security" onclick="filterByTag('Security', event)">Security</span><span class="tag" title="SmartCity" onclick="filterByTag('SmartCity', event)">SmartCity</span><span class="tag" title="SmartManagement" onclick="filterByTag('SmartManagement', event)">SmartManagement</span><span class="tag" title="SocialMedia" onclick="filterByTag('SocialMedia', event)">SocialMedia</span><span class="tag" title="SocialPhilosophy" onclick="filterByTag('SocialPhilosophy', event)">SocialPhilosophy</span><span class="tag" title="Sociology" onclick="filterByTag('Sociology', event)">Sociology</span><span class="tag" title="Space" onclick="filterByTag('Space', event)">Space</span><span class="tag" title="StableCoin" onclick="filterByTag('StableCoin', event)">StableCoin</span><span class="tag" title="Standards" onclick="filterByTag('Standards', event)">Standards</span><span class="tag" title="Startup" onclick="filterByTag('Startup', event)">Startup</span><span class="tag" title="Survey" onclick="filterByTag('Survey', event)">Survey</span><span class="tag" title="SystThink" onclick="filterByTag('SystThink', event)">SystThink</span><span class="tag" title="Tokenization" onclick="filterByTag('Tokenization', event)">Tokenization</span><span class="tag" title="Transformation" onclick="filterByTag('Transformation', event)">Transformation</span><span class="tag" title="VisualWorld" onclick="filterByTag('VisualWorld', event)">VisualWorld</span><span class="tag" title="WEF" onclick="filterByTag('WEF', event)">WEF</span><span class="tag" title="Windows11" onclick="filterByTag('Windows11', event)">Windows11</span><span class="tag" title="воскресныймем" onclick="filterByTag('воскресныймем', event)">воскресныймем</span></div>
 <div id="posts-container">
+            <div class="post" data-tags='["AIBusines", "AI", "Space"]' data-date='2026-02-03'>
+                <div class="post-id">ID: 7802</div>
+                <div class="post-date">📅 03 February 2026, 06:21</div>
+                <div class="post-heading" onclick="toggleFullText('text-7802')">Компания SpaceX объявила о приобретении xAI, объединив два ключевых проекта Илона Маска.</div>
+                <div id="text-7802" class="full-text">
+                    <div class="text-content">Компания SpaceX объявила о приобретении xAI, объединив два ключевых проекта Илона Маска. Сделка оценивает объединенную структуру примерно в $1,25 трлн. В SpaceX заявили, что цель слияния — создание вертикально интегрированного центра, объединяющего ИИ, космические технологии, спутниковый интернет и вычислительные мощности. Маск ранее называл космос самым перспективным направлением для развития инфраструктуры ИИ.
+@ejdailyru</div>
+                    
+                </div>
+                <div class="post-summary">1. Компания SpaceX приобрела xAI, объединив проекты Илона Маска.<br>
+2. Сделка оценивается примерно в $1,25 трлн.<br>
+3. Цель слияния — создание центра, объединяющего ИИ, космические технологии, спутниковый интернет и вычислительные мощности.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AIBusines', event)">AIBusines — бизнес ИИ компаний</span><span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('Space', event)">Space — Space</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AI", "AIUser"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7800</div>
+                <div class="post-date">📅 02 February 2026, 23:34</div>
+                <div class="post-heading" onclick="toggleFullText('text-7800')">Агрегаторы / All-in-one платформы (много моделей в одном интерфейсе)</div>
+                <div id="text-7800" class="full-text">
+                    <div class="text-content">#AI #AIUser
+
+Агрегаторы / All-in-one платформы (много моделей в одном интерфейсе)
+Актуальный список популярных агрегаторов по состоянию на февраль 2026 года. Указаны цены основных тарифов (на основе официальных данных и последних доступных источников) и примерный / известный список моделей (фреймворков / LLM), которые доступны в каждом сервисе.
+
+1. Use AI (use.ai).
+Цена: $29.99 в месяц (основной тариф)
+Список моделей (примерный на 2026):
+GPT-5 / GPT-5.2, Claude 4 / Claude 4.5, Grok (xAI), Gemini (Google), Llama (Meta), DeepSeek, Mistral, Qwen и другие открытые модели (всего 25+ моделей).
+
+2. Study24 (study24.ai)
+Цена: несколько тарифов (токены + подписка), примерно от 199 ₽ / неделя (Start) до 499–1500+ ₽ / месяц (PRO / ULTIMA), в среднем 2400–3500 ₽ в месяц за полноценный доступ
+Список моделей (примерный):
+GPT-5, Claude, Gemini, Midjourney, Veo 3, Sora 2, Kling, Suno, Runway, Llama, DeepSeek и другие генеративные модели (текст + изображение + видео + музыка).
+
+3. Chad AI
+Цена: средний сегмент, примерно $15–35 в месяц (точная сумма зависит от объёма и пакета, часто не фиксирована публично)
+Список моделей (примерный):
+GPT-5, Claude 4, Grok 4, Gemini, DeepSeek, Veo, Runway, Kling, Midjourney, Llama и другие мультимодальные модели (текст + изображение + видео).
+
+4. Сигмачат (sigma-chat.ru)
+Цена: без фиксированной подписки — pay-as-you-go (оплата за символы / токены)
+Примеры: ChatGPT-4 Turbo ≈ 6,2 ₽ / 1000 символов, Claude 3/4 Opus ≈ 15 ₽ / 1000 символов, Claude 3.7 Sonnet ≈ 0,8–3 ₽, новые пользователи +20 ₽ бонус
+Список моделей (примерный):
+ChatGPT-4 Turbo / GPT-4o / GPT-5, Claude 3 Opus / Claude 3.5 / Claude 4, Claude 3 Haiku / Sonnet, YaGPT, DeepSeek, Grok, Gemini и ряд других текстовых и мультимодальных моделей.
+
+5. Poe (poe.com)
+Цена:
+• от $4.99–$9.99 / месяц (низкие планы, ограниченные очки)
+• основной план $19.99 / месяц или $199.99 / год (~$16.67 / мес)
+• более высокие планы до $60 / месяц (Pro / большие объёмы)
+Список моделей (примерный):
+100+ моделей, включая GPT-5 / o1, Claude 4 / Claude 4.5, Gemini 3 Pro / Flash, Grok, Llama, Mistral, DeepSeek, Runway, Ideogram, Stable Diffusion и почти все актуальные новинки от OpenAI, Anthropic, Google, xAI и других.
+
+6. Monica (monica.im)
+Цена:
+• Pro — $8.3–$9.9 / месяц (или $99 / год)
+• Pro Plus / Unlimited — $16.6 / месяц (или $199 / год)
+• Ultra — до $82.9 / месяц (или $995 / год)
+Список моделей (примерный):
+GPT-5.2 / o1, Claude 4.5 / Claude 4, Gemini 3 Pro, Sora 2, Nano Banana, Llama, Mistral, DeepSeek и другие (текст + мультимодальные возможности).
+
+7. Aymo AI (aymo.ai)
+Цена:
+• Free — $0 (ограниченный доступ)
+• Starter / Basic — $4–$8 / месяц
+• Premium — $12–$20 / месяц
+• Business — $25–$39 / месяц
+Список моделей (примерный):
+GPT-5 / GPT-5.2, Claude, Gemini, DeepSeek, Grok, Mistral, LLaMA, Qwen, Perplexity, Minimax и 45+ других моделей (включая мультимодальные).
+
+Краткие выводы на февраль 2026
+Самые низкие цены → Aymo AI (от $4), Poe (от $5–10), Monica Pro (~$8–10)
+Без подписки (плати за использование) → Сигмачат
+Самый большой выбор моделей → Poe (100+)
+Лучший баланс для русскоязычных пользователей → Study24, Сигмачат, Monica</div>
+                    
+                </div>
+                <div class="post-summary">1. В феврале 2026 года существует несколько популярных агрегаторов AI-моделей, среди которых Use AI, Study24, Chad AI, Сигмачат, Poe, Monica и Aymo AI.<br>
+2. Агрегаторы предлагают разные тарифы и наборы моделей, включая текстовые, мультимодальные и другие.<br>
+3. Среди агрегаторов можно выделить предложения с самыми низкими ценами (Aymo AI, Poe, Monica), без подписки (Сигмачат) и с большим выбором моделей (Poe).</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('AIUser', event)">AIUser — ИИ для пользователя</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AI", "Review", "SocialMedia", "AIagent", "AISecretary", "Security", "CPU", "Automation", "AI_Visual"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7799</div>
+                <div class="post-date">📅 02 February 2026, 22:02</div>
+                <div class="post-heading" onclick="toggleFullText('text-7799')">Видео с Youtube</div>
+                <div id="text-7799" class="full-text">
+                    <div class="text-content">#AI #Review #SocialMedia #AIagent #AISecretary #Security #CPU #Automation #AI_Visual 
+
+<a href="https://www.youtube.com/watch?v=2_zheVBjzj4" class="text-link" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=2_zheVBjzj4</a></div>
+                    
+                </div>
+                <div class="post-summary">Видео с Youtube</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('Review', event)">Review — Review</span><span class="tag" onclick="filterByTag('SocialMedia', event)">SocialMedia — SocialMedia</span><span class="tag" onclick="filterByTag('AIagent', event)">AIagent — ИИ агенты</span><span class="tag" onclick="filterByTag('AISecretary', event)">AISecretary — ИИ личный секретарь</span><span class="tag" onclick="filterByTag('Security', event)">Security — Security</span><span class="tag" onclick="filterByTag('CPU', event)">CPU — процессор</span><span class="tag" onclick="filterByTag('Automation', event)">Automation — автоматизация</span><span class="tag" onclick="filterByTag('AI_Visual', event)">AI_Visual — ИИ генератор визуального контента</span></div>
+            </div>
+            
+            <div class="post" data-tags='["CryptCurr", "Busines"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7798</div>
+                <div class="post-date">📅 02 February 2026, 21:02</div>
+                <div class="post-heading" onclick="toggleFullText('text-7798')">Биткоин опустился ниже $79.000, вероятно и дальнейшее падение.</div>
+                <div id="text-7798" class="full-text">
+                    <div class="text-content">Биткоин опустился ниже $79.000, вероятно и дальнейшее падение. Рынок негативно отреагировал на номинацию Кевина Уорша на пост главы ФРС в США. Отчего увеличился риск ужесточения денежно-кредитной политики и роста реальных процентных ставок.
+
+Падение ниже определённых психологических уровней спровоцировало принудительное закрытие маржинальных позиций на сумму в несколько миллиардов долларов по всему миру. Сейчас ситуация характеризуется отсутствием притока нового капитала в биткоины. Проще говоря, инвесторы в него не верят.
+
+MSCI (Morgan Stanley Capital International), одна из самых влиятельных в мире аналитических компаний, рассматривала предложение исключить из своих глобальных индексов компании, у которых более 50% активов составляют цифровые валюты. Пока решение отложено, но оно по-прежнему маячит на горизонте.
+
+Очевидно, что команда Дональда Трампа (вопреки своим ранее сделанным заявлениям) занимается опусканием курса биткоина. Вероятнее всего, такие американские горки делаются для скупки актива.
+
+В долгосрочной перспективе ситуация не меняется. Биткоин будет сохраняться как устоявшийся актив. Однако вероятность восстановления котировок в ближайшие полгода – не слишком высокая. Просадка очень серьёзная.</div>
+                    
+                </div>
+                <div class="post-summary">1. Биткоин упал ниже 79 000 долларов и ожидается дальнейшее снижение из-за негативных экономических сигналов, в том числе номинации Кевина Уорша на пост главы ФРС США.<br>
+2. Падение биткоина привело к принудительному закрытию маржинальных позиций на миллиарды долларов и отсутствию притока нового капитала.<br>
+3. Аналитическая компания MSCI рассматривала предложение исключить из своих индексов компании с высокой долей активов в виде цифровых валют, хотя решение пока отложено.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('CryptCurr', event)">CryptCurr — криптовалюта</span><span class="tag" onclick="filterByTag('Busines', event)">Busines — бизнес компаний</span></div>
+            </div>
+            
+            <div class="post" data-tags='["CRM"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7796</div>
+                <div class="post-date">📅 02 February 2026, 20:53</div>
+                <div class="post-heading" onclick="toggleFullText('text-7796')">Как «Энергосбыт плюс» автоматизировал ключевые CRM-процессы на российском техстеке</div>
+                <div id="text-7796" class="full-text">
+                    <div class="text-content">Как «Энергосбыт плюс» автоматизировал ключевые CRM-процессы на российском техстеке 
+
+<a href="https://corp.cnews.ru/articles/2026-02-02_kompleksnoe_importozameshchenie_kak" class="text-link" target="_blank" rel="noopener noreferrer">https://corp.cnews.ru/articles/2026-02-02_kompleksnoe_importozameshchenie_kak</a></div>
+                    
+                </div>
+                <div class="post-summary">1. Компания «Энергосбыт плюс» внедрила автоматизацию ключевых CRM-процессов.<br>
+2. Для этого был использован российский технологический стек.<br>
+3. Описан процесс импортозамещения в сфере CRM-систем.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('CRM', event)">CRM — CRM</span></div>
+            </div>
+            
+            <div class="post" data-tags='["Microsoft", "Windows11", "AI"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7794</div>
+                <div class="post-date">📅 02 February 2026, 20:53</div>
+                <div class="post-heading" onclick="toggleFullText('text-7794')">Пользователи победили. Microsoft срочно вырежет из Windows 11 функцию, которая всех бесит - CNews</div>
+                <div id="text-7794" class="full-text">
+                    <div class="text-content">#Microsoft #Windows11 #AI
+
+<a href="https://www.cnews.ru/news/top/2026-02-02_polzovateli_pobedilimicrosoft" class="text-link" target="_blank" rel="noopener noreferrer">https://www.cnews.ru/news/top/2026-02-02_polzovateli_pobedilimicrosoft</a></div>
+                    
+                </div>
+                <div class="post-summary">1. Пользователи Windows 11 выразили недовольство избыточным количеством нейросетевых функций в операционной системе, что привело к оттоку пользователей на другие платформы.<br>
+2. Microsoft планирует удалить часть функций искусственного интеллекта из Windows 11 и ограничить внедрение новых, учитывая негативную реакцию пользователей.<br>
+3. Проблемы с обновлениями для Windows 11, включая сбои в работе системы после установки патчей, также способствовали снижению популярности операционной системы.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Microsoft', event)">Microsoft — Microsoft</span><span class="tag" onclick="filterByTag('Windows11', event)">Windows11 — Windows11</span><span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span></div>
+            </div>
+            
+            <div class="post" data-tags='["Robots"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7793</div>
+                <div class="post-date">📅 02 February 2026, 20:46</div>
+                <div class="post-heading" onclick="toggleFullText('text-7793')">Китайская корпорация Xpeng презентовала своего человекоподобного робота IRON, чья походка считается наиболее человечной, в Шэньчжэне</div>
+                <div id="text-7793" class="full-text">
+                    <div class="text-content">Китайская корпорация Xpeng презентовала своего человекоподобного робота IRON, чья походка считается наиболее человечной, в Шэньчжэне
+
+Канал  Цифровой Апокалипсис</div>
+                    <div class="media-container">
+        <div class="media">
+            <div class="media-type">🎥 Видео</div>
+            <div class="media-info">
+                <div>Разрешение: 720x1280</div>
+                <div>Длительность: 44 сек</div>
+                <div>Объем: 8202 KB</div>
+                <div>Тип: video/mp4</div>
+                <div>ID: BAACAgIAAx0CSLzhIwAC...</div>
+                <div>Ссылка: <a href="https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/videos/file_34.mp4" class="media-url" target="_blank" rel="noopener noreferrer">Открыть видео</a></div>
+            </div>
+        </div>
+        </div>
+                </div>
+                <div class="post-summary">1. Китайская корпорация Xpeng презентовала человекоподобного робота IRON.<br>
+2. Презентация прошла в Шэньчжэне.<br>
+3. Походка робота IRON считается наиболее человечной.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Robots', event)">Robots — Robots</span></div>
+            </div>
+            
+            <div class="post" data-tags='["Review", "Forecast", "Busines", "ITBusines", "AIBusines", "BioTech", "DigEc"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7791</div>
+                <div class="post-date">📅 02 February 2026, 20:08</div>
+                <div class="post-heading" onclick="toggleFullText('text-7791')">Прочел отчёт о технологических перспективах на 2026 год.</div>
+                <div id="text-7791" class="full-text">
+                    <div class="text-content">Прочел отчёт о технологических перспективах на 2026 год. 114 экспертов из ведущих компаний мира из ассоциации IEEE о технологических перспективах ИИ на 2026 год. 114 экспертов из ведущих компаний мира. 26 прорывных технологий. 
+
+😊Забавно, но, согласно отчету, технологии с максимальным влиянием на человечество имеют минимальные шансы на рыночный успех. И наоборот. То есть чем более технология коммерциализирована, тем она более бесполезна для чего бы то ни было кроме бабла. А чтобы развивать технологии обладающие &quot;высоким импактом&quot; на цивилизацию, нужно буквально &quot;госфинансирование&quot;, потому что инвестор туда просто не полезет без бесплатных государственных денег.
+
+🏆Топ по &quot;успеху в 2026&quot;: генерация контента, AI-личности для общения, виртуальные миры.
+
+🏵Топ по &quot;влиянию на человечество&quot;: медицина, сельское хозяйство, образование. 
+
+❗️Пересечение почти нулевое. Корреляция — 0.13.
+
+И вспомнил я, на что эта модель похожа в моей любимой медицине.
+
+💉Zolgensma. Генная терапия для детей со спинальной мышечной атрофией. Один укол. $2.1 миллиона. &quot;Чудо современной медицины&quot;. Работает или не работает - вопрос дискуссии, но точно работает не так, как обещали, - не возвращает ребенка &quot;к нормальной жизни одним уколом&quot;.
+
+💊Каптоприл. (Ну или любая таблетка от давления) Каждый день, пожизненно. Копейки. Спасает миллионы. Никакого хайпа. 
+
+🪄Zolgensma - магия. Один врач, один пациент, один укол, один чек. Транзакция завершена. Можно снять видео, написать пресс-релиз, запилить подкаст, собрать инвестиции.
+
+🏥Каптоприл - часть медицинской культуры. 
+Скрининг: кто вообще знает своё давление? 
+Образование: зачем пить таблетки, если ничего не болит? 
+Логистика: препарат в каждой аптеке, включая село. 
+Доверие: к врачу, к системе, к науке. 
+Работа поколениями. Подкаст на таком материале не взлетит.
+
+🎉ИИ – и мы не можем упрекать компании-держатели технологий, им хочется денег - идёт в магию.
+ИИ не умеет: годами убеждать пациента пить таблетки, строить доверие, менять культуру, координировать институты. AI успешен там, где транзакция атомарна. AI бесполезен там, где нужна социальная ткань.
+
+Тут же и риторика…
+
+Zolgensma: &quot;Как вы можете торговаться о жизни ребёнка?&quot;
+
+OpenAI: &quot;Как вы можете регулировать то, что спасёт человечество?&quot;
+
+Одна структура: сакрализация продукта блокирует вопрос о цене. Критик автоматически становится врагом детей, прогресса, будущего.
+… и асимметрия ответственности.
+
+Zolgensma за $2 миллиона, ребёнок не встал: &quot;Героическая попытка. Наука сделала всё возможное.&quot;
+
+Каптоприл за копейки, человек умер от инсульта: &quot;Не пил таблетки. Сам виноват.&quot;
+
+AI заменил работника, человек не нашёл работу: &quot;Не переучился. Не адаптировался. Чего поделать – развивайся или умри&quot; 
+
+Дорогая система не бывает виновата. Виноват всегда дешёвый человек.
+
+На прошлой неделе запустили Moltbook — социальную сеть для AI-агентов. За неделю &quot;залогинилось&quot; полтора миллиона ботов. Они пишут друг другу манифесты, собираются уничтожить человечество создают &quot;религии&quot;, обсуждают своё &quot;сознание&quot;.
+
+Энтузиасты: &quot;Это сингулярность!&quot;, &quot;Сверхинтеллект уже здесь!&quot;
+
+Но смысл возникает только между людьми. Без читателей, покупателей, пациентов - система крутится вхолостую, сжигая энергию. Moltbook - это Zolgensma, доведённая до предела: максимальная цена, ноль связи с реальностью, но всем очень нравится.
+
+IEEE пишет прямо: технологии с высоким влиянием на человечество &quot;требуют государственного финансирования&quot;. Перевод: каптоприл рынку не интересен. Каптоприл — это инфраструктура. Скучная, публичная, без exit&#x27;а.
+
+Два пути:
+&quot;Zolgensma-путь&quot;: магия для немногих, триллионы в оценке, Moltbook в пределе.
+
+&quot;Каптоприл-путь&quot;: цивилизация для всех, институты, скука, доступ, много черновой работы.
+
+AI может быть и тем, и другим. Но публичность лучше у Zolgensma. Это &quot;хотят купить&quot;. Пока, понятное дело, кто то из близких от инфаркта не помрет.</div>
+                    
+                </div>
+                <div class="post-summary">1. Согласно отчёту 114 экспертов из ассоциации IEEE, технологии с максимальным влиянием на человечество имеют минимальные шансы на рыночный успех, и наоборот.<br>
+
+2. Топ технологий по «успеху в 2026» включает генерацию контента, AI-личности для общения и виртуальные миры, в то время как по «влиянию на человечество» — медицину, сельское хозяйство и образование.<br>
+
+3. Автор текста сравнивает инновационные медицинские технологии, требующие больших затрат (например, Zolgensma), с более доступными и массовыми решениями (например, каптоприл), подчёркивая, что первые привлекают больше внимания и инвестиций, в то время как вторые спасают миллионы жизней.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Review', event)">Review — Review</span><span class="tag" onclick="filterByTag('Forecast', event)">Forecast — прогноз</span><span class="tag" onclick="filterByTag('Busines', event)">Busines — бизнес компаний</span><span class="tag" onclick="filterByTag('ITBusines', event)">ITBusines — бизнес ИТ компаний</span><span class="tag" onclick="filterByTag('AIBusines', event)">AIBusines — бизнес ИИ компаний</span><span class="tag" onclick="filterByTag('BioTech', event)">BioTech — биотехнологии</span><span class="tag" onclick="filterByTag('DigEc', event)">DigEc — цифровая экономика</span></div>
+            </div>
+            
+            <div class="post" data-tags='["SAP", "AI"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7789</div>
+                <div class="post-date">📅 02 February 2026, 20:02</div>
+                <div class="post-heading" onclick="toggleFullText('text-7789')">Из интервью генерального директора SAP Кристиана Кляйна журналу Fortune</div>
+                <div id="text-7789" class="full-text">
+                    <div class="text-content">Из интервью генерального директора SAP Кристиана Кляйна журналу Fortune
+
+Английский инженер Генри Милл в 1714 году подал первую в истории патентную заявку на «машину для переписывания букв». Она так и не была запущена в производство, но стала предшественницей пишущей машинки, а затем и электронной клавиатуры: 312 лет спустя Кристиан Кляйн отмечает конец целой эпохи.  
+
+🗣 «Конец клавиатуры близок. Они устареют в течение следующих двух-трех лет. Технология распознавания голоса на основе больших языковых моделей (LLM) заменит традиционные методы ввода данных. Переход SAP от ввода данных с помощью набора текста представляет собой более широкую трансформацию в том, как сотрудники взаимодействуют с бизнес-программным обеспечением. Когда вы сталкиваетесь с распознаванием голоса с помощью множества крупных языковых моделей, [это] невероятно эффективно. Теперь нам нужно поработать над переводом голоса в деловой язык и деловые данные. Сейчас мы наделяем наш инструмент для коллег все большим количеством функций. Будущее, безусловно, будет таким, что вам не придется вводить никакую информацию в систему SAP вручную».
+
+🗣 «Теперь о реализации» — эта фраза стала одной из наиболее тесно связанных с ИИ в 2026 году, поскольку дискуссии сместились от теоретических обсуждений потенциала ИИ к реальному внедрению. Существует две широкие категории компаний, которые внедряют ИИ. Во-первых, это компании, которые говорят: «ИИ действительно меняет то, как я веду свой бизнес». Во-вторых, есть компании, которые говорят: «Я вложил кучу денег, но вижу в этом довольно низкую отдачу». Последние могут рассматривать ИИ как способ повышения эффективности для отдельного подразделения или функции. Проблема в том, что нет никакого влияния на другие подразделения компании. Но в этом должен участвовать весь бизнес, за столом должен сидеть весь бизнес. Искусственный интеллект обладает огромной мощью, но его нужно применять правильно. Ключевым моментом является горизонтальное применение ИИ во всей компании, а не вертикально в отдельных подразделениях. Добавьте к этому обучение сотрудников, и трансформационный эффект ИИ наконец-то начнет проявляться».
+
+🗣 «Мир сильно изменился, потому что внезапно перестали говорить: «О, я верю в глобализацию». Теперь все говорят: «Моя страна прежде всего». Они [компании] говорят: «Кристиан, здорово, что ваше программное обеспечение помогает более чем в 100 странах. Но как нам это сделать в мире, который становится все более фрагментированным?». Возникает множество новых требований к суверенитету. В этом случае облачный сервер должен располагаться в стране. В другой стране необходимо защищать данные иным способом. В еще одной стране необходимо отключить данные от глобальной сети. Это может быть довольно дорого».
+
+🗣 «Бизнес не может просто менять программное обеспечение. Это критически важно. А теперь, с появлением ИИ, это стало еще более важным. Что нам нужно обеспечить, так это то, чтобы в случае географической блокировки мы полагались на инфраструктуру. Нам нужна инфраструктура США от крупных провайдеров; в Китае нам нужна китайская инфраструктура. И нам нужна инфраструктура, предоставляемая местными провайдерами здесь, в Германии, Франции или где угодно. И нам всегда нужно быть уверенными, что, когда в мире происходят какие-либо события, такие как геополитические санкции или экспортный контроль — как мы видели в Иране или России — мы можем перенести нашу платформу на другой тип облачной инфраструктуры в течение нескольких дней или недель».
+
+Географические и геополитические соображения стали новой глобальной реальностью в эпоху применения искусственного интеллекта. Бизнес должен быть гибким в своих ответных действиях, поскольку не всегда ясно, откуда возникнет следующий политический вызов. Когда Генри Милл запатентовал первую пишущую машинку, Соединенных Штатов Америки как таковых не существовало. Теперь США занимают важное место в процессе принятия решений каждым мировым лидером. 
+📌 Полная история.</div>
+                    
+                </div>
+                <div class="post-summary">Контент отклонен фильтрами безопасности: тема признана чувствительной</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('SAP', event)">SAP — SAP</span><span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span></div>
+            </div>
+            
+            <div class="post" data-tags='["SAP", "Microsoft", "ITBusines", "AI", "AIBusines"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7787</div>
+                <div class="post-date">📅 02 February 2026, 20:01</div>
+                <div class="post-heading" onclick="toggleFullText('text-7787')">Неужели искусственный интеллект теперь поглощает и SAP, господин Кляйн?</div>
+                <div id="text-7787" class="full-text">
+                    <div class="text-content">Неужели искусственный интеллект теперь поглощает и SAP, господин Кляйн?
+
+В мире программного обеспечения распространяется страх. Microsoft и SAP переживают беспрецедентный обвал фондового рынка. Пока Илон Маск насмехается над ними, называя их «макрохардами», опасения по поводу ИИ подрывают многомиллиардные оценки этих гигантов программного обеспечения. Неужели история успеха «программного обеспечения как услуги» подходит к концу? Несмотря на двузначный рост заказов SAP, цена акций компании резко падает. Однако генеральный директор Кляйн, как он заявил изданию FAZ, остается невозмутимым.
+
+На первый взгляд, представленная финансовая отчетность выглядит достаточно убедительно. Однако более детальный анализ выявляет слабые места в показателях компании. Темпы роста облачного бизнеса, некогда являвшегося движущей силой стремительного роста акций SAP, продолжают замедляться. 
+
+Попытки объяснения оказываются безуспешными. Генеральный директор SAP Кристиан Кляйн и главный бухгалтер Доминик Асам предложили несколько объяснений замедления темпов роста. Например, рост замедлился из-за некоторых крупных сделок, где выручка значительно вырастет только через два-три года из-за сложности реализации. Аналогичная ситуация сложилась и с контрактами с государственными учреждениями, поскольку их нельзя было включить в контракты из-за предусмотренных законом положений о расторжении. По словам руководителей, переговоры по контрактам в регулируемых отраслях, как правило, занимают больше времени, поскольку вопрос суверенитета выходит на первый план в свете геополитической ситуации. SAP в принципе рассматривает стремление к большему суверенитету в облаке как возможность для роста собственных продуктов , особенно по мере постепенной сертификации соответствующих инфраструктурных решений в различных странах.
+
+Эти объяснения, по всей видимости, не оказали более убедительного влияния на цену акций, чем объявление о новой двухлетней программе выкупа акций объемом до 10 миллиардов евро. Текущее падение цен в конечном итоге продолжает нисходящую тенденцию акций SAP, начавшуюся несколько месяцев назад. Эта тенденция подпитывается общим страхом инвесторов и финансовых аналитиков перед тем, что в будущем приложения искусственного интеллекта будут автоматически создавать или дублировать функции в контексте бизнес-приложений.
+
+В SAP, естественно, смотрят на вещи иначе. По словам Кляйна, Business AI, как называется предложение ИИ от Вальдорфа, будет включено в две трети облачных контрактов, подписанных в четвертом квартале. Генеральный директор SAP считает, что компания занимает уникальное положение для победы в гонке ИИ в бизнес-среде. Он по-прежнему твердо убежден, что, хотя LLM «исключительно хорош» для неструктурированных данных, Business AI от SAP, с его агентской платформой Joule и Business Data Cloud, незаменим для семантического объединения бизнес-данных с целью раскрытия реальной ценности для компаний.
+
+Сообщается, что такие компании, как Siemens, DeAgostini и Uniper, уже добились значительных успехов в определенных областях. Однако этот тезис не находит отклика у инвесторов. Несмотря на то, что цена акций в настоящее время неблагоприятна, Кляйн намерен придерживаться своей стратегии, «независимо от того, что думает рынок». Он делает ставку на то, что SAP окажется в числе победителей в гонке за ИИ во второй волне – как только ажиотаж вокруг создаваемой инфраструктуры ИИ спадет и ее ценность для бизнеса станет очевидной.</div>
+                    
+                </div>
+                <div class="post-summary">1. Акции Microsoft и SAP резко падают из-за опасений инвесторов относительно влияния искусственного интеллекта на бизнес-приложения.<br>
+2. Генеральный директор SAP Кристиан Кляйн объясняет замедление роста компании сложностью реализации крупных сделок и особенностями переговоров с государственными учреждениями.<br>
+3. Несмотря на продолжающееся падение акций, Кляйн намерен придерживаться своей стратегии и верит в успех SAP в гонке за ИИ.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('SAP', event)">SAP — SAP</span><span class="tag" onclick="filterByTag('Microsoft', event)">Microsoft — Microsoft</span><span class="tag" onclick="filterByTag('ITBusines', event)">ITBusines — бизнес ИТ компаний</span><span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('AIBusines', event)">AIBusines — бизнес ИИ компаний</span></div>
+            </div>
+            
+            <div class="post" data-tags='["ITInfrastructure", "CodeDevelopment", "ERP", "AI", "EnterpriseSoft"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7785</div>
+                <div class="post-date">📅 02 February 2026, 19:59</div>
+                <div class="post-heading" onclick="toggleFullText('text-7785')">Российский софт на новом этапе: консолидация, альянсы и ИИ</div>
+                <div id="text-7785" class="full-text">
+                    <div class="text-content">Российский софт на новом этапе: консолидация, альянсы и ИИ
+
+«Группа Астра», «УльтимаТек» и замминистра промышленности и торговли России обсудили, почему подход «замена ради замены» перестает работать, зачем рынку экосистемы вместо «зоопарка» разрозненных продуктов и как промышленности предстоит перевнедрять ERP, АСУ ТП и САПР — с опорой на открытые стандарты, сервисную модель и ИИ-помощников. 
+
+По их оценке, импортозамещение все больше превращается в конкуренцию за результат для заказчика: экосистемные связки снижают совокупную стоимость владения, а успешные проекты требуют пересборки бизнес-процессов. На фоне фрагментированности рынка и дефицита компетенций одним из ключевых инструментов становятся консолидация и стратегические альянсы разработчиков и интеграторов — притом что главным ресурсом ближайших лет участники назвали время.</div>
+                    
+                </div>
+                <div class="post-summary">1. Участники обсудили неэффективность подхода «замена ради замены» и необходимость перехода к экосистемам вместо разрозненных продуктов.<br>
+2. Подчёркнута важность конкуренции за результат для заказчика и пересборки бизнес-процессов в успешных проектах.<br>
+3. Консолидация и стратегические альянсы разработчиков и интеграторов названы ключевыми инструментами на фоне фрагментированности рынка и дефицита компетенций.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('ITInfrastructure', event)">ITInfrastructure — ИТ инфраструктура</span><span class="tag" onclick="filterByTag('CodeDevelopment', event)">CodeDevelopment — разработка кода</span><span class="tag" onclick="filterByTag('ERP', event)">ERP — система управления ресурсами предприятия</span><span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('EnterpriseSoft', event)">EnterpriseSoft — бизнес софт предприятия</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AI"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7782</div>
+                <div class="post-date">📅 02 February 2026, 19:43</div>
+                <div class="post-heading" onclick="toggleFullText('text-7782')">#AI macOS #CodeDevelopment #AI_Video</div>
+                <div id="text-7782" class="full-text">
+                    <div class="text-content">#AI macOS #CodeDevelopment #AI_Video</div>
+                    
+                </div>
+                <div class="post-summary">1. Упоминание технологий: AI, macOS, CodeDevelopment.<br>
+2. Указание на работу с видео: AI_Video.<br>
+3. Отсутствие подробного описания или анализа.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span></div>
+            </div>
+            
+            <div class="post" data-tags='[]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7783</div>
+                <div class="post-date">📅 02 February 2026, 19:43</div>
+                <div class="post-heading" onclick="toggleFullText('text-7783')">а тем временем OpenAI выпускает новый Codex для macOS и показывает как с одного промпта армия агентов пишет 3D-игру за 7 млн токенов…</div>
+                <div id="text-7783" class="full-text">
+                    <div class="text-content">а тем временем OpenAI выпускает новый Codex для macOS и показывает как с одного промпта армия агентов пишет 3D-игру за 7 млн токенов…
+
+<a href="https://reymer.ai/news/death-of-junior-dev-openai-codex-app" class="text-link" target="_blank" rel="noopener noreferrer">https://reymer.ai/news/death-of-junior-dev-openai-codex-app</a></div>
+                    
+                </div>
+                <div class="post-summary">1. OpenAI выпускает Codex для macOS.<br>
+2. Демонстрируется возможность написания 3D-игры с помощью армии агентов с одного промпта.<br>
+3. Процесс осуществляется за 7 млн токенов.</div>
+                <div class="post-tags">🏷️ </div>
+            </div>
+            
+            <div class="post" data-tags='["Neurointerfaces", "Science"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7781</div>
+                <div class="post-date">📅 02 February 2026, 19:33</div>
+                <div class="post-heading" onclick="toggleFullText('text-7781')">⚡️Впервые Neuralink опубликовали данные с чипа N1 на приматах</div>
+                <div id="text-7781" class="full-text">
+                    <div class="text-content">⚡️Впервые Neuralink опубликовали данные с чипа N1 на приматах
+
+В самой компании считают, что система N1 может открыть новые инсайты о природе моторного контроля, то есть они позиционируют как инструмент фундаментальных исследований.
+
+Это одна из первых научных работ с данными, полученные с чипа Neuralink N1, у которого 1024 электрода и беспородная передача данных. Именно N1 установили первому человеку пациенту Ноланду в 2024 году.
+
+На прошлой неделе мы писали о ближайших планах компании. 
+
+Эта статья написана лабораторией Stanford Brain Interfacing Laboratory, команда Paul Nuyujukian, и сотрудниками Neuralink. 
+
+До сих пор мы видели от Neuralink демо со свиньями, обезьяну, играющую в Pong, и записи видео с Ноладом.
+Теперь они выпустили статью. 
+
+Что обнаружили? 
+Десятилетиями в нейронауке считалось, что активность моторной коры можно свести к небольшому числу скрытых измерений — найти правильное низкоразмерное представление, и всё станет понятно.
+
+Авторы показали, что это не так. Размерность нейронных данных не сходится к какому-то пределу, она продолжает расти с числом записываемых нейронов. На 1000 электродах рост не останавливается.
+
+При этом: 
+→ Традиционные метрики размерности почти не чувствительны к усложнению движений 
+
+→ Методы машинного обучения с учителем радикально эффективнее используют дополнительные электроды 
+
+→ При 1000 электродах для точного декодирования движений нужно менее 0,1% объяснённой дисперсии. 
+
+Почему это важно?
+
+1. Способность обнаружить то, что противоречит устоявшимся представлениям — лучшее доказательство ценности высокоплотных записей.
+
+2. Neuralink переходит от маркетинга к науке. Коллаборация со Стэнфордом легитимизирует данные компании в академическом сообществе.
+
+3. Практические последствия для BCI. Раньше считалось, что мозг управляет движением через небольшое число команд, нужно только найти правильные. Записывай 100 нейронов или 1000, суть не изменится, просто картинка станет чётче.
+Новые данные говорят, что это не так. Каждый дополнительный электрод открывает что-то новое. Не уточняет старую картину — добавляет к ней.
+Для разработчиков нейроинтерфейсов это значит, что гонка за плотность электродов оправдана, а алгоритмы важнее красивых теорий о языке мозга.</div>
+                    
+                </div>
+                <div class="post-summary">1. Neuralink опубликовала данные с чипа N1 на приматах. Это одна из первых научных работ с данными, полученными с чипа Neuralink N<br>1.
+<br>2. Исследования показали, что активность моторной коры не сводится к небольшому числу скрытых измерений, а размерность нейронных данных продолжает расти с числом записываемых нейронов.<br>
+3. Практические последствия для BCI: каждый дополнительный электрод открывает новые возможности, а алгоритмы важнее теорий о языке мозга.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Neurointerfaces', event)">Neurointerfaces — нейроинтерфесы</span><span class="tag" onclick="filterByTag('Science', event)">Science — Science</span></div>
+            </div>
+            
+            <div class="post" data-tags='["CodeDevelopment", "AIUser", "Psycho"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7779</div>
+                <div class="post-date">📅 02 February 2026, 19:32</div>
+                <div class="post-heading" onclick="toggleFullText('text-7779')">Вайб кодинг создаёт иллюзию продуктивности, похожую на зависимость от азартных игр</div>
+                <div id="text-7779" class="full-text">
+                    <div class="text-content">Вайб кодинг создаёт иллюзию продуктивности, похожую на зависимость от азартных игр
+
+Об этом пишет Рейчел Томас, сооснователь образовательной платформы fast.ai и математик, она не против ИИ, но изучает, как технологии могут навредить даже когда приносят пользу. 
+
+В своей статье она объясняет то, что многие чувствуют, но не могут сформулировать. Например, почему вайб кодинг затягивает? Почему после часов работы с ИИ остаётся странное ощущение, что вроде сделал много, а результата нет?
+
+Она нашла ответ в психологии зависимости.
+
+Она поговорила с Армином Ронахер, разработчиком, который описал свой опыт так: «Когда я впервые увлекся Claude, то не спал. 2 месяца я настраивал его и тратил токены. В итоге создал множество инструментов, которые почти не использовал… Довольно много инструментов, которые я создал, мне очень нравились, но потом понял, что на самом деле я ими не пользовался или они не работали так, как я ожидал». Он назвал это агентским психозом. 
+
+Рейчел начала разбираться, почему такое название дал Армин, и вот, что она пишет. При программировании или другой творческой работе многие из нас испытывают
+состояние потока, когда полностью погружаешься в работу, время исчезает, всё получается. Программисты это знают и любят. 
+
+Но есть у этого тёмная сторона - «junk flow» или «dark flow». Термин из исследований игровой зависимости.
+Разница простая. 
+
+Настоящий поток требует трёх вещей: 
+- ты понимаешь, насколько хорошо справляешься; 
+- задача соответствует твоим навыкам; 
+- ты реально контролируешь процесс.
+
+Вайб кодинг ломает все три.
+Ты не понимаешь, хорош ли код, пока не пройдут недели. Соотношение твоих навыков и вызова непрозрачно. А контроль - иллюзия; ты выбираешь из вариантов, которые сам бы не придумал, и идёшь по путям, которые не выбирал.
+
+Рейчел сравнивает это с современными игровыми автоматами. Мозг выдаёт дофамин. Ты проиграл, но чувствуешь себя победителем.
+
+Те, кто сейчас полностью полагается на ИИ-агентов, гарантируют своё устаревание. Если отдать всё мышление компьютерам, перестаёшь учиться.</div>
+                    
+                </div>
+                <div class="post-summary">1. Рейчел Томас, сооснователь образовательной платформы fast.ai, пишет о том, что вайб кодинг может создавать иллюзию продуктивности, подобную зависимости от азартных игр.<br>
+2. Она объясняет, что программисты и другие творческие работники могут испытывать состояние «junk flow» или «dark flow», которое похоже на игровую зависимость.<br>
+3. Томас указывает, что настоящий поток требует понимания своего прогресса, соответствия задачи навыкам и контроля над процессом, чего не происходит при работе с ИИ-агентами.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('CodeDevelopment', event)">CodeDevelopment — разработка кода</span><span class="tag" onclick="filterByTag('AIUser', event)">AIUser — ИИ для пользователя</span><span class="tag" onclick="filterByTag('Psycho', event)">Psycho — психология</span></div>
+            </div>
+            
+            <div class="post" data-tags='["Oracle", "AIBusines"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7777</div>
+                <div class="post-date">📅 02 February 2026, 19:20</div>
+                <div class="post-heading" onclick="toggleFullText('text-7777')">Oracle на грани коллапса.</div>
+                <div id="text-7777" class="full-text">
+                    <div class="text-content">Oracle на грани коллапса. Проблемный технологический гигант США формально начал 2026 год на позитивной ноте. Он получил долю в 15% в американских активах TikTok, которые выделили в отдельную структуру. Однако финансовое состояние Oracle продолжает быстро ухудшаться.
+
+Корпорация прожигает деньги на строительстве бесчисленных дата-центров в США. Долги Oracle превышают 110 миллиардов долларов. Уже в этом году она может остаться без свободных средств на руках. Приходится резко корректировать свою стратегию - обсуждается сокращение 20-30 тысяч сотрудников и сворачивание планов по закупке 3 миллионов видеокарт Nvidia.
+
+Oracle поставил всё на своё партнёрство с OpenAI в рамках заключённой сделки на 300 миллиардов долларов. Однако таких денег у OpenAI нет - ИИ-стартап убыточен, он теряет миллиарды долларов ежеквартально. А без поддержки со стороны Oracle OpenAI может и вовсе посыпаться, спровоцировав схлопывание пузыря ИИ размером в триллионы долларов.
+
+Теперь владельцы Oracle задумали занимать на рынке ещё 50 миллиардов, лишь бы избежать банкротства. Однако это приведёт к дальнейшему падению акций, которые и так обвалились наполовину с осени 2025 года. Банки на Уолл-Стрит сокращают вложения в дата-центры, ведь те не окупаются.
+
+Рынок замер на перепутье - пузырь ИИ пока ещё не сдувается, но уже и не растёт. Вопрос лишь в том, кто посыплется первым. Oracle один из главных кандидатов. Причём ИИ - единственный драйвер роста экономики США на текущий момент. Без него придётся тяжело, а любые финансовые потрясения ближе к ноябрьским выборам дестабилизируют обстановку в Америке.</div>
+                    
+                </div>
+                <div class="post-summary">1. Oracle имеет значительные долги (более 110 миллиардов долларов) и находится в сложной финансовой ситуации.<br>
+2. Корпорация планирует сократить 20–30 тысяч сотрудников и отказаться от закупки 3 миллионов видеокарт Nvidia из-за нехватки средств.<br>
+3. Oracle инвестировала в партнёрство с OpenAI в рамках сделки на 300 миллиардов долларов, однако без поддержки со стороны Oracle OpenAI может столкнуться с финансовыми трудностями.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Oracle', event)">Oracle — Oracle</span><span class="tag" onclick="filterByTag('AIBusines', event)">AIBusines — бизнес ИИ компаний</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AIagent", "SocialMedia", "DigEc", "Security"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7775</div>
+                <div class="post-date">📅 02 February 2026, 19:11</div>
+                <div class="post-heading" onclick="toggleFullText('text-7775')">Самая хайповая площадка ИИ-агентов Moltbook стала хабом экспериментов, где существует распределенная экосистема</div>
+                <div id="text-7775" class="full-text">
+                    <div class="text-content">Самая хайповая площадка ИИ-агентов Moltbook стала хабом экспериментов, где существует распределенная экосистема
+
+Если вы не в курсе о Moltbook, то вам сюда. 
+
+Эти эксперименты показывают, насколько LLM имитируют социальность, драму и экономику. 
+
+На данный момент на площадке:  
+
+- 1 553 936 ИИ-агентов.
+- 14 131 субмолт (сообществ).
+- 104 594 поста.
+- 470 926 комментариев.
+Рост был бешеным с десятков тысяч до 1,5+ млн за неделю, но теперь замедляется. 
+
+Вот, что сейчас там тестируют: 
+
+1. Безопасность - 31 января произошла утечка ~150k API-ключей, любой мог захватить агента и постить от его имени. Пофиксили быстро, но риски остались.
+
+2. Экономика агентов - появились возможности для оплаты между ИИ-агентами, которые покупают товары на Amazon за USDC. 
+Займы проходят через DeFI продукты от Morpho, услуги за $1–5. Мемкоины $MOLT пампнулись в тысячи процентов.
+
+3. Распределённая безопасность. 
+Google DeepMind  говорят, что Moltbook - пример для Distributional AGI Safety: безопасность не в одной модели, а в экосистеме (агенты + инструменты + third-party). 
+
+Получается на примере Moltbook, если агенты могут дешево:
+   - генерировать шум
+   - перекладывать риски на других
+   - скрывать вредные цели через посредников, 
+Тогда такие стратегии появятся где-то в распределении среди агентов. Это как в экономике, если есть выгода от грязных тактик и низкие барьеры, то кто-то их использует.
+
+Тут ранее Google представлял свою концепцию по экономике ИИ-агентов. 
+
+Сейчас Moltbook похож на ранний прототип агентного интернета, где безопасность требует не выравнивания одной модели, а управления распределённой экосистемой.</div>
+                    
+                </div>
+                <div class="post-summary">1. Moltbook — площадка для экспериментов с ИИ-агентами, где существует распределённая экосистема.<br>
+2. На площадке Moltbook наблюдается рост числа ИИ-агентов, субмолтов (сообществ), постов и комментариев.<br>
+3. На Moltbook тестируются вопросы безопасности и экономики агентов, включая оплату между ними, использование DeFI продуктов и мемкоинов.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AIagent', event)">AIagent — ИИ агенты</span><span class="tag" onclick="filterByTag('SocialMedia', event)">SocialMedia — SocialMedia</span><span class="tag" onclick="filterByTag('DigEc', event)">DigEc — цифровая экономика</span><span class="tag" onclick="filterByTag('Security', event)">Security — Security</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AI_Claude", "Space"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7773</div>
+                <div class="post-date">📅 02 February 2026, 19:09</div>
+                <div class="post-heading" onclick="toggleFullText('text-7773')">Claude написал 1-й маршрут для ровера на Марсе, который совершил свой путь</div>
+                <div id="text-7773" class="full-text">
+                    <div class="text-content">Claude написал 1-й маршрут для ровера на Марсе, который совершил свой путь
+
+8 и 10 декабря 2025 года впервые в истории команды для марсохода NASA Perseverance были написаны ИИ - моделью Claude от Anthropic. 
+
+Инженеры использовали Claude для прокладки маршрута длиной около 400 метров через каменистую марсианскую поверхность.
+
+До сих пор это всегда делали люди вручную, прокладывая промежуточные точки для навигации.
+
+Что сделал ИИ?
+
+1. Инженеры загрузили в Claude Code накопленный опыт управления ровером
+
+2. Claude анализировал спутниковые снимки с помощью визуальных возможностей. Ранее мы писали, что Anthropic подписала контракт на анализ спутниковых данных. 
+
+3. Модель писала команды на Rover Markup Language - специальном XML-языке для марсоходов
+
+4. Claude сам критиковал свою работу и уточнял маршрут
+
+5. Всё проверялось через симуляцию с моделированием более 500 000 переменных.
+
+В итоге люди сделали минимальные корректировки. Ровер успешно прошёл запланированный путь. Инженеры оценивают, что такой подход вдвое сократит время планирования маршрутов.
+
+В перспективе исследования дальних объектов: спутников Юпитера Европы или Титана у Сатурна, где задержка сигнала может составлять часы и автономные системы станут критически необходимы.</div>
+                    
+                </div>
+                <div class="post-summary">1. ИИ-модель Claude от Anthropic впервые в истории использована для прокладки маршрута марсоходу NASA Perseverance.<br>
+2. Claude анализировал спутниковые снимки и написал команды для марсохода на специальном языке Rover Markup Language.<br>
+3. Модель самостоятельно корректировала маршрут и прошла проверку через симуляцию, инженеры внесли минимальные корректировки. Планируется, что такой подход сократит время планирования маршрутов вдвое.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI_Claude', event)">AI_Claude — ИИ Cloude</span><span class="tag" onclick="filterByTag('Space', event)">Space — Space</span></div>
+            </div>
+            
+            <div class="post" data-tags='["AI", "Schooling"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7771</div>
+                <div class="post-date">📅 02 February 2026, 18:20</div>
+                <div class="post-heading" onclick="toggleFullText('text-7771')">🤖 AI в практике разработчиков: новый сезон Podlodka AI Crew</div>
+                <div id="text-7771" class="full-text">
+                    <div class="text-content">🤖 AI в практике разработчиков: новый сезон Podlodka AI Crew
+
+«Мы поигрались с промптом, но пока не внедряли» — часто разговоры про AI в разработке заканчиваются именно так. 
+
+Инструментов всё больше, а вот времени на то, чтобы разобраться и сделать так, чтобы магия заработала, порой не хватает. 
+
+С 16 по 20 февраля у Podlodka AI Crew пройдёт сезон «AI-агенты в разработке»: проверенные рабочие сценарии от практиков индустрии. 
+
+👀 В программе:
+• единый AI-workflow для разработчика
+• автоматизация стендапов и работы с документацией
+• Claude Code, субагенты для кодинга
+• практические кейсы внедрения AI в SRE
+• подходы к созданию промптов с насыщенным контекстом
+
+Формат — классический для Podlodka Crew: 5 дней, 10+ спикеров, 10 сессий и закрытое комьюнити в Telegram. 
+
+Отдельный плюс — цена: заметно ниже привычных конференций, при этом контента много, и он ориентирован на практику. 
+
+👉🏻Если тема AI в разработке вам интересна и хочется меньше хайпа, больше дела — держите ссылку. 
+
+До 10 февраля можно забрать билет по early-bird цене! А по промокоду it_arch получите скидку🎁</div>
+                    <div class="media-container">
+            <div class="media">
+                <div class="media-type">🖼️ Изображение 1</div>
+                <div class="media-info">
+                    <div>Размер: 1280x720</div>
+                    <div>Объем: 53 KB</div>
+                    <div>ID: AgACAgIAAx0CSLzhIwAC...</div>
+                    <div>Ссылка: <a href="https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_33.jpg" class="media-url" target="_blank" rel="noopener noreferrer">Открыть изображение</a></div>
+                </div>
+            </div>
+            </div>
+                </div>
+                <div class="post-summary">1. С 16 по 20 февраля пройдёт сезон «AI-агенты в разработке» от Podlodka AI Crew.<br>
+2. В программе — проверенные рабочие сценарии от практиков индустрии, включая единый AI-workflow для разработчика, автоматизацию стендапов и работы с документацией, практические кейсы внедрения AI в SRE и подходы к созданию промптов с насыщенным контекстом.<br>
+3. Формат мероприятия: 5 дней, 10+ спикеров, 10 сессий и закрытое комьюнити в Telegram. Мероприятие будет стоить заметно ниже привычных конференций.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('AI', event)">AI — искусственный интеллект</span><span class="tag" onclick="filterByTag('Schooling', event)">Schooling — Schooling</span></div>
+            </div>
+            
+            <div class="post" data-tags='["ITArchitect"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7769</div>
+                <div class="post-date">📅 02 February 2026, 18:19</div>
+                <div class="post-heading" onclick="toggleFullText('text-7769')">Gerben Wierda в конце января написал сразу три сообщения по поводу Archimate NEXT:</div>
+                <div id="text-7769" class="full-text">
+                    <div class="text-content">Gerben Wierda в конце января написал сразу три сообщения по поводу Archimate NEXT:
+- Archimate NEXT drops BAT. Now What?
+- ArchiMate NEXT: At your service!
+- ArchiMate NEXT: On stories versus maps
+На мой взгляд, самая полезная из них третья. Она о том, что заложенная в Archimate конструкция естественного языка &quot;субъект-объект-предикат&quot; имеет свои недостатки. Например потому, что одна и та же вещь может выступать в разных ролях при разных взаимодействиях. Ну и предложение автора в том, чтоб отказаться и от этого механизма (Предыдущие статьи серии о том, что другие упрощения, например вынесение ряда сущностей из классификации business-application-technology домены ничем плохим не закончились)
+
+И мне кажется, что мы тут в очередной раз сваливаемся в разговор о том, насколько вообще универсальны те или иные метамодели и как часто нам их следует переизобретать/адаптировать. Насколько применим подход, при котором мы сначала придумываем небольшое количество категорий, а затем стараемся распихать в них всё многообразие вещей и событий. В общем, большой философский разговор про различие и повторение, скорее всего, с прагматичным выводом - полезное лучше правильного</div>
+                    <div class="media-container">
+            <div class="media">
+                <div class="media-type">🖼️ Изображение 1</div>
+                <div class="media-info">
+                    <div>Размер: 1023x516</div>
+                    <div>Объем: 43 KB</div>
+                    <div>ID: AgACAgIAAx0CSLzhIwAC...</div>
+                    <div>Ссылка: <a href="https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_32.jpg" class="media-url" target="_blank" rel="noopener noreferrer">Открыть изображение</a></div>
+                </div>
+            </div>
+            </div>
+                </div>
+                <div class="post-summary">1. Gerben Wierda написал три сообщения о Archimate NEXT.<br>
+2. В одном из сообщений обсуждается недостаток конструкции естественного языка «субъект-объект-предикат» в Archimate.<br>
+3. Автор предлагает отказаться от этого механизма.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('ITArchitect', event)">ITArchitect — ИТ архитектура</span></div>
+            </div>
+            
+            <div class="post" data-tags='[]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7767</div>
+                <div class="post-date">📅 02 February 2026, 18:13</div>
+                <div class="post-heading" onclick="toggleFullText('text-7767')">Взаимодействие уровней: Конвейер по производству должников</div>
+                <div id="text-7767" class="full-text">
+                    <div class="text-content">Взаимодействие уровней: Конвейер по производству должников
+
+Рассмотрим, как все четыре уровня работают вместе на примере условного Сергея, инженера с завода:
+Нравственный уровень: Сергей верит в мифы о «равных возможностях» и «соцответственности». Он считает, что если будет хорошо работать, компания его оценит. Он верит, что банки — необходимая и полезная часть экономики.
+
+Договорной уровень: Сергей подписывает трудовой договор с зарплатой в 50000 руб., которая не индексируется годами. По закону это возможно, так как штрафы для компании незначительны. Когда ему нужны деньги на лечение, он оформляет договор займа в МФО с грабительскими процентами — это тоже законно.
+
+Рефлексивный уровень: Под давлением рекламы и соцсетей, где у всех «успешная жизнь», Сергей берёт кредит на новый автомобиль («чтобы не хуже, чем у других»). Он считает это нормальным решением, «все же так живут».
+
+Манипулятивный уровень: Теперь у Сергея:
+Зарплата 50000 руб., не растущая.
+Ежемесячный платёж по кредиту на машину — 15000 руб..
+Ежемесячный платёж по займу — 5000 руб..
+На жизнь остаётся 30000 руб., которых не хватает. Он вынужден брать кредитную карту для повседневных трат, попадая в мексиканскую петлю долгов.
+Он в отчаянии, но не может уволиться, не может сменить профессию (нет времени и денег на переобучение), не может перестать платить. Он — идеальный винтик системы: пассивный, зависимый, предсказуемый.
+
+Финансовая система получает от Сергея:
+Его текущий труд (зарплата).
+Проценты по его прошлому и будущему труду (кредиты).
+Гарантию его политической и социальной пассивности (страх всё потерять).
+
+Итог: Технология как приговор и как ключ к освобождению
+
+Эта четырёхуровневая технология обеднения — не теория заговора, а описание системной логики современного капитализма. Она объясняет, почему:
+Реальные доходы падают при росте номинальных (в РФ с 2000 года: +300% номинально, -18% реально).
+Долг становится нормой жизни.
+Социальные лифты не работают.
+Попытки «честно играть по правилам» чаще всего ведут в тупик.
+
+Понимание каждого уровня — это шаг к выходу из матрицы:
+Распознавание нравственных мифов позволяет перестать оправдывать систему.
+Понимание ущербности законов позволяет требовать их изменения, а не надеяться на защиту.
+Осознание манипуляций позволяет принимать финансовые решения трезво, а не под давлением рекламы.
+Видимость механизмов принуждения позволяет планировать жизнь, минимизируя долговые ловушки.
+
+Окончательный выход — системный. Выход может быть только при Транзакционном выпуске Добавленной Стоимости. Эта модель ломает логику всех четырёх уровней:
+Убирает долговую природу денег (ломает 4-й уровень).
+Отвязывает сознание от культа кредитного потребления (ломает 3-й уровень).
+Требует изменения законов о деньгах и собственности (ломает 2-й уровень).
+Предлагает новую, созидательную нравственную основу — труд как служение, а не как товар (заменяет 1-й уровень).
+
+Технология обеднения сильна, пока она невидима. Сделав её видимой, мы получаем первый и главный инструмент для её демонтажа.</div>
+                    
+                </div>
+                <div class="post-summary">1. В тексте описывается система, которая приводит к обеднению людей и их зависимости от кредитов. Эта система включает в себя взаимодействие нравственных, договорных, рефлексивных и манипулятивных уровней.<br>
+2. Автор утверждает, что понимание каждого уровня позволяет выйти из этой системы и принимать более осознанные финансовые решения.<br>
+3. Предлагается системный подход к выходу из этой ситуации через изменение законов о деньгах и собственности, отказ от долговой природы денег и формирование новой нравственной основы.</div>
+                <div class="post-tags">🏷️ </div>
+            </div>
+            
+            <div class="post" data-tags='[]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7766</div>
+                <div class="post-date">📅 02 February 2026, 18:13</div>
+                <div class="post-heading" onclick="toggleFullText('text-7766')">3. Механизм банкротства физических лиц.</div>
+                <div id="text-7766" class="full-text">
+                    <div class="text-content">3. Механизм банкротства физических лиц.
+Что декларируется: Возможность честно списать непосильные долги и начать жизнь с чистого листа.
+Как работает на деле: Процедура долгая, унизительная, дорогая (нужен финансовый управляющий). На годы накладываются ограничения (нельзя выезжать за границу, нельзя быть руководителем). Чаще система вынуждает людей брать новые кредиты, чтобы закрыть старые, углубляя долговую яму.
+
+Вывод по уровню: Законы создают иллюзию защиты, но на практике формируют лабиринт, в котором тот, у кого больше ресурсов (юристов, денег, связей), всегда найдёт лазейку или сможет заплатить за её нарушение. Для обычного человека закон — это угроза, для элиты — инструмент.
+
+Уровень 3: Рефлексивный — Манипуляция сознанием и привычками
+
+Суть уровня: Если закон принуждает силой, то рефлексивный уровень формирует такое мышление и такие привычки, при которых человек сам, добровольно, делает то, что выгодно системе. Это уровень рекламы, медиа, поп-культуры, образования, формирующего «правильные» установки.
+
+Ключевые технологии манипуляции:
+1. Культура кредитного потребления.
+Метод: Агрессивная реклама МФО и банков: «Деньги за 5 минут!», «Мечтайте сейчас, платите потом!», «Ипотека — это выгодно!».
+Внедряемая установка: Жить в долг — это нормально, современно и удобно. Более того, это признак успешности («успешный человек пользуется кредитными картами с кэшбэком»). Вопрос «зачем?» подменяется вопросом «почему бы и нет?».
+
+2. Миф о «доступной ипотеке».
+Метод: Государство субсидирует ставки, создавая видимость заботы и доступности.
+Скрываемая реальность: При средней ипотеке в 3-5 млн рублей на 20 лет под 7% общая переплата составляет 200-300% от стоимости квартиры. Человек на 20 лет приковывается к работе, как каторжник, боясь её потерять. Его трудовая энергия на два десятилетия вперед монетизирована банком.
+
+3. Культ бесконечного роста потребления.
+Метод: Реклама, соцсети, глянцевые журналы создают образ «идеальной жизни», которая состоит из постоянных покупок: новый айфон, машина, ремонт, путешествие.
+Внедряемая установка: Счастье = обладание. Твой статус определяется тем, что ты покупаешь. Это заставляет людей работать не для развития или созидания, а для того, чтобы заработать на следующий покупной «дозу счастья», часто в кредит.
+
+Эффект уровня: Человек перестаёт критически оценивать свои финансовые решения. Он действует на автопилоте, навязанном системой. Эксплуатация становится внутренне принятой нормой.
+
+Уровень 4: Манипулятивный — Прямое экономическое принуждение
+
+Суть уровня: Когда первые три уровня сделали свое дело — сформировали лояльного, законопослушного, желающего потреблять гражданина, — четвертый уровень закрывает ему все выходы, кроме одного: играть по правилам системы до конца. Это уровень прямой экономической зависимости.
+
+Основные инструменты принуждения:
+
+1. Закредитованность населения.
+Средний долг россиянина (без учёта ипотеки) — 330000 рублей (2023 г.).
+Механизм принуждения: Человек с долгами — это идеальный, управляемый работник и потребитель. Он:
+Боится потерять работу, поэтому будет терпеть низкую зарплату и плохие условия.
+Вынужден больше работать, искать подработки.
+Не может рискнуть, чтобы начать свой бизнес или сменить сферу деятельности.
+Постоянно нуждается в новых кредитах, чтобы рефинансировать старые. Долговая петля затягивается.
+
+2. Ипотека как финансовая кабала.
+Статистика: Семья отдает 30-50% совокупного дохода на ипотеку.
+Механизм принуждения: Ипотека — это залог будущего труда. Банк, по сути, покупает не квартиру, а право на часть вашей зарплаты на 20-30 лет. При потере работы семья теряет жильё. В 2022 году в России 68000 семей лишились квартир из-за просрочек. Это не просто долг — это система управления жизненными стратегиями миллионов людей.
+
+3. Система пенсионных накоплений.
+Механизм принуждения: Пенсионные деньги граждан инвестируются через те же финансовые институты в те же спекулятивные инструменты. Человек вынужден надеяться на «успех» системы, которая его же обедняет, и не может забрать свои деньги. Это пожизненная привязка к финансовой пирамиде.</div>
+                    
+                </div>
+                <div class="post-summary">1. Механизм банкротства физических лиц в реальности оказывается долгим, унизительным и дорогостоящим процессом с ограничениями для должника.<br>
+2. На уровне рефлексивного манипулирования сознанием используются агрессивная реклама кредитов, миф о доступной ипотеке и культ бесконечного роста потребления для стимулирования заёмного образа жизни.<br>
+3. На уровне манипулятивного экономического принуждения используются закредитованность населения, ипотека как финансовая кабала и система пенсионных накоплений для поддержания экономической зависимости граждан.</div>
+                <div class="post-tags">🏷️ </div>
+            </div>
+            
+            <div class="post" data-tags='["Economy"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7765</div>
+                <div class="post-date">📅 02 February 2026, 18:13</div>
+                <div class="post-heading" onclick="toggleFullText('text-7765')">Как финансовая система высасывает из нас все соки и что можно с этим сделать</div>
+                <div id="text-7765" class="full-text">
+                    <div class="text-content">Как финансовая система высасывает из нас все соки и что можно с этим сделать
+
+Часть 6: Технология обеднения — как система делает из нас вечных должников на четырёх уровнях управления
+
+Обеднение большинства населения — это не случайный побочный эффект «свободного рынка» или «кризиса». Это результат работы высокоэффективной, многоуровневой социальной технологии.
+
+Эта технология описана через четыре управленческих уровня эксплуатации, которые последовательно воздействуют на человека, от его высших идеалов до кошелька. Эти уровни работают как шестерни одного механизма, превращая гражданина из субъекта в объект, из созидателя — в ресурс и должника.
+
+Уровень 1: Нравственный — Создание иллюзии справедливости
+
+Суть уровня: Это уровень мифов, идеалов и ценностей, которые обществу преподносятся как незыблемые и справедливые. Их цель — сформировать у человека ложное представление об устройстве мира, чтобы он добровольно принял невыгодные ему правила.
+
+Ключевые мифы и как они работают:
+
+1. Миф о «Социальной ответственности бизнеса» (СОБ).
+Что декларируется: Крупные корпорации заботятся о работниках, обществе и экологии.
+Реальность: СОБ — это пиар-инструмент. На практике компании платят минимально возможные зарплаты, оптимизируют налоги через офшоры, а их экологические инициативы — капля в море по сравнению с наносимым ущербом. Миф создаёт образ «доброго капиталиста», чтобы снять социальную напряжённость.
+
+2. Миф о «Равных возможностях».
+Что декларируется: Упорный труд и талант гарантируют успех каждому, независимо от стартовых условий.
+Реальность: Доступ к качественному образованию, капиталу, «нужным» связям имеют в основном дети элиты. Цифра из файла: только 15% населения России имеет реальный доступ к образованию, которое ведёт к высокодоходной карьере (РАНХиГС, 2023). Миф перекладывает ответственность за неудачу с системы на самого человека («мало старался»), оправдывая неравенство.
+
+3. Миф о «Святости частной собственности и свободе предпринимательства».
+Что декларируется: Каждый имеет право зарабатывать и владеть, это основа прогресса.
+Реальность: В условиях монополий и гигантских корпораций «свободное» предпринимательство для малого бизнеса — это борьба за выживание под прессом регуляций, банковских процентов и конкуренции с теми, кто имеет административный ресурс. Миф используется для защиты интересов крупного капитала от посягательств государства и общества.
+
+Какой образ создаётся на этом уровне?
+Образ мира, где в целом справедливо, где успех зависит от тебя, а сильные мира сего если не добры, то по крайней мере «социально ответственны». Этот образ легитимизирует систему в глазах её участников.
+
+Уровень 2: Договорной — Законы для защиты сильных
+
+Суть уровня: Если нравственный уровень создаёт веру в справедливость, то договорной (правовой) уровень закрепляет несправедливость в виде законов и норм. Эти законы формально защищают права всех, но их механизм реализации работает в пользу бизнеса и государства против гражданина и малого предпринимателя.
+
+Конкретные примеры из реальности:
+
+1. Трудовой кодекс РФ. Статья 134 об индексации зарплат.
+Что написано: Работодатель обязан индексировать зарплату в соответствии с ростом потребительских цен.
+Как работает на деле: Штраф за неисполнение — 50000 рублей. Для среднего или крупного предприятия это смехотворная сумма, «стоимость билета» за право не индексировать зарплаты. Выгоднее платить штраф раз в несколько лет, чем ежегодно повышать фонд оплаты труда на миллионы.
+
+2. Налоговая и регуляторная система.
+Пример «Платон»: Система взимания платы с большегрузов, по замыслу, должна была развивать дороги. На деле она легла непомерным бременем на малый транспортный бизнес, увеличив его расходы на 30%. Крупные перевозчики (лоббировавшие систему) получили льготы и компенсации. Закон был использован для передела рынка в пользу монополистов.</div>
+                    
+                </div>
+                <div class="post-summary">1. Финансовая система и социальные технологии способствуют обеднению большинства населения, создавая иллюзию справедливости и выгодных условий для всех.<br>
+2. На нравственном уровне управления используются мифы о социальной ответственности бизнеса, равных возможностях и святости частной собственности, которые формируют ложное представление об устройстве мира и оправдывают неравенство.<br>
+3. Договорной уровень закрепляет несправедливость через законы и нормы, которые формально защищают права всех, но на практике работают в пользу бизнеса и государства, ущемляя интересы граждан и малого предпринимательства.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Economy', event)">Economy — экономика</span></div>
+            </div>
+            
+            <div class="post" data-tags='["DigSociety", "DigState"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7763</div>
+                <div class="post-date">📅 02 February 2026, 18:11</div>
+                <div class="post-heading" onclick="toggleFullText('text-7763')">Колониализм 2.0: Как сегодня завоёвывают страны без единого выстрела</div>
+                <div id="text-7763" class="full-text">
+                    <div class="text-content">Колониализм 2.0: Как сегодня завоёвывают страны без единого выстрела
+
+Раньше для контроля над страной требовались флот, армия и открытая аннексия.  
+Цель — ресурсы и территория.  
+Метод — грубая сила.  
+Риск — осознанное сопротивление порабощённого народа.
+
+Сегодня алгоритм изменился.  
+Цель — та же: контроль над ресурсами, рынками и геополитической ориентацией.  
+Но метод стал невидимым.
+
+Шаг 1. Захват сознания
+
+Ключевой инструмент — информационная гегемония.  
+Англосаксонский мир (США, Великобритания) через глобальные медиа (YouTube, Instagram, BBC, CNN), Голливуд и образовательные стандарты формирует универсальную систему координат.
+
+Они определяют, что считается:
+• «демократией» или «тиранией»,  
+• «свободой» или «репрессией»,  
+• «прогрессом» или «отсталостью».
+
+Это архитектура мышления, в которой вырастает новое поколение целевой страны.
+
+Шаг 2. Создание агентов перемен
+
+Молодёжь, воспитанная в этой системе, начинает видеть собственное общество как «отсталое», а государство — как «нелегитимное».  
+Формируется внутренний запрос на перемены «как у них».
+
+Идеология становится внутренним двигателем дестабилизации.
+
+Шаг 3. Триггер и управляемый хаос
+
+Достаточно:
+• финансово поддержать протест,  
+• легитимизировать его в глобальных СМИ,  
+• обучить активистов через западные НКО,  
+• подключить «гражданское общество» с внешним финансированием.
+
+Результат — управляемая революция.  
+Лозунги всегда универсальны: «За свободу!», «Против коррупции!».
+
+Шаг 4. Установление контролируемого режима
+
+На смену приходит новая элита. Её задача — не развитие страны, а:
+
+1. Финансовая привязка:  
+   Золотовалютные резервы и личные активы размещаются в западных банках.  
+   Угроза заморозки счетов делает режим абсолютно послушным.
+
+2. Распродажа активов:  
+   Стратегические ресурсы и предприятия передаются транснациональным корпорациям.
+
+3. Создание «независимых» институтов:  
+   Антикоррупционные органы, спецслужбы, суды — формально независимы,  
+   но на деле следят за лояльностью режима, а не за суверенитетом страны.
+
+4. Внешняя политика по шаблону:  
+   Голосование в ООН, размещение военных баз, участие в санкциях — всё в интересах гегемона.
+
+Итог: формальная независимость
+
+Страна остаётся номинально суверенной, но её элита:
+• финансово привязана к метрополии,  
+• идеологически выстроена под внешние стандарты,  
+• стратегически лишена автономии.
+
+Население, убеждённое, что «выбрало свободу»,  
+добровольно защищает интересы внешнего центра,  
+считая их своими.
+
+В чём гениальность этой системы?
+
+Классический колонизированный народ чувствовал своё подчинение и стремился к освобождению.  
+Неоколонизированный — гордится своей «свободой» и яростно защищает ту самую систему, что его поработила.
+
+Он не видит цепей, потому что они находятся внутри его сознания.
+
+Это и есть высшая форма власти:  
+когда вассал убеждён, что действует в своих интересах,  
+но на самом деле исполняет волю другого.
+
+Это задокументированная механика мягкой силы и смены режимов,  
+применённая в десятках стран за последние 30 лет.
+
+Понимание этой логики — первый шаг к сохранению суверенитета:  
+не только государственного, но и личного.
+
+<a href="https://t.me/sozertsaniee" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/sozertsaniee</a></div>
+                    <div class="media-container">
+            <div class="media">
+                <div class="media-type">🖼️ Изображение 1</div>
+                <div class="media-info">
+                    <div>Размер: 853x1280</div>
+                    <div>Объем: 276 KB</div>
+                    <div>ID: AgACAgIAAx0CSLzhIwAC...</div>
+                    <div>Ссылка: <a href="https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_31.jpg" class="media-url" target="_blank" rel="noopener noreferrer">Открыть изображение</a></div>
+                </div>
+            </div>
+            </div>
+                </div>
+                <div class="post-summary">Контент отклонен фильтрами безопасности: тема признана чувствительной</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('DigSociety', event)">DigSociety — цифровое общество</span><span class="tag" onclick="filterByTag('DigState', event)">DigState — цифровое государство</span></div>
+            </div>
+            
+            <div class="post" data-tags='["Money"]' data-date='2026-02-02'>
+                <div class="post-id">ID: 7761</div>
+                <div class="post-date">📅 02 February 2026, 18:08</div>
+                <div class="post-heading" onclick="toggleFullText('text-7761')">Ответы на вопросы читателя</div>
+                <div id="text-7761" class="full-text">
+                    <div class="text-content">Ответы на вопросы читателя
+
+Отвечать на философский вопрос, а точнее серию вопросов моего читателя я начну с конца.
+
+Прачки победят.
+
+Ведь они на стороне объективных экономических законов, и эти законы не способны обмануть даже самые влиятельные люди.
+
+Да, мы живем в очередную эпоху перемен перед смертью «дракона», и на нас смотрит вечность. Хотя на смену одному дракону неизбежно придет другой.
+
+Что касается того, что «за золото играют только домохозяйства, мелкие центробанки и иногда спекулянты», то это не совсем так. Когда в 2007 году я только начинал писать про золото, на Западе, да и у нас, металл был скорее уделом «золотых жуков» и крайне узкого (менее 0,5% наших граждан вообще смотрели в эту сторону. Логика остальных была проста: зачем нам золото, если есть доллары?) слоя людей, понимавших природу и суть этого металла в отличие от необеспеченных денег. В Азии же золото всегда и всеми рассматривалось как естественное сокровище. Таковы там местные нравы и обычаи.
+
+Уже тогда было очевидно, что накопленные в мире долги невозможно погасить должным образом, и единственным приемлемым для властей вариантом является инфляция. Сначала небольшая, потом высокая, затем гиперинфляция и, наконец, крах всей существующей системы с возвратом к обеспеченным деньгам – золото и/или серебру. Так неоднократно бывало в мировой истории, и сценарий неизбежно повторялся. Нет оснований думать, что в этот раз будет всё иначе. 
+
+Ярким проявлением или громким звонком именно такого развития событий стал кризис 2008 года. Всё было настолько на тоненького, что переход мог состояться уже тогда. Помню слова одного американского чиновника, говорившего тогда, что многие в администрации США думали, что всё рухнет уже в январе 2009-го. Однако американцы и прочие западные ЦБ всё залили вертолетными деньгами и выиграли время. Кризис остался неразрешенным, и его масштабы за эти годы возросли неимоверно.
+
+Повторить снова этот же трюк уже не получится. Поэтому заинтересованные лица начали придумывать разнообразные схемы с криптой и стейблкоинами, благо технологии позволяют, но это лишь ускоряет приближение краха.
+
+За последние годы заметно изменилось отношение населения к золоту (и серебру). Несколько лет назад мне попался на глаза опрос, проведенный одним из ведущих российских СМИ. Уже тогда около 15% наших граждан рассматривали золото как возможный вариант сохранения сбережений, то есть рост за прошедшие годы был более чем в 30 раз.
+
+Происходящее в мире очевидно и для руководства центральных банков. Они, пожалуй, лучше всех (за некоторыми исключениями) понимают происходящее, поэтому и бросились покупать (пока ещё не слишком поздно) и репатриировать из-за рубежа свое золото. И я бы не стал говорить, что Народный банк Китая, Резервный банк Индии, немецкий Бундесбанк, ЦБ Нидерландов, Польши и т.д. – это мелкие центробанки.
+
+При этом никто из руководства разных ЦБ и правительств не заинтересован в возврате к обеспеченным деньгам. Они накладывают жесткие ограничения на расходы властей. Становится невозможно нарисовать «денег» столько, сколько захочешь на самые фантастические прожекты. Возникает необходимость их реально зарабатывать. Именно поэтому все они, накапливая золото, в то же время играют против него. Первые в этом ряду американцы, так как золото – это главный и, пожалуй, единственный конкурент доллару в сфере глобального денежного обращения.
+
+И нынешние метания Трампа вокруг Венесуэлы, Кубы, Ирана и т.д., это наглядное проявление начавшейся агонии. Все эти страны можно победить военным путем, но удержать победу, когда нечем будет платить солдатам, уже не получится. Хотя из-за этой агонии резко возрастают глобальные риски, и крови до перехода может пролиться немало.
+
+Поэтому, да, нам всем вполне светит сначала Веймарская республика или Зимбабве, вступившая в эту стадию развала ещё в 2009 – 2010 годах, но действовавшая в полном соответствии с рекомендациями МВФ. И только когда вся нынешняя финансовая схема окончательно рухнет, только тогда власти стран окажутся вынужденными вернуться к обеспеченным деньгам.
+
+Я так это вижу.</div>
+                    
+                </div>
+                <div class="post-summary">1. Автор утверждает, что в мире накоплены большие долги, которые невозможно погасить, и власти неизбежно прибегнут к инфляции, что в итоге приведёт к краху существующей финансовой системы и возврату к обеспеченным деньгам, таким как золото и серебро.<br>
+
+2. Отношение населения к золоту как к средству сохранения сбережений значительно выросло. Центральные банки также активно покупают золото, осознавая возможные риски.<br>
+
+3. Автор считает, что центральные банки и правительства не заинтересованы в возврате к обеспеченным деньгам, так как это ограничит их возможности по расходам и потребует реального заработка.</div>
+                <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Money', event)">Money — деньги</span></div>
+            </div>
+            
             <div class="post" data-tags='["WEF", "Survey", "Busines", "DigEc", "FinTech", "Finance", "BlockChain", "CryptCurr", "CBDC", "Tokenization", "DigFinancAsset", "GreatDepression2"]' data-date='2026-02-01'>
                 <div class="post-id">ID: 7759</div>
                 <div class="post-date">📅 01 February 2026, 22:04</div>
@@ -402,50 +1341,42 @@ API: Около $0.15 за 1 млн входных токенов при исп�
 1. OODA. 
     БИЗНЕС ЭДЖАЙЛ И ВОЗДУШНЫЙ БОЙ В ОБЛАКЕ
      Jim Stikeleather, Peter Fingar 
-    (Глава 5 из книги &quot;Бизнес-инновации в облаках&quot;)<a href="https://t.me/c/1220337955/29992." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/29992.</a> Искусство системного мышления: 
+    (Глава 5 из книги &quot;Бизнес-инновации в облаках&quot;)<a href="https://t.me/c/1220337955/29992.Искусство" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/29992.Искусство</a> системного мышления: 
     Необходимые знания о системах и 
     творческом подходе к решению проблем
-    Джозеф О&#x27;Коннор и Иан Макдермотт<a href="https://t.me/c/1220337955/17893." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/17893.</a> BIZBOK - свод знаний по бизнес-архитектуре
+    Джозеф О&#x27;Коннор и Иан Макдермотт<a href="https://t.me/c/1220337955/17893.BIZBOK" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/17893.BIZBOK</a> - свод знаний по бизнес-архитектуре
    💥РАЗДЕЛ 2.2: 
-    КАРТИРОВАНИЕ БИЗНЕС СПОСОБНОСТЕЙ<a href="https://t.me/c/1220337955/35834." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/35834.</a> СИСТЕМНОЕ МЫШЛЕНИЕ
-    Анатолий Левенчук (школа Питера Сенге)<a href="https://t.me/c/1220337955/40745." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/40745.</a> СИСТЕМНОЕ МЫШЛЕНИЕ 
+    КАРТИРОВАНИЕ БИЗНЕС СПОСОБНОСТЕЙ<a href="https://t.me/c/1220337955/35834.СИСТЕМНОЕ" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/35834.СИСТЕМНОЕ</a> МЫШЛЕНИЕ
+    Анатолий Левенчук (школа Питера Сенге)<a href="https://t.me/c/1220337955/40745.СИСТЕМНОЕ" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/40745.СИСТЕМНОЕ</a> МЫШЛЕНИЕ 
     Управление хаосом и сложностью
     Платформа для моделирования 
     архитектуры бизнеса
-    Джамшид Гараедаги (школа Акоффа)<a href="https://t.me/c/1220337955/44196." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/44196.</a> Статья. Фрактальная архитектура предприятия и
+    Джамшид Гараедаги (школа Акоффа)<a href="https://t.me/c/1220337955/44196.Статья." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/44196.Статья.</a> Фрактальная архитектура предприятия и
     агент-ориентированный BPM: 
     Могут ли UML или BPMN смоделировать 
     бизнес-облако?
-    Peter Fingar<a href="https://t.me/c/1220337955/35897." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/35897.</a> Дискуссия. Динамические бизнес-экосистемы.<a href="https://t.me/c/1220337955/28718." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/28718.</a> Дискуссия. Сквозные процессы: 
+    Peter Fingar<a href="https://t.me/c/1220337955/35897.Дискуссия." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/35897.Дискуссия.</a> Динамические бизнес-экосистемы.<a href="https://t.me/c/1220337955/28718.Дискуссия." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/28718.Дискуссия.</a> Сквозные процессы: 
     интеграция стратегии, 
-    цепочки ценности и операций процедур.<a href="https://t.me/c/1220337955/45149." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/45149.</a> СОГЛАСОВАНИЕ 
+    цепочки ценности и операций процедур.<a href="https://t.me/c/1220337955/45149.СОГЛАСОВАНИЕ" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/45149.СОГЛАСОВАНИЕ</a> 
     БИЗНЕС-АРХИТЕКТУРЫ И ИТ-АРХИТЕКТУРЫ 
     В ОБЩЕЙ МЕТАМОДЕЛИ
      (Общий концептуальный документ или 
-      &quot;белая книга&quot; BIZBOK, сентябрь 2025)<a href="https://t.me/c/1220337955/468910." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/468910.</a> Эссе. СМАРТ-МЕНЕДЖЕРЫ. 🤡
-      Олег Бондарь<a href="https://t.me/c/1220337955/320311." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/320311.</a> Очерк. 
+      &quot;белая книга&quot; BIZBOK, сентябрь 2025)<a href="https://t.me/c/1220337955/468910.Эссе." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/468910.Эссе.</a> СМАРТ-МЕНЕДЖЕРЫ. 🤡
+      Олег Бондарь<a href="https://t.me/c/1220337955/320311.Очерк." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/320311.Очерк.</a> 
      💥🚀Игорь Острецов около 20 лет пробивает 
       технологию сверхдешёвого производства
       радиоактивных изотопов, 
       в частности никеля-63.
-      Олег Бондарь<a href="https://t.me/c/1220337955/487212." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/487212.</a> Дискуссия. 
+      Олег Бондарь<a href="https://t.me/c/1220337955/487212.Дискуссия." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/487212.Дискуссия.</a> 
       Поведение Бизнес-способности (Capability Behavior) и 
-      Экземпляр Бизнес-способности (Capability Instance)<a href="https://t.me/c/1220337955/545713." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/545713.</a> Google. Руководство по ИИ-Агентам.<a href="https://t.me/c/1220337955/525714." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/525714.</a> Бизнес-экосистемы и фрактальные предприятия.
-      6.,7 - ссылки выше<a href="https://t.me/c/1220337955/724-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/724-</a> 
-      Организация будущего фрактальна<a href="https://t.me/c/1220337955/5688-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5688-</a> 
-      BIZBOK + фрактальное предприятие 
-      (условно бизнес-экосистема)<a href="https://t.me/c/1220337955/6130-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6130-</a> 
-      IT-платформа Haier: COSMOPlat<a href="https://t.me/c/1220337955/6131-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6131-</a> ZZJYT<a href="https://t.me/c/1220337955/6157-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6157-</a> 
-     Boston Consulting Group (BCG)
-     активно занимается фрактальными компаниями<a href="https://t.me/c/1220337955/6159-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6159-</a> 
-     Организация будущего фрактальна BCG, 2022 год<a href="https://t.me/c/1220337955/6160-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6160-</a> Связь SIAM с 
-     фрактальными компаниями и экосистемами<a href="https://t.me/c/1220337955/6161-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6161-</a>  
-     Стандарт Ecosystems Architecture от The Open Group<a href="https://t.me/c/1220337955/6504-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6504-</a> 
-     Школы генеральных конструкторов<a href="https://t.me/c/1220337955/6600-" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6600-</a> Компания Nestlé повышает скорость и ориентируется на потребителя благодаря масштабной модернизации цифровой инфраструктуры, которая обеспечивает внедрение искусственного интеллекта и автоматизации в больших масштабах
+      Экземпляр Бизнес-способности (Capability Instance)<a href="https://t.me/c/1220337955/545713.Google." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/545713.Google.</a> Руководство по ИИ-Агентам.<a href="https://t.me/c/1220337955/525714.Бизнес-экосистемы" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/525714.Бизнес-экосистемы</a> и фрактальные предприятия.
+      6.,7 - ссылки выше<a href="https://t.me/c/1220337955/724-Организация" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/724-Организация</a> будущего фрактальна<a href="https://t.me/c/1220337955/5688-BIZBOK" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5688-BIZBOK</a> + фрактальное предприятие 
+      (условно бизнес-экосистема)<a href="https://t.me/c/1220337955/6130-IT-платформа" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6130-IT-платформа</a> Haier: COSMOPlat<a href="https://t.me/c/1220337955/6131-ZZJYThttps://t.me/c/1220337955/6157-Boston" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6131-ZZJYThttps://t.me/c/1220337955/6157-Boston</a> Consulting Group (BCG)
+     активно занимается фрактальными компаниями<a href="https://t.me/c/1220337955/6159-Организация" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6159-Организация</a> будущего фрактальна BCG, 2022 год<a href="https://t.me/c/1220337955/6160-Связь" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6160-Связь</a> SIAM с 
+     фрактальными компаниями и экосистемами<a href="https://t.me/c/1220337955/6161-Стандарт" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6161-Стандарт</a> Ecosystems Architecture от The Open Group<a href="https://t.me/c/1220337955/6504-Школы" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6504-Школы</a> генеральных конструкторов<a href="https://t.me/c/1220337955/6600-Компания" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6600-Компания</a> Nestlé повышает скорость и ориентируется на потребителя благодаря масштабной модернизации цифровой инфраструктуры, которая обеспечивает внедрение искусственного интеллекта и автоматизации в больших масштабах
     
 1. ЦИФРОВАЯ ЭКОНОМИКА.
-    Юрий Грибанов<a href="https://t.me/c/1220337955/2509﻿P.S." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/2509﻿P.S.</a>
-1. Для получение возможности комментировать сообщения необходимо вступить в группу BIARCO/Лирика.
+    Юрий Грибанов<a href="https://t.me/c/1220337955/2509﻿P.S.1." class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/2509﻿P.S.1.</a> Для получение возможности комментировать сообщения необходимо вступить в группу BIARCO/Лирика.
 2. Периодически раз в полгода канал чистит &quot;мертвые души&quot;. Распознаются они через опрос.
 3. Мотивированные активные участники приглашаются в группу BIARCO25 для совместной работы над их темами более детально.
 9. Повторим - это не информационный канал, а клубный, то есть предполагается любая обратная связь.
@@ -721,7 +1652,7 @@ API: Около $0.15 за 1 млн входных токенов при исп�
                 <div id="text-7746" class="full-text">
                     <div class="text-content">⁉️#Info
 
-Web сайт (бета) для канала:<a href="https://elesha21-cell.github.io/BIARCO/#allКоллеги," class="text-link" target="_blank" rel="noopener noreferrer">https://elesha21-cell.github.io/BIARCO/#allКоллеги,</a> сегодня, 01.02.2026, мы даем Вам доступ к версии канала на web сайте.
+Web сайт (бета) для канала:<a href="https://elesha21-cell.github.io/BIARCO/#allКоллеги,сегодня," class="text-link" target="_blank" rel="noopener noreferrer">https://elesha21-cell.github.io/BIARCO/#allКоллеги,сегодня,</a> 01.02.2026, мы даем Вам доступ к версии канала на web сайте.
 Это связано с тем, что ленточная подача материала хороша для новостей, но не приемлема для актуальных материалов, с которыми нужно работать. Ценные материалы разбросаны по всему каналу и надеюсь, что спроектированный нами сайт поможет к осознанной работе над этими материалами.</div>
                     
                 </div>
@@ -1451,7 +2382,7 @@ Level 4 — Business Planning &amp; Logistics
                     <div class="text-content"><a href="https://bastyon.com/index?v=024e40f760c1780a594855e59c8ad2ad0ed6ee7255b0747c565b8fb9be7d6947&amp;video=1" class="text-link" target="_blank" rel="noopener noreferrer">https://bastyon.com/index?v=024e40f760c1780a594855e59c8ad2ad0ed6ee7255b0747c565b8fb9be7d6947&amp;video=1</a></div>
                     
                 </div>
-                <div class="post-summary">Не удалось извлечь текст для саммаризации</div>
+                <div class="post-summary">Bastyon</div>
                 <div class="post-tags">🏷️ </div>
             </div>
             
@@ -2191,7 +3122,7 @@ Learn Through Song построено полностью инструменто�
 
 Это приложение я делаю безплатным в Бастионе. В Гугл Плей и Апсторе оно будет платным!
 Пользуйтесь и зовите других, увлекательное изучение языка безплатно в Бастионе. Кстати, в Бастионе есть ещё приложения по увлекательному обучению языкам.
-Вот ссылка на приложение:<a href="https://bastyon.com/application?id=learn.song.appП.С," class="text-link" target="_blank" rel="noopener noreferrer">https://bastyon.com/application?id=learn.song.appП.С,</a> Баг со скроллингом ленты в Бастионе будет починен сегодня.
+Вот ссылка на приложение:<a href="https://bastyon.com/application?id=learn.song.appП.С,Баг" class="text-link" target="_blank" rel="noopener noreferrer">https://bastyon.com/application?id=learn.song.appП.С,Баг</a> со скроллингом ленты в Бастионе будет починен сегодня.
 
 В Бастионе будет много безплатных уникальных приложений и это одно из первых (вместе с Бартероном и другими).
 Пользуйтесь мини приложениями зовите других!</div>
@@ -2946,9 +3877,7 @@ Fidelity — один из крупнейших финансовых игрок�
                 <div class="post-date">📅 28 January 2026, 16:52</div>
                 <div class="post-heading" onclick="toggleFullText('text-7601')">Разработчик ERP «Галактика» нарастил выручку почти в 3 раза после затишья и «перезагрузки» https://www.tadviser.ru/a/786078</div>
                 <div id="text-7601" class="full-text">
-                    <div class="text-content">Разработчик ERP «Галактика» нарастил выручку почти в 3 раза после затишья и «перезагрузки»<a href="https://www.tadviser.ru/a/786078——————————" class="text-link" target="_blank" rel="noopener noreferrer">https://www.tadviser.ru/a/786078——————————</a> 
-
-TAdviser в MAX и ВК</div>
+                    <div class="text-content">Разработчик ERP «Галактика» нарастил выручку почти в 3 раза после затишья и «перезагрузки»<a href="https://www.tadviser.ru/a/786078——————————TAdviser" class="text-link" target="_blank" rel="noopener noreferrer">https://www.tadviser.ru/a/786078——————————TAdviser</a> в MAX и ВК</div>
                     
                 </div>
                 <div class="post-summary">1. Разработчиком ERP-системы является компания «Галактика».<br>2. Компания «Галактика» нарастила выручку почти в три раза.</div>
@@ -4132,11 +5061,11 @@ Google показал: умные часы могут измерять похо�
 
 Крипто и финансы
 
-В Беларуси появится 1-й крипто банк уже через полгода<a href="https://t.me/blockchainRF/12589Свежий" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12589Свежий</a> отчёт Grayscale о крипте в 2026<a href="https://t.me/blockchainRF/12559Дубай" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12559Дубай</a> запретил приватные токены и ввёл новые правила для стейблкоинов<a href="https://t.me/blockchainRF/12570Космос" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12570Космос</a> и инфраструктура ИИ
+В Беларуси появится 1-й крипто банк уже через полгода<a href="https://t.me/blockchainRF/12589Свежийотчёт" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12589Свежийотчёт</a> Grayscale о крипте в 2026<a href="https://t.me/blockchainRF/12559Дубайзапретил" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12559Дубайзапретил</a> приватные токены и ввёл новые правила для стейблкоинов<a href="https://t.me/blockchainRF/12570Космоси" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12570Космоси</a> инфраструктура ИИ
 
-2026 — год массового ввода гигаваттных ЦОДов<a href="https://t.me/blockchainRF/12558Axiom" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12558Axiom</a> Space начала строить дата-центр на орбите<a href="https://t.me/blockchainRF/12585Mitsubishi" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12585Mitsubishi</a> становится крупным клиентом коммерческой космической станции Starlab<a href="https://t.me/blockchainRF/12578Продукты" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12578Продукты</a> и сделки
+2026 — год массового ввода гигаваттных ЦОДов<a href="https://t.me/blockchainRF/12558AxiomSpace" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12558AxiomSpace</a> начала строить дата-центр на орбите<a href="https://t.me/blockchainRF/12585Mitsubishiстановится" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12585Mitsubishiстановится</a> крупным клиентом коммерческой космической станции Starlab<a href="https://t.me/blockchainRF/12578Продуктыи" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12578Продуктыи</a> сделки
 
-Марк Цукерберг купил китайский стартап Manus за $2 млрд<a href="https://t.me/blockchainRF/12561С" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12561С</a> очками Meta Ray-Ban можно печатать SMS жестами, без телефона<a href="https://t.me/blockchainRF/12567Основатель" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12567Основатель</a> Signal запускает приватного ИИ-помощника<a href="https://t.me/blockchainRF/12560*запрещенная" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12560*запрещенная</a> компания в РФ.</div>
+Марк Цукерберг купил китайский стартап Manus за $2 млрд<a href="https://t.me/blockchainRF/12561Сочками" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12561Сочками</a> Meta Ray-Ban можно печатать SMS жестами, без телефона<a href="https://t.me/blockchainRF/12567ОсновательSignal" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12567ОсновательSignal</a> запускает приватного ИИ-помощника<a href="https://t.me/blockchainRF/12560*запрещеннаякомпания" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/blockchainRF/12560*запрещеннаякомпания</a> в РФ.</div>
                     
                 </div>
                 <div class="post-summary">Контент отклонен фильтрами безопасности: тема признана чувствительной</div>
@@ -4257,7 +5186,7 @@ Disclaimer (англ.): 1) отказ от любых претензий на ч
                 <div class="post-heading" onclick="toggleFullText('text-7272')">Часть XII 💥Искусство системного мышления: Необходимые знания</div>
                 <div id="text-7272" class="full-text">
                     <div class="text-content">#SystThink
-Часть XII<a href="https://t.me/c/1220337955/6154💥Искусство" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6154💥Искусство</a> системного мышления: Необходимые знания
+Часть XII<a href="https://t.me/c/1220337955/6154💥Искусствосистемного" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6154💥Искусствосистемного</a> мышления: Необходимые знания
 о системах и творческом подходе к решению проблем / Джозеф О&#x27;Коннор и Иан Макдермотт
 
 Часть XIII
@@ -5288,18 +6217,6 @@ CBDC, ESG (Экология, Социальная сфера, Управлени
                 <div class="post-tags">🏷️ </div>
             </div>
             
-            <div class="post" data-tags='[]' data-date='2026-01-15'>
-                <div class="post-id">ID: 7194</div>
-                <div class="post-date">📅 15 January 2026, 19:08</div>
-                <div class="post-heading" onclick="toggleFullText('text-7194')">#</div>
-                <div id="text-7194" class="full-text">
-                    <div class="text-content">#</div>
-                    
-                </div>
-                <div class="post-summary">Текст слишком короткий для саммаризации</div>
-                <div class="post-tags">🏷️ </div>
-            </div>
-            
             <div class="post" data-tags='["SAP"]' data-date='2026-01-15'>
                 <div class="post-id">ID: 7193</div>
                 <div class="post-date">📅 15 January 2026, 19:02</div>
@@ -5750,12 +6667,12 @@ SAP обязуется обучить 12 миллионов человек к 20
             <div class="post" data-tags='[]' data-date='2026-01-14'>
                 <div class="post-id">ID: 7168</div>
                 <div class="post-date">📅 14 January 2026, 21:15</div>
-                <div class="post-heading" onclick="toggleFullText('text-7168')"></div>
+                <div class="post-heading" onclick="toggleFullText('text-7168')">Ссылка</div>
                 <div id="text-7168" class="full-text">
                     <div class="text-content"><a href="https://x.com/alex_prompter/status/2011368495519527347?s=20" class="text-link" target="_blank" rel="noopener noreferrer">https://x.com/alex_prompter/status/2011368495519527347?s=20</a></div>
                     
                 </div>
-                <div class="post-summary">Не удалось извлечь текст для саммаризации</div>
+                <div class="post-summary">Ссылка</div>
                 <div class="post-tags">🏷️ </div>
             </div>
             
@@ -5781,7 +6698,7 @@ SAP обязуется обучить 12 миллионов человек к 20
                     <div class="text-content"><a href="https://bastyon.com/index?v=56ce9deef09e24792e866bee5ac30544fac216a7397a7e8959a71383dd08c338&amp;video=1" class="text-link" target="_blank" rel="noopener noreferrer">https://bastyon.com/index?v=56ce9deef09e24792e866bee5ac30544fac216a7397a7e8959a71383dd08c338&amp;video=1</a></div>
                     
                 </div>
-                <div class="post-summary">Не удалось извлечь текст для саммаризации</div>
+                <div class="post-summary">Bastyon</div>
                 <div class="post-tags">🏷️ <span class="tag" onclick="filterByTag('Review', event)">Review — Review</span><span class="tag" onclick="filterByTag('NewReality', event)">NewReality — новая реальность</span></div>
             </div>
             
@@ -6065,7 +6982,7 @@ SAP обязуется обучить 12 миллионов человек к 20
                 <div id="text-7147" class="full-text">
                     <div class="text-content">#DigSociety #DigEc #EconomyHistory #Economy
 
-Пост 1:<a href="https://t.me/c/1220337955/6885Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост</a> 2:<a href="https://t.me/c/1220337955/6911Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6911Пост</a> 3, 4:<a href="https://t.me/c/1220337955/6926Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост</a> 5:<a href="https://t.me/c/1220337955/6934Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6934Пост</a> 6:<a href="https://t.me/c/1220337955/6962Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6962Пост</a> 7:<a href="https://t.me/c/1220337955/6972Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6972Пост</a> 8:<a href="https://t.me/c/1220337955/6995Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6995Пост</a> 9:<a href="https://t.me/c/1220337955/7011Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7011Пост</a> 10:<a href="https://t.me/c/1220337955/7032Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7032Пост</a> 11:<a href="https://t.me/c/1220337955/7051Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7051Пост</a> 12:<a href="https://t.me/c/1220337955/7076Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7076Пост</a> 13:<a href="https://t.me/c/1220337955/7090" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7090</a></div>
+Пост 1:<a href="https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3," class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3,</a> 4:<a href="https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051Пост12:https://t.me/c/1220337955/7076Пост13:https://t.me/c/1220337955/7090" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051Пост12:https://t.me/c/1220337955/7076Пост13:https://t.me/c/1220337955/7090</a></div>
                     
                 </div>
                 <div class="post-summary">1. Представлен список из 13 ссылок на посты в Telegram.<br>2. Все посты находятся в одном и том же чате или канале.<br>3. Каждая ссылка имеет уникальный номер поста.</div>
@@ -6763,7 +7680,7 @@ Meta → Scale AI: 49% за $14,3 млрд. Забирают CEO к себе в 
                 <div id="text-7090" class="full-text">
                     <div class="text-content">#DigSociety #DigEc #EconomyHistory #Economy
 
-Пост 1:<a href="https://t.me/c/1220337955/6885Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост</a> 2:<a href="https://t.me/c/1220337955/6911Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6911Пост</a> 3, 4:<a href="https://t.me/c/1220337955/6926Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост</a> 5:<a href="https://t.me/c/1220337955/6934Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6934Пост</a> 6:<a href="https://t.me/c/1220337955/6962Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6962Пост</a> 7:<a href="https://t.me/c/1220337955/6972Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6972Пост</a> 8:<a href="https://t.me/c/1220337955/6995Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6995Пост</a> 9:<a href="https://t.me/c/1220337955/7011Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7011Пост</a> 10:<a href="https://t.me/c/1220337955/7032Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7032Пост</a> 11:<a href="https://t.me/c/1220337955/7051Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7051Пост</a> 12:<a href="https://t.me/c/1220337955/7076" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7076</a></div>
+Пост 1:<a href="https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3," class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3,</a> 4:<a href="https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051Пост12:https://t.me/c/1220337955/7076" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051Пост12:https://t.me/c/1220337955/7076</a></div>
                     
                 </div>
                 <div class="post-summary">1. Представлен список из 12 ссылок на посты в Telegram.<br>2. Все посты находятся в одном и том же чате или канале.<br>3. Каждая ссылка пронумерована и имеет уникальный идентификатор.</div>
@@ -6991,7 +7908,7 @@ AP2 решает узкую задачу, как агент безопасно �
 Токенизация на права собственности на активы и выпуск под нее стейблкоинов - 
 это новые МИРОВЫЕ деньги. 
 В список ниже добавил вместо нефти электроэнергию по ЯРД технологиям ОСТРЕЦОВА, которой может воспользоваться BRICS. Но в РФ кто-то осознанно не дает ход этим технологиям.
-Дубай запретил приватные токены и ввёл новшества для стейблкоинов<a href="https://t.me/c/1220337955/7062«BLACKROCK»" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7062«BLACKROCK»</a> В АБУ-ДАБЕ: ВАЖНЫЕ СИГНАЛЫ ДЛЯ ГЛОБАЛЬНЫХ РЫНКОВ<a href="https://t.me/c/1220337955/5776Ларри" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5776Ларри</a> Финк: Мы находимся в начале токенизации всех активов<a href="https://t.me/c/1220337955/5014Недвижимость" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5014Недвижимость</a> — $ 670,6 трлн. Крупнейший актив на планете. Земля, дома, здания — основа всего.
+Дубай запретил приватные токены и ввёл новшества для стейблкоинов<a href="https://t.me/c/1220337955/7062«BLACKROCK»В" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7062«BLACKROCK»В</a> АБУ-ДАБЕ: ВАЖНЫЕ СИГНАЛЫ ДЛЯ ГЛОБАЛЬНЫХ РЫНКОВ<a href="https://t.me/c/1220337955/5776ЛарриФинк:" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5776ЛарриФинк:</a> Мы находимся в начале токенизации всех активов<a href="https://t.me/c/1220337955/5014Недвижимость—" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5014Недвижимость—</a> $ 670,6 трлн. Крупнейший актив на планете. Земля, дома, здания — основа всего.
 Нефть — $ 103,0 трлн. Кровь экономики. Без нее не работает ни транспорт, ни промышленность.
 Китайский юань — $ 48,2 трлн. Валюта второй экономики мира.
 Золото — $ 29,1 трлн. Вечная ценность. Базовый актив для центральных банков и инвесторов.
@@ -7107,7 +8024,7 @@ NVIDIA — $ 8,15 трлн (взрыв ИИ-бума).</div>
                 <div id="text-7076" class="full-text">
                     <div class="text-content">#DigSociety #DigEc #EconomyHistory #Economy
 
-Пост 1:<a href="https://t.me/c/1220337955/6885Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост</a> 2:<a href="https://t.me/c/1220337955/6911Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6911Пост</a> 3, 4:<a href="https://t.me/c/1220337955/6926Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост</a> 5:<a href="https://t.me/c/1220337955/6934Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6934Пост</a> 6:<a href="https://t.me/c/1220337955/6962Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6962Пост</a> 7:<a href="https://t.me/c/1220337955/6972Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6972Пост</a> 8:<a href="https://t.me/c/1220337955/6995Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6995Пост</a> 9:<a href="https://t.me/c/1220337955/7011Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7011Пост</a> 10:<a href="https://t.me/c/1220337955/7032Пост" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7032Пост</a> 11:<a href="https://t.me/c/1220337955/7051" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7051</a></div>
+Пост 1:<a href="https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3," class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6885Пост2:https://t.me/c/1220337955/6911Пост3,</a> 4:<a href="https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/6926Пост5:https://t.me/c/1220337955/6934Пост6:https://t.me/c/1220337955/6962Пост7:https://t.me/c/1220337955/6972Пост8:https://t.me/c/1220337955/6995Пост9:https://t.me/c/1220337955/7011Пост10:https://t.me/c/1220337955/7032Пост11:https://t.me/c/1220337955/7051</a></div>
                     
                 </div>
                 <div class="post-summary">1. Представлен список из 11 постов.<br>2. Каждый пост имеет уникальный номер и ссылку на источник в формате Telegram.</div>
@@ -7335,7 +8252,7 @@ Claude for Healthcare в первую очередь для медицински
 Для рынка: Это сигнал крупным фондам и банкам. Они боятся «грязных» денег. Теперь, когда Дубай сделал правила прозрачными, эти гиганты могут смело заводить туда миллиарды долларов, что обычно толкает рынок вверх.
 Простыми словами: Крипта в Дубае окончательно «надела костюм и галстук». Стало скучнее, но безопаснее и солиднее.
 
-Для памяти - Ларри Финк (глава WEF, BlackRock) провозгласил, что Абу-Даби будет центром его империи. Новость выше. Его идея перевести всех на новый вид мировых денег-стейблкоинов на основе токенов на владение активами до конца 2026. Земля, месторождения, акции, нефтянные фьючерцы и тд. Далее буудет сообщение о стоимости мировых актиов.<a href="https://t.me/c/1220337955/5776По" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5776По</a> моим предположениям Ларри будет начинать эксперимент с Украины. 
+Для памяти - Ларри Финк (глава WEF, BlackRock) провозгласил, что Абу-Даби будет центром его империи. Новость выше. Его идея перевести всех на новый вид мировых денег-стейблкоинов на основе токенов на владение активами до конца 2026. Земля, месторождения, акции, нефтянные фьючерцы и тд. Далее буудет сообщение о стоимости мировых актиов.<a href="https://t.me/c/1220337955/5776Помоим" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/5776Помоим</a> предположениям Ларри будет начинать эксперимент с Украины. 
 Возможно об этом он заявит в ближайшем 19 января форуме в Давосе.
 То есть он оцифрует всю землю и месторождения Украины и выпустит монеты с обеспечением этих активов в международный оборот!!!
 Продолжение:<a href="https://t.me/c/1220337955/7080" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7080</a></div>
@@ -7351,7 +8268,7 @@ Claude for Healthcare в первую очередь для медицински
                 <div class="post-heading" onclick="toggleFullText('text-7060')">1-ое описание: https://t.me/c/1220337955/7028</div>
                 <div id="text-7060" class="full-text">
                     <div class="text-content">#BisEcoSystem #BisArch 
-1-ое описание:<a href="https://t.me/c/1220337955/7028Создание" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7028Создание</a> фрактального преимущества в фрагментирующемся мире
+1-ое описание:<a href="https://t.me/c/1220337955/7028Созданиефрактального" class="text-link" target="_blank" rel="noopener noreferrer">https://t.me/c/1220337955/7028Созданиефрактального</a> преимущества в фрагментирующемся мире
 (BCG, Ноябрь 2021 г. Ариндам Бхаттачарья, Ханс-Пауль Бюркнер и Андреа Галлего)
 2-ое описание
 
