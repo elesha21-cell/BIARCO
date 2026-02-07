@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]  # Запуск при пуше в основную ветку
   workflow_dispatch:      # Позволяет запускать процесс вручную через вкладку Actions
+on:
+  schedule:
+    # Запускать каждый день в 05:00 UTC (8:00 МСК)
+    - cron: '0 5 * * *'
+  workflow_dispatch: # Позволяет запускать вручную
 
 jobs:
   build:
