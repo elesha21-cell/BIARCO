@@ -1,0 +1,47 @@
+name: Telegram Data Processing
+
+on:
+  push:
+    branches: [ main ]  # Запуск при пуше в основную ветку
+  workflow_dispatch:      # Позволяет запускать процесс вручную через вкладку Actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12' # Укажите нужную версию Python
+
+      - name: Install dependencies
+        run: |
+          pip install python-telegram-bot python-dotenv
+          # Если у вас есть файл requirements.txt, лучше использовать:
+          # pip install -r requirements.txt
+
+      - name: Run processing scripts
+        env:
+          # Если скрипты используют переменные окружения (из .env), 
+          # добавьте их в Settings -> Secrets вашего репозитория
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
+	  YANDEX_CATALOG_ID: ${{ secrets.YANDEX_CATALOG_ID }}
+        run: |
+          python 1_messages_31_01_26_20_49.py
+          python 2a_digest_data_26_01_26_13_23.py
+          python 2b_digest_itogi_30_01_26_23_25.py
+          python 2c_rez_ind_03_02_26_11_53.py
+          python 3_index_03_02_26_12_55.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Auto-update data from Scripts" || echo "No changes to commit"
+          git push
