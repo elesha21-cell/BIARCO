@@ -4,9 +4,8 @@ on:
   push:
     branches: [ main ]
   schedule:
-    # Запускать каждый день в 05:00 UTC (8:00 МСК)
     - cron: '0 5 * * *'
-  workflow_dispatch: # Позволяет запускать вручную
+  workflow_dispatch:
 
 jobs:
   build:
@@ -19,12 +18,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12'
+          python-version: '3.11' # Рекомендую 3.11 для лучшей совместимости с pymorphy2
 
       - name: Install dependencies
         run: |
-          pip install python-telegram-bot python-dotenv requests pandas xlrd yt-dlp openpyxl setuptools yake stop-words beautifulsoup4 lxml groq pymorphy2 pymorphy2-dicts-ru
-          #pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          pip install setuptools==69.5.1
+          pip install python-telegram-bot python-dotenv requests pandas xlrd yt-dlp openpyxl yake stop-words beautifulsoup4 lxml groq pymorphy2 pymorphy2-dicts-ru
 
       - name: Run processing scripts
         env:
@@ -33,7 +33,16 @@ jobs:
           YANDEX_CATALOG_ID: ${{ secrets.YANDEX_CATALOG_ID }}
           HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
         run: |
+          # Запуск первого скрипта
           python 1_messages_31_01_26_20_49.py
+          
+          # Проверка: если файл не создался (нет новых сообщений), создаем пустой список, чтобы другие скрипты не выдавали ошибку
+          if [ ! -f messages.json ]; then
+            echo "[]" > messages.json
+            echo "Файл messages.json отсутствовал, создан пустой список."
+          fi
+
+          # Запуск остальных скриптов
           python 2a_digest_data_26_01_26_13_23.py
           python 2b_digest_itogi_30_01_26_23_25.py
           python 2c_rez_ind_03_02_26_11_53.py
