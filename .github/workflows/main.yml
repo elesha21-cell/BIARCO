@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install python-telegram-bot python-dotenv requests pandas xlrd yt-dlp openpyxl setuptools yake stop-words beautifulsoup4 lxml groq pymorphy2-dicts-ru
+          pip install python-telegram-bot python-dotenv requests pandas xlrd yt-dlp openpyxl setuptools yake stop-words beautifulsoup4 lxml groq pymorphy2-dicts-ru pymorphy2
           #pip install -r requirements.txt
 
       - name: Run processing scripts
@@ -31,6 +31,7 @@ jobs:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           YANDEX_API_KEY: ${{ secrets.YANDEX_API_KEY }}
           YANDEX_CATALOG_ID: ${{ secrets.YANDEX_CATALOG_ID }}
+          HUGGINGFACE_API_KEY: ${{ secrets.HUGGINGFACE_API_KEY }}
         run: |
           python 1_messages_31_01_26_20_49.py
           python 2a_digest_data_26_01_26_13_23.py
