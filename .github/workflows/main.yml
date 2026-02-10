@@ -10,10 +10,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Добавляем права на запись
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # Обновлено до v4
 
       - name: Set up Python
         uses: actions/setup-python@v4
