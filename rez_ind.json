@@ -1,5 +1,83 @@
 [
   {
+    "id": 8449,
+    "chat_id": -1001220337955,
+    "date": "2026-02-21T13:24:08+00:00",
+    "type": "channel_post",
+    "caption": "НАСА выбрало дату запуска ракеты-носителя Artemis II SLS к Луне — 3 марта\n\nЭто будет первая пилотируемая миссия вокруг Луны со времен миссий \"Аполлон\".",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACIQFpmbH3AAFA5zZHfWoTLQE4kTkcJLsAAvwYaxsqJNBI7UsOYI5N9P0BAAMCAAN5AAM6BA",
+        "file_unique_id": "AQAD_BhrGyok0Eh-",
+        "width": 1280,
+        "height": 720,
+        "file_size": 160997,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_179.jpg"
+      }
+    ],
+    "tags": [
+      "Space"
+    ],
+    "name": [
+      "Space"
+    ],
+    "text": "НАСА выбрало дату запуска ракеты-носителя Artemis II SLS к Луне — 3 марта\n\nЭто будет первая пилотируемая миссия вокруг Луны со времен миссий \"Аполлон\".",
+    "heading": "НАСА выбрало дату запуска ракеты-носителя Artemis II SLS к Луне — 3 марта",
+    "summary": "1. НАСА выбрало дату запуска ракеты-носителя Artemis II SLS — 3 марта.\n2. Artemis II станет первой пилотируемой миссией к Луне со времён миссий «Аполлон»."
+  },
+  {
+    "id": 8447,
+    "chat_id": -1001220337955,
+    "date": "2026-02-21T10:48:53+00:00",
+    "type": "channel_post",
+    "caption": "В нашей вселенной telegram все еще работает и это позволяет мне оттягивать прикручивание e-mail рассылки к этому блогу... \n\nНовое сообщение в блоге:  Старый добрый RSS/ATOM",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACIP9pmY2VlPy_dRfwV6M3iHLZYiD-aQACMBRrGzsm0Eh0cEQGWfFOsQEAAwIAA3kAAzoE",
+        "file_unique_id": "AQADMBRrGzsm0Eh-",
+        "width": 1280,
+        "height": 706,
+        "file_size": 144538,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_178.jpg"
+      }
+    ],
+    "tags": [
+      "ITArchitect"
+    ],
+    "name": [
+      "ИТ архитектура"
+    ],
+    "text": "В нашей вселенной telegram все еще работает и это позволяет мне оттягивать прикручивание e-mail рассылки к этому блогу... \n\nНовое сообщение в блоге:  Старый добрый RSS/ATOM",
+    "heading": "В нашей вселенной telegram все еще работает и это позволяет мне оттягивать прикручивание e-mail рассылки к этому блогу...",
+    "summary": "1. В Telegram всё ещё работает.\n2. Автор блога оттягивает подключение email-рассылки.\n3. В блоге опубликовано новое сообщение о RSS/ATOM."
+  },
+  {
+    "id": 8445,
+    "chat_id": -1001220337955,
+    "date": "2026-02-21T10:39:35+00:00",
+    "type": "channel_post",
+    "caption": "Китайцы и тут впереди - аналог Neuralink Илона Маска из Поднебесной чипировал уже 50 людей, втрое больше чему Маска.\n\nNeuroXess, ко всему прочему, не требует вживления чипов в мозг - вместо него, на поверхность мозга имплантируют специальную сетку.\n\nПациенты также как у Маска в итоге могут работать с компьютером силой мысли.\n\nКанал  Цифровой Апокалипсис",
+    "video": {
+      "file_id": "BAACAgIAAx0CSLzhIwACIP1pmYtnlAKIgzkcy7DxQAfMAhloHQACUosAAs57yEhaTSti0pQ2ZToE",
+      "file_unique_id": "AgADUosAAs57yEg",
+      "width": 1280,
+      "height": 720,
+      "duration": 15,
+      "mime_type": "video/mp4",
+      "file_size": 1265363,
+      "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/videos/file_177.mp4"
+    },
+    "tags": [
+      "Neuralink"
+    ],
+    "name": [
+      "Neuralink"
+    ],
+    "text": "Китайцы и тут впереди - аналог Neuralink Илона Маска из Поднебесной чипировал уже 50 людей, втрое больше чему Маска.\n\nNeuroXess, ко всему прочему, не требует вживления чипов в мозг - вместо него, на поверхность мозга имплантируют специальную сетку.\n\nПациенты также как у Маска в итоге могут работать с компьютером силой мысли.\n\nКанал  Цифровой Апокалипсис",
+    "heading": "Китайцы и тут впереди - аналог Neuralink Илона Маска из Поднебесной чипировал уже 50 людей, втрое больше чему Маска.",
+    "summary": "1. Китайская компания NeuroXess провела чипирование 50 человек, что втрое больше, чем у аналога в лице Neuralink Илона Маска.\n2. Для работы с компьютером силой мысли используется специальная сетка, имплантируемая на поверхность мозга, а не вживление чипов в мозг.\n3. Пациенты могут работать с компьютером силой мысли после процедуры."
+  },
+  {
     "id": 8443,
     "chat_id": -1001220337955,
     "date": "2026-02-20T21:11:56+00:00",
