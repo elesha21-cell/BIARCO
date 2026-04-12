@@ -24059,5 +24059,84 @@
     "text": "🚨 Another proof that Telegram’s Secret Chats are the most secure way to communicate. The FBI got access to deleted messages in US gov-funded app Signal just by checking the notifications data. On Telegram, Secret Chats never show message content in push notifications, so, unlike Signal and other supposedly secure apps, we don’t have this risk. \n\n🔛 Turning off notification previews won’t make you safe if you use those apps, because you never know whether the people you message have done the same. So Telegram’s Secret Chats design that forces the absence of notifications previews is the only solution. Obviously, this hurts usability, that’s why Telegram has two types of chats: Secret and Cloud.\n\n🤹 In general, apps that are trying to provide both security and usability in ONE type of chat end up with ugly compromises — like WhatsApp leaking 95% of messages via unencrypted backups or Signal exposing messages through push notifications. The only way is to have two types of chats: 100% usable (Cloud) and 100% secure (Secret).\n\n📆 12+ years passed since Telegram started the end-to-end encryption revolution by launching Secret Chats. Since then, dozens of apps followed suit and made bold claims about their encryption. But no app has been able to beat our Cloud Chats in usability and our Secret Chats in security. Their try to mix the two and get neither.",
     "tags": [],
     "name": []
+  },
+  {
+    "id": 10300,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T10:58:31+00:00",
+    "type": "channel_post",
+    "text": "Франция готовит отказ от Windows и других технологий не из ЕС, переводя государственные системы на европейские решения. По данным европейских СМИ, правительство поручило всем министерствам до осени представить планы импортозамещения, включая переход на альтернативные инструменты для совместной работы, антивирусное ПО, базы данных и решения в сфере искусственного интеллекта.",
+    "tags": [
+      "IT"
+    ],
+    "name": [
+      "информационные технологии"
+    ]
+  },
+  {
+    "id": 10302,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T10:59:42+00:00",
+    "type": "channel_post",
+    "text": "Компании массово используют ИИ для расчёта минимальной зарплаты кандидатов, анализируя соцсети, финансы и поведение, чтобы предложить сумму, на которую человек согласится, — СМИ. Эта практика «surveillance wages» уже применяется в логистике, ритейле, медицине и сервисе и приводит к разной оплате за одинаковую работу.",
+    "tags": [
+      "AI",
+      "HRM"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "управление человеческим капиталом"
+    ]
+  },
+  {
+    "id": 10304,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T12:52:32+00:00",
+    "type": "channel_post",
+    "text": "🔐 We’ve upgraded Telegram’s anti-censorship protocol. Users in Russia are advised to update their apps to stay connected despite the ban.\n\n⚠️ Some other advice: stock up on several VPNs/proxies in advance, help your friends and family do the same, and avoid using Russian apps while connected to a VPN (they may report your VPN to authorities for blocking).\n\n💪  I’m glad to see most people are already doing this. Thanks to this Digital Resistance, Telegram usage in Russia has remained stable over the past week despite the full ban.\n\n🔥 Keep it up. On our side, we’ll continue improving Telegram’s decentralized anti-censorship tech.",
+    "tags": [
+      "SocialMedia"
+    ],
+    "name": [
+      "SocialMedia"
+    ]
+  },
+  {
+    "id": 10305,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T15:04:44+00:00",
+    "type": "channel_post",
+    "text": "#AI #Review\n\nhttps://youtu.be/b-PxSLQoU-I?si=G7SlAuF5AG1uDDt_",
+    "tags": [
+      "AI",
+      "Review"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "Review"
+    ]
+  },
+  {
+    "id": 10307,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T15:05:30+00:00",
+    "type": "channel_post",
+    "caption": "Обнаружить VPN на iPhone практически нереально — Минцифры РФ.\n\nВсё благодаря тому, что iOS изолирует сторонние приложения друг от друга, поэтому следить за пользователями становится сложнее.\n\nТГ Канал  Цифровой Апокалипсис\nМАХ Цифровой Апокалипсис",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACKENp2mM6lahOuSoMgkBbHULucis8EQAC6RNrG_rL0ErMBTmnQFoYBgEAAwIAA3kAAzsE",
+        "file_unique_id": "AQAD6RNrG_rL0Ep-",
+        "width": 918,
+        "height": 1280,
+        "file_size": 110981,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_503.jpg"
+      }
+    ],
+    "tags": [
+      "OS"
+    ],
+    "name": [
+      "ОС"
+    ]
   }
 ]

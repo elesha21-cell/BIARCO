@@ -1,5 +1,95 @@
 [
   {
+    "id": 10307,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T15:05:30+00:00",
+    "type": "channel_post",
+    "caption": "Обнаружить VPN на iPhone практически нереально — Минцифры РФ.\n\nВсё благодаря тому, что iOS изолирует сторонние приложения друг от друга, поэтому следить за пользователями становится сложнее.\n\nТГ Канал  Цифровой Апокалипсис\nМАХ Цифровой Апокалипсис",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACKENp2mM6lahOuSoMgkBbHULucis8EQAC6RNrG_rL0ErMBTmnQFoYBgEAAwIAA3kAAzsE",
+        "file_unique_id": "AQAD6RNrG_rL0Ep-",
+        "width": 918,
+        "height": 1280,
+        "file_size": 110981,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_503.jpg"
+      }
+    ],
+    "tags": [
+      "OS"
+    ],
+    "name": [
+      "ОС"
+    ],
+    "text": "Обнаружить VPN на iPhone практически нереально — Минцифры РФ.\n\nВсё благодаря тому, что iOS изолирует сторонние приложения друг от друга, поэтому следить за пользователями становится сложнее.\n\nТГ Канал  Цифровой Апокалипсис\nМАХ Цифровой Апокалипсис",
+    "heading": "Обнаружить VPN на iPhone практически нереально — Минцифры РФ.",
+    "summary": "Ошибка при генерации саммари: 403 Client Error: Forbidden for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
+    "id": 10305,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T15:04:44+00:00",
+    "type": "channel_post",
+    "text": "#AI #Review\n\nhttps://youtu.be/b-PxSLQoU-I?si=G7SlAuF5AG1uDDt_",
+    "tags": [
+      "AI",
+      "Review"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "Review"
+    ],
+    "heading": "Видео с Youtube",
+    "summary": "Видео с Youtube"
+  },
+  {
+    "id": 10304,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T12:52:32+00:00",
+    "type": "channel_post",
+    "text": "🔐 We’ve upgraded Telegram’s anti-censorship protocol. Users in Russia are advised to update their apps to stay connected despite the ban.\n\n⚠️ Some other advice: stock up on several VPNs/proxies in advance, help your friends and family do the same, and avoid using Russian apps while connected to a VPN (they may report your VPN to authorities for blocking).\n\n💪  I’m glad to see most people are already doing this. Thanks to this Digital Resistance, Telegram usage in Russia has remained stable over the past week despite the full ban.\n\n🔥 Keep it up. On our side, we’ll continue improving Telegram’s decentralized anti-censorship tech.",
+    "tags": [
+      "SocialMedia"
+    ],
+    "name": [
+      "SocialMedia"
+    ],
+    "heading": "🔐 We’ve upgraded Telegram’s anti-censorship protocol.",
+    "summary": "Ошибка при генерации саммари: 403 Client Error: Forbidden for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
+    "id": 10302,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T10:59:42+00:00",
+    "type": "channel_post",
+    "text": "Компании массово используют ИИ для расчёта минимальной зарплаты кандидатов, анализируя соцсети, финансы и поведение, чтобы предложить сумму, на которую человек согласится, — СМИ. Эта практика «surveillance wages» уже применяется в логистике, ритейле, медицине и сервисе и приводит к разной оплате за одинаковую работу.",
+    "tags": [
+      "AI",
+      "HRM"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "управление человеческим капиталом"
+    ],
+    "heading": "Компании массово используют ИИ для расчёта минимальной зарплаты кандидатов, анализируя соцсети, финансы и поведение, чтобы предложить сумму, на которую человек согласится, — СМИ.",
+    "summary": "Ошибка при генерации саммари: 403 Client Error: Forbidden for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
+    "id": 10300,
+    "chat_id": -1001220337955,
+    "date": "2026-04-11T10:58:31+00:00",
+    "type": "channel_post",
+    "text": "Франция готовит отказ от Windows и других технологий не из ЕС, переводя государственные системы на европейские решения. По данным европейских СМИ, правительство поручило всем министерствам до осени представить планы импортозамещения, включая переход на альтернативные инструменты для совместной работы, антивирусное ПО, базы данных и решения в сфере искусственного интеллекта.",
+    "tags": [
+      "IT"
+    ],
+    "name": [
+      "информационные технологии"
+    ],
+    "heading": "Франция готовит отказ от Windows и других технологий не из ЕС, переводя государственные системы на европейские решения.",
+    "summary": "Ошибка при генерации саммари: 403 Client Error: Forbidden for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
     "id": 10298,
     "chat_id": -1001220337955,
     "date": "2026-04-10T22:29:32+00:00",
