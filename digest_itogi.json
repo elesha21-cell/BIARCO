@@ -19541,7 +19541,7 @@
       "Service"
     ],
     "heading": "Walmart отказался от ИИ-агента для покупок от OpenAI из-за низкой конверсии.",
-    "summary": "Ошибка при генерации саммари: 403 Client Error: Forbidden for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Ошибка при генерации саммари: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
   },
   {
     "id": 9617,
