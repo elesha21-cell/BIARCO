@@ -35928,5 +35928,28 @@
     "name": [
       "криптовалюта"
     ]
+  },
+  {
+    "id": 11521,
+    "chat_id": -1001220337955,
+    "date": "2026-05-16T15:16:17+00:00",
+    "type": "channel_post",
+    "caption": "😮 Создатели OpenClaw используют токенов на 1,3 миллиона долларов в месяц\n\nОдновременно у команды из 3-6 разработчиков запущена сотня агентов, которые ревьювят все пулреквесты, коммиты и ишью, ну и конечно же пишут весь код. Агенты слушают митинги команды и начинают сразу имплементировать обсуждаемые фичи. Такая цена во многом из-за fast режима, который в 2.5x дороже обычного. Ну и разумеется за всё платит OpenAI, где работает главный разработчик.\n\nПолное описание воркфлоу\n\n@ai_newz",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACLQFqCIpBBYr2ZTNratczTQqe-ipYmwACGBdrG5niQUiMHCDlcl0bjAEAAwIAA3kAAzsE",
+        "file_unique_id": "AQADGBdrG5niQUh-",
+        "width": 1280,
+        "height": 1184,
+        "file_size": 115174,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_757.jpg"
+      }
+    ],
+    "tags": [
+      "AIagentOpenClaw"
+    ],
+    "name": [
+      "AIagentOpenClaw"
+    ]
   }
 ]
