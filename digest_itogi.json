@@ -58241,8 +58241,8 @@
     "name": [
       "SAPhistory"
     ],
-    "heading": "Марко Буркхардт: Я рад, что вернулся",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "heading": "",
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 12962,
@@ -76923,7 +76923,7 @@
       "Science"
     ],
     "heading": "На пороге следующей войны",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 14533,
