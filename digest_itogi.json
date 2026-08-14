@@ -7229,7 +7229,7 @@
     "name": [
       "экономика"
     ],
-    "heading": "VK Видео — смотреть онлайн бесплатно | VK Видео",
+    "heading": "‌‌‌‌‌‌‌‌‌‌‌Загружается...‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -36075,7 +36075,7 @@
       "SocialPhilosophy",
       "бизнес-экосистемы"
     ],
-    "heading": "‌‌‌‌‌‌‌‌‌‌‌Загружается...‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌",
+    "heading": "VK Видео — смотреть онлайн бесплатно | VK Видео",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -36878,7 +36878,7 @@
       "SAP"
     ],
     "heading": "",
-    "summary": "Не удалось извлечь текст для саммаризации"
+    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
     "id": 11210,
