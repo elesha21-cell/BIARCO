@@ -7229,7 +7229,7 @@
     "name": [
       "экономика"
     ],
-    "heading": "‌‌‌‌‌‌‌‌‌‌‌Загружается...‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌",
+    "heading": "VK Видео — смотреть онлайн бесплатно | VK Видео",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -46477,8 +46477,8 @@
     "text": "https://www.facebook.com/100001704448953/posts/27131236153183166/?app=fbl",
     "tags": [],
     "name": [],
-    "heading": "Mona Romenska - Берни Сандерс взял интервью у ИИ. И...",
-    "summary": "Не удалось извлечь текст для саммаризации"
+    "heading": "Explore the thingsyou love.Log into FacebookEmail or mobile numberPasswordLog inForgot password?Create new account",
+    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
     "id": 11969,
@@ -90313,6 +90313,23 @@
     "text": "https://www.youtube.com/watch?v=2ZJLXEi9N9E",
     "tags": [],
     "name": [],
+    "heading": "Видео с Youtube",
+    "summary": "Видео с Youtube"
+  },
+  {
+    "id": 15630,
+    "chat_id": -1001220337955,
+    "date": "2026-08-17T10:28:32+00:00",
+    "type": "channel_post",
+    "text": "#Internet #ITBusines\n\nhttps://youtu.be/TDVVVa-3J-c?is=lP037Hqg3LqUZWyw",
+    "tags": [
+      "Internet",
+      "ITBusines"
+    ],
+    "name": [
+      "интернет",
+      "бизнес ИТ компаний"
+    ],
     "heading": "Видео с Youtube",
     "summary": "Видео с Youtube"
   }

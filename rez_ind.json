@@ -1,5 +1,22 @@
 [
   {
+    "id": 15630,
+    "chat_id": -1001220337955,
+    "date": "2026-08-17T10:28:32+00:00",
+    "type": "channel_post",
+    "text": "#Internet #ITBusines\n\nhttps://youtu.be/TDVVVa-3J-c?is=lP037Hqg3LqUZWyw",
+    "tags": [
+      "Internet",
+      "ITBusines"
+    ],
+    "name": [
+      "интернет",
+      "бизнес ИТ компаний"
+    ],
+    "heading": "Видео с Youtube",
+    "summary": "Видео с Youtube"
+  },
+  {
     "id": 15629,
     "chat_id": -1001220337955,
     "date": "2026-08-11T19:52:39+00:00",
