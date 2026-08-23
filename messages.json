@@ -68612,5 +68612,18 @@
         "date": "2026-08-19T15:46:17+00:00",
         "type": "channel_post",
         "text": "https://youtu.be/1SqlganlxDI?is=Q4WxcphdecwAnrRP"
+    },
+    {
+        "id": 15633,
+        "chat_id": -1001220337955,
+        "date": "2026-08-22T09:55:18+00:00",
+        "type": "channel_post",
+        "text": "https://habr.com/ru/news/1073018/"
+    },
+    {
+        "id": 15634,
+        "chat_id": -1001220337955,
+        "date": "2026-08-22T09:55:58+00:00",
+        "type": "channel_post"
     }
 ]

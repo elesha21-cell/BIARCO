@@ -36877,7 +36877,7 @@
     "name": [
       "SAP"
     ],
-    "heading": "SAP Sapphire Virtual in 2026 | SAP Events",
+    "heading": "",
     "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
@@ -90354,5 +90354,26 @@
     "name": [],
     "heading": "Видео с Youtube",
     "summary": "Видео с Youtube"
+  },
+  {
+    "id": 15633,
+    "chat_id": -1001220337955,
+    "date": "2026-08-22T09:55:18+00:00",
+    "type": "channel_post",
+    "text": "https://habr.com/ru/news/1073018/",
+    "tags": [],
+    "name": [],
+    "heading": "Япония пыталась создать операционную систему для всего мира, но затем вмешалось правительство США / Хабр",
+    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
+    "id": 15634,
+    "chat_id": -1001220337955,
+    "date": "2026-08-22T09:55:58+00:00",
+    "type": "channel_post",
+    "tags": [],
+    "name": [],
+    "heading": "",
+    "summary": "Не удалось извлечь текст для саммаризации"
   }
 ]
