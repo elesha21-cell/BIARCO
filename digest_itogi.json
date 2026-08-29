@@ -9699,7 +9699,7 @@
       "геоинформационная система",
       "аналитика"
     ],
-    "heading": "",
+    "heading": "Цифровизация в агропромышленном комплексе России",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -44907,7 +44907,7 @@
     "tags": [],
     "name": [],
     "heading": "From Data to Decisions: Storytelling, BRM and Turning Information into Action - BRM Institute",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 11845,
@@ -46477,8 +46477,8 @@
     "text": "https://www.facebook.com/100001704448953/posts/27131236153183166/?app=fbl",
     "tags": [],
     "name": [],
-    "heading": "Explore the thingsyou love.Log into FacebookEmail or mobile numberPasswordLog inForgot password?Create new account",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "heading": "Mona Romenska - Берни Сандерс взял интервью у ИИ. И...",
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 11969,
@@ -93289,5 +93289,20 @@
     "name": [],
     "heading": "Всей своей враждебной сутью отвлекают и вредят — кормят, поят нас бермутью про таинственный квадрат!",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+  },
+  {
+    "id": 15863,
+    "chat_id": -1001220337955,
+    "date": "2026-08-28T22:48:09+00:00",
+    "type": "channel_post",
+    "text": "#ITBusinesUSSR\n\nhttps://www.youtube.com/watch?v=Qj6mcwv5SCQ",
+    "tags": [
+      "ITBusinesUSSR"
+    ],
+    "name": [
+      "бизнес ИТ в СССР"
+    ],
+    "heading": "Видео с Youtube",
+    "summary": "Видео с Youtube"
   }
 ]
