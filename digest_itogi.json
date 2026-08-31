@@ -9700,7 +9700,7 @@
       "аналитика"
     ],
     "heading": "Цифровизация в агропромышленном комплексе России",
-    "summary": "Не удалось извлечь текст для саммаризации"
+    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
     "id": 8833,
@@ -36877,7 +36877,7 @@
     "name": [
       "SAP"
     ],
-    "heading": "",
+    "heading": "SAP Sapphire Virtual in 2026 | SAP Events",
     "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
