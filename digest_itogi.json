@@ -9700,7 +9700,7 @@
       "аналитика"
     ],
     "heading": "Цифровизация в агропромышленном комплексе России",
-    "summary": "Не удалось извлечь текст для саммаризации"
+    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
     "id": 8833,
@@ -26833,7 +26833,7 @@
     "text": "https://e3value-user-manual.thevalueengineers.nl/",
     "tags": [],
     "name": [],
-    "heading": "E3value User Guide\nDesigning Your Ecosystem in a Digital World",
+    "heading": "E3value User Guide\nDesigning Your Ecosystem in a Digital World\nEcosphere Edition",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
