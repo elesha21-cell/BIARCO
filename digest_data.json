@@ -96720,5 +96720,479 @@
       "здоровье",
       "Research"
     ]
+  },
+  {
+    "id": 17135,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T11:13:37+00:00",
+    "type": "channel_post",
+    "text": "#Controlling\n\nВ 90-х меня учили калькулировать себестоимость. Слово «маржинальность» тогда почти не звучало, а распределять коммерческие расходы по продуктам и клиентам на 90-м счёте я ещё много лет считал искусственной и малозначимой задачей. Ирония в том, что как раз в 1990-м Робин Купер предложил смотреть на затраты совсем иначе.\n\nЕсли упростить, путь к этому взгляду - лестница из четырёх ступенек.\n\nСтупенька 1. Себестоимость - это производство. На переменные и постоянные делят только затраты основного производства, остальное - накладные, которые размазывают одной базой, например пропорционально зарплате основных рабочих. В итоге массовый продукт молча оплачивает переналадки мелкосерийного.\n\nСтупенька 2. Деление выходит за пределы основного производства. Впервые я увидел это на заводе Ford в 2007-м: на постоянные и переменные там делили затраты вспомогательных функций и даже административные.\n\nСтупенька 3. В фокус попадают коммерческие расходы. Параллельно, с начала 2000-х, на рынках электроники и FMCG пошли в ход ретро-бонусы, price protection и другие механики, и методологи не знали, как квалифицировать их в финансовом, управленческом и налоговом учёте. Споры были жаркими, устаканивалось всё больше десяти лет.\n\nТогда же выросли торговые сети, для которых дистрибуция и есть основное производство: крупные распределительные центры, тонкая оптимизация транспорта. Деление на «производственные» и «коммерческие» расходы здесь теряет смысл. Нужна была новая оптика.\n\nСтупенька 4. Такая оптика к тому времени уже была. Иерархия затрат Купера меняет сам вопрос: не «затрата переменная или постоянная?», а «относительно чего она переменная?»\n\nЗатраты на сырьё растут с каждой единицей, на переналадку - с каждой партией, на карточку товара - с каждым SKU, на доставку в РЦ - с каждым заказом, на менеджера ключевого клиента - с каждым клиентом. Аренду офиса и аудит на продукты распределять не нужно вовсе.\n\nРазмер «зонтика» для затраты определяет не место в цепочке создания стоимости, а объект, к которому она относится: продукт, категория, канал, клиент. Дальше зонтик растягивается во времени: разработка, оснастка и листинг - затраты продукта до первой продажи, а отсрочка платежа - затрата клиента, которой нет в расходах периода.\n\nЕсли ваша модель до сих пор на первой ступеньке, это не обязательно плохо. При рынке продавца или сбытовой программе на годы вперёд решения об ассортименте, каналах и клиентах почти не принимаются, и тонкой аналитике нечего подсказывать. В cost plus перекос в другую сторону: там развито искусство притянуть за уши к смете любые расходы.\n\nВ прошлой заметке я писал, что структура ответственности должна следовать за структурой решений. С маржинальностью то же самое: глубина анализа должна соответствовать решениям, которые вы реально принимаете. А рынок продавца, бывает, заканчивается без предупреждения.\n\nНа какой ступеньке стоит ваша модель маржинальности?\n\nhttps://lnkd.in/p/emvnn7BD",
+    "tags": [
+      "Controlling"
+    ],
+    "name": [
+      "Controlling"
+    ]
+  },
+  {
+    "id": 17137,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:17:43+00:00",
+    "type": "channel_post",
+    "caption": "«Яндекс» начал продавать решение для защиты ИИ\n\n«Яндекс» выводит на рынок решение для комплексной защиты систем с использованием искусственного интеллекта - AI‑SPM. Этот ИТ-инструмент является...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvFqwjLs87SNUJMq-JYSPw7WxQWEZQACwB1rG8cRkUlpx9UgkjbWCgEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADwB1rG8cRkUl-",
+        "width": 1280,
+        "height": 960,
+        "file_size": 167699,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2059.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "Cloud",
+      "Security",
+      "Yandex",
+      "B2B"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "облачные технологии",
+      "Security",
+      "Yandex",
+      "бизнес-бизнес системы (business-to-business)"
+    ]
+  },
+  {
+    "id": 17139,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:19:22+00:00",
+    "type": "channel_post",
+    "caption": "В микроэлектронике грядет массовое сокращение. Уволят девять из десяти инженеров, оставшихся заставят создавать процессоры в восемь раз быстрее\n\nРаспространение нейросетей может больно ударить по кадрам в области микроэлектроники. ИИ позволит сократить команду разработчиков чипов – в среднем...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvNqwjLsTc3b1_vz1ce4vKN1jzgdJgACoB9rG8cRkUk-fTpJUvHiNQEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADoB9rG8cRkUl-",
+        "width": 1170,
+        "height": 780,
+        "file_size": 105631,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2060.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "Engineering",
+      "Automation",
+      "ITcomponents",
+      "IndustryElectronicEngin"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "инженерия",
+      "автоматизация",
+      "ИТ компоненты",
+      "IndustryElectronicEngin"
+    ]
+  },
+  {
+    "id": 17141,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:21:03+00:00",
+    "type": "channel_post",
+    "caption": "VPN-сервисы в опасности. США хотят заставить их бороться с «пиратскими» сайтами\n\nВ США рассмотрят один из сразу нескольких законопроектов, нацеленных на борьбу с пиратством в Сети. Инициатива Даррелла Иссы предусматривает...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvVqwjLsOalARkZR65qve-nPEEFFBwACPx1rG8cRmUmRuUyxe2001wEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADPx1rG8cRmUl9",
+        "width": 750,
+        "height": 500,
+        "file_size": 60637,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2061.jpg"
+      }
+    ],
+    "tags": [
+      "VPN",
+      "Regulation",
+      "Security",
+      "Internet",
+      "Surveillance"
+    ],
+    "name": [
+      "VPN",
+      "регулирование",
+      "Security",
+      "интернет",
+      "Surveillance"
+    ]
+  },
+  {
+    "id": 17143,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:26:13+00:00",
+    "type": "channel_post",
+    "caption": "Мосбиржа готовится запустить торги биткоинами\n\nМосковская биржа России планирует начать торги парами биткоин-рубль и биткоин-квазидоллар. Одновременно с этим биржа планирует запускать торги и...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvdqwjLsSLOyKgMUWn_lXIOm2ud_UQACUB5rG8cRmUkWvs8wQBs1zQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADUB5rG8cRmUl9",
+        "width": 700,
+        "height": 467,
+        "file_size": 79418,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2062.jpg"
+      }
+    ],
+    "tags": [
+      "CryptCurr",
+      "Burse",
+      "FinTech",
+      "Regulation",
+      "Bank"
+    ],
+    "name": [
+      "криптовалюта",
+      "Burse",
+      "ФинТех",
+      "регулирование",
+      "банки"
+    ]
+  },
+  {
+    "id": 17145,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:28:04+00:00",
+    "type": "channel_post",
+    "caption": "Под Москвой будут выпускать компактные радиомодули для 5G\n\nСерийный выпуск оборудования для сетей LTE и 5G стартует в подмосковной Дубне осенью 2026 г. Финансирование проекта составило 1,2 млрд руб...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvlqwjLs765Osk2M38MsNsM0JIBsNgACXCJrG-4GoUnrqmqbD2pUXwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADXCJrG-4GoUl9",
+        "width": 700,
+        "height": 579,
+        "file_size": 60407,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2063.jpg"
+      }
+    ],
+    "tags": [
+      "5G",
+      "Production",
+      "ITcomponents",
+      "TelecomNetworks",
+      "Investments"
+    ],
+    "name": [
+      "5G",
+      "производство",
+      "ИТ компоненты",
+      "TelecomNetworks",
+      "Investments"
+    ]
+  },
+  {
+    "id": 17147,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:28:56+00:00",
+    "type": "channel_post",
+    "caption": "Электростанциям и электросетям в России запретят владеть имуществом для майнинга криптовалют\n\nФАС предлагает запретить субъектам электроэнергетики заниматься деятельностью операторов майнинговой инфраструктуры и иметь имущество, используемое...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQvtqwjLsyY0hljy9uqXFTAEPdz5cJAACjiJrG-4GoUkYu0gbIFM3dgEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADjiJrG-4GoUl9",
+        "width": 700,
+        "height": 468,
+        "file_size": 141450,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2064.jpg"
+      }
+    ],
+    "tags": [
+      "CryptCurr",
+      "Regulation",
+      "IndustryElectricPower",
+      "BlockChain",
+      "FinTech"
+    ],
+    "name": [
+      "криптовалюта",
+      "регулирование",
+      "IndustryElectricPower",
+      "блокчейн",
+      "ФинТех"
+    ]
+  },
+  {
+    "id": 17149,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:30:14+00:00",
+    "type": "channel_post",
+    "caption": "Сбербанк добавил дополнительные 16 миллиардов в капитал владельца микроэлектронного холдинга «Элемент»\n\nСбербанк докапитализировал структуру - владельца доли в «Элементе» на 16,5 млрд руб. — до 44,16 млрд. Собеседники CNews на рынке микроэлектроники...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQv1qwjLs_SXB3muQZ829Upq4k0yb7QACPSNrG-4GoUmyWkWnNPwR9AEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADPSNrG-4GoUl9",
+        "width": 700,
+        "height": 462,
+        "file_size": 89865,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2065.jpg"
+      }
+    ],
+    "tags": [
+      "Sber",
+      "Investments",
+      "ITcomponents",
+      "IndustryElectronicEngin",
+      "Production"
+    ],
+    "name": [
+      "Sber",
+      "Investments",
+      "ИТ компоненты",
+      "IndustryElectronicEngin",
+      "производство"
+    ]
+  },
+  {
+    "id": 17151,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:31:50+00:00",
+    "type": "channel_post",
+    "caption": "Россияне создали первый в мире портативный томограф\n\nРоссийская компания Smart Engines разработала портативный томограф для диагностики организма. Прототип уже проходит апробацию в медицинских и...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQv9qwjLsij_xDJXJld-Lv6DhAom2xAAC5RprG-4GqUm3aaoqFKQkmQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQAD5RprG-4GqUl9",
+        "width": 603,
+        "height": 339,
+        "file_size": 25879,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2066.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "CV",
+      "Health",
+      "Innovations",
+      "SoftRU"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "компьютерное зрение",
+      "здоровье",
+      "инновации",
+      "SoftRU"
+    ]
+  },
+  {
+    "id": 17153,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:32:58+00:00",
+    "type": "channel_post",
+    "caption": "Китай попытался перехватить контроль над ИИ у США\n\nВыступления в ООН представителей двух ведущих в развитии ИИ держав продемонстрировали, что сформировать единый подход к регулированию отрасли будет...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQwFqwjLsoNwnyvOb_VQGMZBnVvNfxAACpBtrG-4GqUlcmzOCjOxbAwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADpBtrG-4GqUl9",
+        "width": 700,
+        "height": 467,
+        "file_size": 125211,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2067.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "Regulation",
+      "China",
+      "Governance",
+      "InterOrganization"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "регулирование",
+      "China",
+      "управление через регулирование",
+      "InterOrganization"
+    ]
+  },
+  {
+    "id": 17155,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:34:16+00:00",
+    "type": "channel_post",
+    "caption": "Минфин готовит удар по зарубежным интернет-заказам для «обеления» российской экономики - НДС 22% и новый сбор\n\nМинфин внес на рассмотрение в Правительство России проект бюджета на 2027 г., который предусматривает две меры «обеления» экономики в России. Он...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQwNqwjLsZeBO5EwXBb9qfputr0XuNwAC7RxrG-4GqUmCO6zOLWBcXwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQAD7RxrG-4GqUl9",
+        "width": 700,
+        "height": 467,
+        "file_size": 100805
+      }
+    ],
+    "tags": [
+      "TaxSystem",
+      "Regulation",
+      "Economy",
+      "DigEc",
+      "Finance"
+    ],
+    "name": [
+      "TaxSystem",
+      "регулирование",
+      "экономика",
+      "цифровая экономика",
+      "финансы"
+    ]
+  },
+  {
+    "id": 17157,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T15:38:11+00:00",
+    "type": "channel_post",
+    "caption": "«Яндекс» сделал огромную инвестицию в ИТ-решение для борьбы с опасными проявлениями ИИ\n\nЗапуск нового ИБ-направления обошелся «Яндексу» в 7,5 млрд руб. Российский технологический гигант уже выпустил продукт для защиты ИИ-инфраструктуры...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQwVqwjLs4LqLrM1Af4dypEhwXDfqewACGB5rG-4GsUnt6nq7_i-zpgEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADGB5rG-4GsUl9",
+        "width": 700,
+        "height": 466,
+        "file_size": 152438,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2069.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "Security",
+      "Yandex",
+      "AIInfrastructure",
+      "Investments"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "Security",
+      "Yandex",
+      "AIInfrastructure",
+      "Investments"
+    ]
+  },
+  {
+    "id": 17159,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T16:36:43+00:00",
+    "type": "channel_post",
+    "caption": "Можно ли расти, не нанимая людей?\n\nБерем 100 крупнейших американских компаний и находим двенадцать, у которых штат с 2022 года остался прежним или сократился, а выручка на одного сотрудника выросла. это называется производительностью труда.\n\nShopify сократил штат на 6%, а выручка на человека выросла в 2,5 раза. У Oracle минус 14% людей и рост в 1,7 раза. У Microsoft столько же сотрудников, сколько было, а производительность выше в 1,6 раза. PayPal сократил штат на пятую часть и поднял выручку на человека в 1,6 раза. Walmart держит те же 2,1 млн человек и продаёт на 17% больше.\n\nПрибыль на сотрудника выросла у всех двенадцати, у девяти быстрее, чем выручка.\n\nЕсть ли здесь вклад ИИ? В отчётах этого не отделить: в те же годы компании резали затраты, поднимали цены и закрывали слабые направления.\n\nА может, без ИИ они выросли бы ещё быстрее? Microsoft и Alphabet тратят на дата-центры больше всех из этой дюжины, и эти расходы в отчётности растут быстрее выручки.\n\nА как выросла производительность труда в вашей компании? ближе к Shopify или к Wallmart?",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQwdqwjLsb9bp5P_g0p9kG9-fxd1IbgACvx1rGwO-8Ukmn9YgF82dKgEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADvx1rGwO-8Ul8",
+        "width": 2560,
+        "height": 2560,
+        "file_size": 325634,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2070.jpg"
+      }
+    ],
+    "tags": [
+      "Busines",
+      "HRM"
+    ],
+    "name": [
+      "бизнес компаний",
+      "управление человеческим капиталом"
+    ]
+  },
+  {
+    "id": 17160,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T19:13:43+00:00",
+    "type": "channel_post",
+    "text": "#AI #Digest\n\n00:00 Главные новости ИИ 00:28 Сервис ZARUB 01:41 ИИ начал самостоятельно улучшать ИИ 11:33 Claude Sonnet 5.5 против GPT-6.1 Sol 13:13 FLUX 3 Image: новое поколение изображений 14:22 Google выиграла дела вокруг AI Overviews 15:33 DeepSeek выпустила Harness 16:38 Argus автоматически обучает роботов 17:56 36-миллиардная модель управляет роботами через облако 19:20 13 тысяч слов, которые выдают ИИ 21:03 ИИ Мемы\n\nhttps://www.youtube.com/watch?v=PoMSg5ixsi4",
+    "tags": [
+      "AI",
+      "Digest"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "Digest"
+    ]
+  },
+  {
+    "id": 17161,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T19:18:59+00:00",
+    "type": "channel_post",
+    "text": "#AI_Architecture \n\nhttps://www.youtube.com/watch?v=IauULFe1j-A",
+    "tags": [
+      "AI_Architecture"
+    ],
+    "name": [
+      "AI_Architecture"
+    ]
+  },
+  {
+    "id": 17163,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T19:29:51+00:00",
+    "type": "channel_post",
+    "caption": "Первый российско-белорусский 3D-принтер RusMelt 150M показали на \"Иннопроме\", передает корреспондент @SPUTNIKBY\n\nПрезентация прошла на стенде \"Росатома\".\n\nБолее 50% компонентов произведены в Беларуси и РФ: \n▪️механические узлы, кинематику и несущие конструкции сделали в Беларуси, \n▪️лазерную систему, управление и ПО — в России.\n\nСреди плюсов принтера – компактные размеры, пониженное энергопотребление, уменьшенный расход газа и порошка.\n\n🔴 Читайте Sputnik Беларусь в МАКС",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACQwtqwjLsQTVXJeFroPsd04fgd_k1OAACIB5rG1TK6UkgIcBH0j9lvQEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADIB5rG1TK6Ul-",
+        "width": 1280,
+        "height": 720,
+        "file_size": 170582,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2071.jpg"
+      }
+    ],
+    "tags": [
+      "3DPrintRU"
+    ],
+    "name": [
+      "3D печать RU"
+    ]
+  },
+  {
+    "id": 17165,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T19:37:11+00:00",
+    "type": "channel_post",
+    "text": "В России в 2027 году появятся банкоматы для обналичивания цифрорублей — глава комитета Госдумы по финансовому рынку Анатолий Аксаков",
+    "tags": [
+      "CBDC"
+    ],
+    "name": [
+      "ЦВЦБ, цифровые валюты центральных банков"
+    ]
+  },
+  {
+    "id": 17166,
+    "chat_id": -1001220337955,
+    "date": "2026-10-03T20:05:32+00:00",
+    "type": "channel_post",
+    "text": "#AIUser \n\nhttps://www.youtube.com/watch?v=AnbJxDpsYOo",
+    "tags": [
+      "AIUser"
+    ],
+    "name": [
+      "ИИ для пользователя"
+    ]
+  },
+  {
+    "id": 17168,
+    "chat_id": -1001220337955,
+    "date": "2026-10-04T10:37:15+00:00",
+    "type": "channel_post",
+    "text": "Anthropic вложит $100 млн в обучение 10 000 ИИ-инженеров\n\n👍 Anthropic запускает Claude Frontier Academy — программу стоимостью $100 млн. с целью подготовить 10 000 инженеров к концу 2027 года и ускорить внедрение ИИ в крупных компаниях.\n\n👍 Что известно:\n⚫️ Готовят Frontier Deployed Engineers (FDE) — специалистов, которые ведут ИИ-проекты в корпоративном бизнесе от идеи до продакшена.\n⚫️ Первые участники: Accenture, Bain, Capgemini, Deloitte, McKinsey, Morgan Stanley, Novo Nordisk и Commonwealth Bank of Australia.\n⚫️ Accenture уже создала Anthropic Business Group и обучит работе с ИИ Claude около 30 000 своих специалистов.\n\n📖 Как устроено обучение:\n1⃣ Интенсив с инженерами Anthropic — симуляция внедрения.\n2⃣ 12-недельная резидентура — реальный проект на ИИ Claude.\n3⃣ Сертификация Claude Frontier Deployed Engineer. Первые бейджи — в начале 2027 года.\n\n💸 Запуск обучения на фоне подготовки к IPO. Выручка Anthropic — почти $4,6 млрд, а операционный убыток — более $8 млрд. Спрос на FDE растёт: только в пяти крупных консалтинговых фирмах — открыто 1404 такие вакансии за год.\n\n«Небольшая команда высокомотивированных людей с нужными навыками, доступом к Claude и глубоким пониманием бизнеса может трансформировать всю компанию»\n🖥 Стив Корфилд (Глобальный руководитель бизнес-развития и партнёрств Anthropic)\n\n🙌 Горизонт событий",
+    "tags": [
+      "Anthropic",
+      "Investments",
+      "Schooling",
+      "ConsBusines"
+    ],
+    "name": [
+      "Anthropic",
+      "Investments",
+      "Schooling",
+      "бизнес консалтинговых компаний"
+    ]
   }
 ]
