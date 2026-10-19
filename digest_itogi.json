@@ -3978,7 +3978,7 @@
       "цифровое государство"
     ],
     "heading": "Российского «убийцу» Telegram закрывают. Пользователям дали две недели на прощание и перенос данных. Опрос - CNews",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 8355,
@@ -4214,7 +4214,7 @@
       "цифровое государство"
     ],
     "heading": "Бизнес просит узаконить обмен обезличенными данными для обучения ИИ - CNews",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 8376,
@@ -13781,7 +13781,7 @@
     "name": [
       "ОС"
     ],
-    "heading": "Выкуплена и воскрешена операционная система DR-DOS, легендарная «убийца» MS-DOS - CNews",
+    "heading": "",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -13864,7 +13864,7 @@
       "IndustryElectronicEngin",
       "бизнес ИТ компаний"
     ],
-    "heading": "По мировым ИТ нанесен подлый удар. Редчайшее вещество для производства микросхем подорожало почти вдвое - CNews",
+    "heading": "",
     "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
   },
   {
@@ -28362,7 +28362,7 @@
       "Windows11"
     ],
     "heading": "Microsoft починила мертвую древнюю технологию в Windows, которую сама и убила. Она опоздала с этим на десятилетия, мир давно ушел вперед - CNews",
-    "summary": "Ошибка при генерации саммари: 401 Client Error: Unauthorized for url: https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
+    "summary": "Не удалось извлечь текст для саммаризации"
   },
   {
     "id": 10428,
