@@ -104219,5 +104219,1554 @@
       "ИИ агенты",
       "риск"
     ]
+  },
+  {
+    "id": 17964,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T10:48:28+00:00",
+    "type": "channel_post",
+    "caption": "JPMorgan поставил на 1-е место биткоин по долгосрочным прогнозам доходности на ближайшие 10–15 лет.\n\nПо их расчётам, сложная годовая доходность биткоина составит около 10%. \n\nЭто выше, чем у крупных американских акций, золота и недвижимости.\n\nПри этом волатильность у биткоина остаётся высокой - примерно 55% в год. \n\nИнтересно, что ещё недавно глава банка относился к крипте скептически, а теперь биткоин официально попал в их модельные расчёты и обогнал традиционные активы по ожидаемой прибыли.​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRixq2I4zQhLiqDUgR9VA89lIRqd-IgACHB9rG-GduUrdAAFEoaTO6PMBAAMCAAN5AAM9BA",
+        "file_unique_id": "AQADHB9rG-GduUp-",
+        "width": 1280,
+        "height": 822,
+        "file_size": 99909,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2203.jpg"
+      }
+    ],
+    "tags": [
+      "CryptCurr"
+    ],
+    "name": [
+      "криптовалюта"
+    ]
+  },
+  {
+    "id": 17965,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T11:37:38+00:00",
+    "type": "channel_post",
+    "text": "#Anthropic #Security \n\nСкорее всего речь идет об известный уже уязвимостях, таких сканеров много, базы уязвимостей открытые.",
+    "tags": [
+      "Anthropic",
+      "Security"
+    ],
+    "name": [
+      "Anthropic",
+      "Security"
+    ]
+  },
+  {
+    "id": 17966,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T11:37:38+00:00",
+    "type": "channel_post",
+    "text": "Anthropic запустил бесплатный сканер уязвимостей для open-source проектов",
+    "tags": [],
+    "name": []
+  },
+  {
+    "id": 17968,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T13:34:51+00:00",
+    "type": "channel_post",
+    "text": "#DeepSeek раскрыл рецепт как построил одну из самых эффективных и дешевых инфраструктур для работы ИИ в мире\n\nСегодня команда #DeepSeek открыла исходный код DeepInfer - движка, на котором работают их собственные сервисы.\n\nА еще они показывают цифры, которые почти не публикуют ни OpenAI, ни Anthropic, ни Google.\n\nТак мы узнали, что 1 кластер #DeepSeek обрабатывает 155 триллионов токенов в день, а выручка около $38 на карту в час по льготному тарифу.\n\nПричем их главный экономический рычаг - это кэш, а не чипы. \n\nВ своем отчете они пишут, что пропускная способность на карту без учёта попаданий в кэш 60 тысяч токенов в секунду, а с учётом попаданий - 1,5 миллиона. Разница в 25 раз. \n\nА средний процент попаданий 96%.\n\nТо есть реальная стоимость инференса сегодня определяется тем, насколько хорошо вы умеете работать с кэшем.",
+    "tags": [
+      "DeepSeek",
+      "China",
+      "AIInfrastructure",
+      "AIOpen"
+    ],
+    "name": [
+      "DeepSeek",
+      "China",
+      "AIInfrastructure",
+      "AIOpen"
+    ]
+  },
+  {
+    "id": 17970,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T13:35:34+00:00",
+    "type": "channel_post",
+    "caption": "DeepSeek открыла DeepInfer — свой production-фреймворк для инференса больших моделей\n\n👊 DeepInfer — это высокопроизводительный фреймворк для инференса, который DeepSeek использует в собственных крупномасштабных производственных сервисах. Репозиторий содержит offline-версию с ключевыми функциями, необходимыми для масштабного обслуживания моделей.\n\n🤩 Поддерживаемые модели и оборудование:\n🔜 Модели: DeepSeek-V4.1-Flash (по умолчанию: deepseek-ai/DeepSeek-V4.1-Flash-1017).\n🔜 Оборудование: NVIDIA SM100 GPU и Huawei Ascend 950 NPU.\n\nGitHub",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRjJq2I4zgrqk3M6i-wZPxsi5hREZpgACriJrGzsowEq4tAn3uuGQogEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADriJrGzsowEp8",
+        "width": 1272,
+        "height": 1394,
+        "file_size": 120158,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2204.jpg"
+      }
+    ],
+    "tags": [
+      "China",
+      "DeepSeek",
+      "AIInfrastructure",
+      "AIOpen"
+    ],
+    "name": [
+      "China",
+      "DeepSeek",
+      "AIInfrastructure",
+      "AIOpen"
+    ]
+  },
+  {
+    "id": 17972,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T14:00:48+00:00",
+    "type": "channel_post",
+    "text": "Три эндшпиля ИИ по Альтману: МАГАТЭ, консорциум лабораторий или «расплавленные GPU»\n\n👌 Сэм Альтман на внутреннем брифинге для сотрудников OpenAI (около недели назад) описал три возможных «эндшпиля» для передового ИИ. \n\n💻 Три сценария Альтмана:\n1⃣ «План МАГАТЭ»: Глобальный регулятор\nСамый предпочтительный для Альтмана сценарий. Он предполагает создание международного надзорного органа по модели Международного агентства по атомной энергии (МАГАТЭ). Такой орган устанавливал бы стандарты безопасности, проводил независимые проверки и аудит перед выпуском мощных ИИ-моделей.\n\n2⃣ «План Демиса»: Слияние лабораторий\nНазван в честь генерального директора Google DeepMind Демиса Хассабиса. Сценарий предполагает объединение ведущих ИИ-лабораторий (таких как OpenAI, Google DeepMind и Anthropic) в единый международный консорциум по модели ЦЕРН. Цель — совместная разработка и обмен стандартами безопасности вместо неконтролируемой гонки.\n\n3⃣ «План Элиезера»: «Расплавить чужие GPU»\nСамый экстремальный и «пугающий» сценарий, названный в честь теоретика ИИ-безопасности Элиезера Юдковского.\n\n🧠 Сэм Альтман поясняет: компания, которая первой достигнет рекурсивного самосовершенствования (RSI) — способности ИИ улучшать самого себя, что создает цикл стремительного роста возможностей. Эта компания получает подавляющее экономическое превосходство и использует его, чтобы «расплавить GPU всех остальных» — то есть лишить конкурентов доступа к вычислительным ресурсам, необходимым для разработки ИИ.\n\n🔐 Альтман заявил, что OpenAI должна определить свою стратегию безопасности с учётом того, что уже идет обсуждение по созданию «Управления стандартов передового ИИ» (Frontier AI Standards Authority) к концу 2026 — началу 2027 года.\n\n🙌 Горизонт событий",
+    "tags": [
+      "OpenAI",
+      "DigState",
+      "InterOrganization",
+      "AGI",
+      "Security",
+      "Threat",
+      "RSI",
+      "Review",
+      "Standards"
+    ],
+    "name": [
+      "OpenAI",
+      "цифровое государство",
+      "InterOrganization",
+      "общий искусственный интеллект",
+      "Security",
+      "Threat",
+      "RSI",
+      "Review",
+      "Standards"
+    ]
+  },
+  {
+    "id": 17974,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:56:18+00:00",
+    "type": "channel_post",
+    "caption": "Создатели Firefox выпустили браузер для слежки за пользователями\n\nMozilla выпустила браузер Firefox Enterprise для бизнеса и госструктур. Он наделен встроенными возможностями слежки за всеми действиями пользователей...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRjZq2I4zinqpOJW1hNwJuZGIjB0YvwACOiFrGw8xcUpPQCaHWpC99gEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADOiFrGw8xcUp-",
+        "width": 1074,
+        "height": 702,
+        "file_size": 61279,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2205.jpg"
+      }
+    ],
+    "tags": [
+      "Browser",
+      "Surveillance",
+      "Security",
+      "Soft",
+      "EnterpriseSoft"
+    ],
+    "name": [
+      "Browser",
+      "Surveillance",
+      "Security",
+      "Soft",
+      "бизнес софт предприятия"
+    ]
+  },
+  {
+    "id": 17976,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:56:52+00:00",
+    "type": "channel_post",
+    "caption": "Пущено с молотка ПО для запуска Android-приложений на российской ОС «Аврора». Его создала ИТ-компания бывшего питерского вице-губернатора\n\nПрава на ПО обанкротившейся всего через три года после основания компании, создателя сервисов для установки Android-приложений и Telegram на...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRjhq2I4zsKpvCq1v5dQzoo82VEksAgACOyFrGw8xcUqkZ7nAU76h2wEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADOyFrGw8xcUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 41356,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2206.jpg"
+      }
+    ],
+    "tags": [
+      "Soft",
+      "ITSystemReplacement",
+      "OS",
+      "SoftRU",
+      "ITBusines"
+    ],
+    "name": [
+      "Soft",
+      "ITSystemReplacement",
+      "ОС",
+      "SoftRU",
+      "бизнес ИТ компаний"
+    ]
+  },
+  {
+    "id": 17978,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:57:22+00:00",
+    "type": "channel_post",
+    "caption": "Популярные криптокошельки Ledger Nano X продавались сразу со шпионским модулем для кражи криптовалюты\n\nРяд владельцев аппаратных криптокошельков Ledger Nano X, купленных у крупного реселлера в ЮВА, лишился своих криптоактивов. Впоследствии выяснилось...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRjpq2I4z2my0qSWq6t6ahwIlMlok9AACPiFrGw8xcUrERxb93Ft4mAEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADPiFrGw8xcUp8",
+        "width": 1600,
+        "height": 1200,
+        "file_size": 258433,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2207.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "CryptCurr",
+      "Surveillance",
+      "Incident",
+      "Gadgets"
+    ],
+    "name": [
+      "Security",
+      "криптовалюта",
+      "Surveillance",
+      "Incident",
+      "гаджеты"
+    ]
+  },
+  {
+    "id": 17980,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:57:57+00:00",
+    "type": "channel_post",
+    "caption": "Мошенники притворяются сервисами «Яндекса» на фоне его сбоев\n\n«Яндекс» опубликовала рекомендации по восстановлению онлайн-сервисов после сбоев и предупредила пользователей о возможных мошеннических схемах под...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRjxq2I4zYGx6wX7RvEwInSese9Fy1AACiyBrGw8xeUrhOgtUWxhShAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADiyBrGw8xeUp9",
+        "width": 800,
+        "height": 533,
+        "file_size": 47977,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2208.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "Yandex",
+      "Users",
+      "Incident",
+      "Trust"
+    ],
+    "name": [
+      "Security",
+      "Yandex",
+      "Users",
+      "Incident",
+      "Trust"
+    ]
+  },
+  {
+    "id": 17982,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:58:26+00:00",
+    "type": "channel_post",
+    "caption": "«Ростелеком» проговорился о планах анализировать звонки в «Макс». Его создатели говорят, что ничего не выйдет\n\nПАО «Ростелеком» раскрыл перед поставщиками свои требования к внедрению масштабной ИИ-платформы для анализа голосовых вызовов и голосовых сервисов на...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRj5q2I4zr0oHAYMgTneMTi2D9lv_igACJCFrGw8xeUr9UOds_LPlqgEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADJCFrGw8xeUp9",
+        "width": 797,
+        "height": 689,
+        "file_size": 103170,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2209.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "VoiceRecognition",
+      "TelecomNetworks",
+      "Security",
+      "Messenger"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "VoiceRecognition",
+      "TelecomNetworks",
+      "Security",
+      "мессенжер"
+    ]
+  },
+  {
+    "id": 17984,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:59:08+00:00",
+    "type": "channel_post",
+    "caption": "Главная микроэлектронная компания мира расписалась в беспомощности. Литографов на всех не хватит\n\nASML, главный производитель передового оборудования для производства чипов в мире, отчитался о рекордной квартальной выручке и «обнадежил» клиентов...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkBq2I4z5qQMy8N_qh7OyLZ-G29XlgACISFrGw8xgUqHYFTZIBLS5QEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADISFrGw8xgUp-",
+        "width": 1097,
+        "height": 722,
+        "file_size": 112587,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2210.jpg"
+      }
+    ],
+    "tags": [
+      "Lithography",
+      "Production",
+      "ITcomponents",
+      "Forecast",
+      "IndustryElectronicEngin"
+    ],
+    "name": [
+      "Lithography",
+      "производство",
+      "ИТ компоненты",
+      "прогноз",
+      "IndustryElectronicEngin"
+    ]
+  },
+  {
+    "id": 17986,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T15:59:32+00:00",
+    "type": "channel_post",
+    "caption": "Под санкции ЕС попали «Аквариус» и «дочки» ГК «Элемент»\n\nЕС наложил санкции на две сотни российских компаний из сферы ИТ и электроники, а также их руководителей, которым запретят въезд в страны Евросоюза...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkJq2I4zN7TPWuDm86NAEE-zvohpRwACIiFrGw8xgUoAAdoP05SVvhgBAAMCAAN4AAM9BA",
+        "file_unique_id": "AQADIiFrGw8xgUp9",
+        "width": 700,
+        "height": 391,
+        "file_size": 96937,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2211.jpg"
+      }
+    ],
+    "tags": [
+      "Regulation",
+      "InterOrganization",
+      "ITBusines",
+      "IndustryElectronicEngin",
+      "Risk"
+    ],
+    "name": [
+      "регулирование",
+      "InterOrganization",
+      "бизнес ИТ компаний",
+      "IndustryElectronicEngin",
+      "риск"
+    ]
+  },
+  {
+    "id": 17988,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:00:02+00:00",
+    "type": "channel_post",
+    "caption": "Microsoft под прицелом. Программист в одиночку выпустил бесплатных «убийц» Word, Excel и PowerPoint. Они неотличимы от оригинала\n\nСоздатель бесплатных аналогов Adobe Photoshop и Premiere, написанных на Rust при помощи ИИ, взялся за создание клонов ПО из пакета Microsoft Office...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkRq2I4zwJ8IoAbtzv9tuPj2Ugi1DwACKCFrGw8xgUr-72WIHGcgAwEAAwIAA3cAAz0E",
+        "file_unique_id": "AQADKCFrGw8xgUp8",
+        "width": 2338,
+        "height": 1648,
+        "file_size": 601840,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2212.jpg"
+      }
+    ],
+    "tags": [
+      "FreeSoftware",
+      "Microsoft",
+      "AI_Claude",
+      "CodeDevelopment",
+      "GitHub"
+    ],
+    "name": [
+      "свободное программное обеспечение",
+      "Microsoft",
+      "ИИ Cloude",
+      "разработка кода",
+      "GitHub"
+    ]
+  },
+  {
+    "id": 17990,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:00:44+00:00",
+    "type": "channel_post",
+    "caption": "«Ростелеком» предложил строить в России «ЦОДы судного дня»\n\nКрупным провайдерам цифровых услуг необходимы резервные центры обработки данных, которые позволят быстро восстановить работу сервисов в случае сбоев...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkZq2I4z_ifWE4S72JwuaWxWR1x4fAAC1SFrGw8xgUp0VGaWFrfZXQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQAD1SFrGw8xgUp9",
+        "width": 600,
+        "height": 400,
+        "file_size": 60278,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2213.jpg"
+      }
+    ],
+    "tags": [
+      "DataProcesCenter",
+      "ITReliability",
+      "Cloud",
+      "Security",
+      "ITInfrastructure"
+    ],
+    "name": [
+      "DataProcesCenter",
+      "ИТ надежность",
+      "облачные технологии",
+      "Security",
+      "ИТ инфраструктура"
+    ]
+  },
+  {
+    "id": 17992,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:01:12+00:00",
+    "type": "channel_post",
+    "caption": "Карта активов МТС. Инфографика CNews\n\nCNews Analytics публикует карту активов МТС — на нее попало 85 организаций. На инфографике приводится год покупки компании телеком-оператором и его...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkhq2I4zLykxsUYQJiWTC0Rn5HojhwAC_SFrGw8xgUrVvJ2oNbhecAEAAwIAA3kAAz0E",
+        "file_unique_id": "AQAD_SFrGw8xgUp-",
+        "width": 1200,
+        "height": 700,
+        "file_size": 160989,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2214.jpg"
+      }
+    ],
+    "tags": [
+      "Analytics",
+      "TelecomNetworks",
+      "Busines",
+      "Investments",
+      "Reports"
+    ],
+    "name": [
+      "аналитика",
+      "TelecomNetworks",
+      "бизнес компаний",
+      "Investments",
+      "Reports"
+    ]
+  },
+  {
+    "id": 17994,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:06:35+00:00",
+    "type": "channel_post",
+    "caption": "Власти попросили МТС, «Билайн», «Мегафон» и Т2 отложить блокировку звонков от крупнейших банков\n\nМинцифры попросило сотовых операторов отложить до ноября блокировку звонков от банков, не заключивших договоры на маркировку вызовов. Ранее сотовые...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkpq2I4zNAy2xN8fZz2gT3EJasTaoAACMSJrGw8xgUpXJFAOdoC4_AEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADMSJrGw8xgUp9",
+        "width": 800,
+        "height": 534,
+        "file_size": 44804,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2215.jpg"
+      }
+    ],
+    "tags": [
+      "TelecomNetworks",
+      "Bank",
+      "Regulation",
+      "Security",
+      "Busines"
+    ],
+    "name": [
+      "TelecomNetworks",
+      "банки",
+      "регулирование",
+      "Security",
+      "бизнес компаний"
+    ]
+  },
+  {
+    "id": 17996,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:07:20+00:00",
+    "type": "channel_post",
+    "caption": "В главном микроэлектронном холдинге страны 60% оборудования старше 25 лет\n\nБолее 60% парка технологического оборудования для кристальных производств группы «Элемент» выпущено до 2000 г., а 43% из них — до 1990 г. То есть...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRkxq2I4zkUtCemHks3JXdOfptsr_igACXCJrGw8xgUo4_3kGbmkhbQEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADXCJrGw8xgUp-",
+        "width": 1024,
+        "height": 683,
+        "file_size": 129912,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2216.jpg"
+      }
+    ],
+    "tags": [
+      "IndustryElectronicEngin",
+      "Production",
+      "ITcomponents",
+      "ITSystemReplacement",
+      "Risk"
+    ],
+    "name": [
+      "IndustryElectronicEngin",
+      "производство",
+      "ИТ компоненты",
+      "ITSystemReplacement",
+      "риск"
+    ]
+  },
+  {
+    "id": 17998,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:07:58+00:00",
+    "type": "channel_post",
+    "caption": "Аэропорт «Шереметьево» закупает СХД, которые продолжат работу при физическом поражении ЦОД\n\nАэропорт «Шереметьево» объявил закупку отечественных систем хранения данных (СХД), созданных по технологиям, обеспечивающим работу ИТ-инфраструктуры...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRk5q2I4zuk3ys9YHaAI_7-mKKhRfxAACMSNrGw8xgUrnAtfZtglrpQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADMSNrGw8xgUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 52322,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2217.jpg"
+      }
+    ],
+    "tags": [
+      "DataProcesCenter",
+      "ITInfrastructure",
+      "ITReliability",
+      "Security",
+      "Procurement"
+    ],
+    "name": [
+      "DataProcesCenter",
+      "ИТ инфраструктура",
+      "ИТ надежность",
+      "Security",
+      "закупки"
+    ]
+  },
+  {
+    "id": 18000,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:08:27+00:00",
+    "type": "channel_post",
+    "caption": "Из России уходит последняя зарубежная компания, занятая информационной безопасностью\n\nCheck Point, крупная израильская ИБ-компания, которая продолжала вести бизнес в России, может покинуть наш рынок. Она получила сертификаты ФСТЭК...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlBq2I4zd3ZiMB76G_X1uDbTKfdlMwACMiNrGw8xgUrZ8vTYhORgYQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADMiNrGw8xgUp9",
+        "width": 700,
+        "height": 479,
+        "file_size": 55206,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2218.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "ITBusines",
+      "Regulation",
+      "ITSystemReplacement",
+      "Risk"
+    ],
+    "name": [
+      "Security",
+      "бизнес ИТ компаний",
+      "регулирование",
+      "ITSystemReplacement",
+      "риск"
+    ]
+  },
+  {
+    "id": 18002,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:08:51+00:00",
+    "type": "channel_post",
+    "caption": "Кручу-верчу, дозвониться хочу. Банки обманывают россиян, массово подделывая маркировку звонков под угрозой их тотальной блокировки\n\nРоссияне стали получать сомнительные звонки с маркировкой, которая никак не связан с тем, кто им звонит. За этим стоят российские банки – они не...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlJq2I4zjbOrgbcBoj6tqgx9rV1OzQACZRprG8cfiUr7XPR6fR8mFQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADZRprG8cfiUp9",
+        "width": 700,
+        "height": 466,
+        "file_size": 65976,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2219.jpg"
+      }
+    ],
+    "tags": [
+      "Bank",
+      "TelecomNetworks",
+      "Security",
+      "Consumers",
+      "Regulation"
+    ],
+    "name": [
+      "банки",
+      "TelecomNetworks",
+      "Security",
+      "потребители",
+      "регулирование"
+    ]
+  },
+  {
+    "id": 18004,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:09:20+00:00",
+    "type": "channel_post",
+    "caption": "Что требуется от аварийного восстановления ИТ-инфраструктуры для обеспечения непрерывности бизнеса\n\nЕдиная стратегия обеспечения непрерывности бизнеса и аварийного восстановления (BCDR) объединяет организационные меры и технологические решения...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlRq2I4zkUTy9o0Y5P1E0Rapk7SWIAACghprG8cfiUrWqxGGE02-SgEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADghprG8cfiUp-",
+        "width": 1200,
+        "height": 700,
+        "file_size": 122297,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2220.jpg"
+      }
+    ],
+    "tags": [
+      "ITReliability",
+      "Cloud",
+      "ITInfrastructure",
+      "Security",
+      "Analytics"
+    ],
+    "name": [
+      "ИТ надежность",
+      "облачные технологии",
+      "ИТ инфраструктура",
+      "Security",
+      "аналитика"
+    ]
+  },
+  {
+    "id": 18006,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:09:50+00:00",
+    "type": "channel_post",
+    "caption": "Как власти потратят триллион на ИТ, медиа и связь\n\nМинцифры представило проект федерального бюджета на 2027-2029 гг., общий размер затрат по курируемым ведомством госпрограммам превысит 1 трлн руб...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlZq2I4zChR8YmyNouWBWB0a6U5JVwAChxtrG8cfiUpAVxNlGOf37gEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADhxtrG8cfiUp-",
+        "width": 900,
+        "height": 600,
+        "file_size": 187973,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2221.jpg"
+      }
+    ],
+    "tags": [
+      "Budget",
+      "IT",
+      "Media",
+      "TelecomNetworks",
+      "Regulation"
+    ],
+    "name": [
+      "Budget",
+      "информационные технологии",
+      "Media",
+      "TelecomNetworks",
+      "регулирование"
+    ]
+  },
+  {
+    "id": 18008,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:10:25+00:00",
+    "type": "channel_post",
+    "caption": "Власти обяжут использовать российский алгоритм шифрования «Кузнечик» во всех смартфонах с 5G\n\nМинцифры России предложило обязать производителей 5G-смартфонов добавить поддержку российского криптографического алгоритма «Кузнечик» (ГОСТ Р...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlhq2I4znrfndwAB9leLZHcgIr7egmMAApcbaxvHH4lKV6weGcxfnXkBAAMCAAN4AAM9BA",
+        "file_unique_id": "AQADlxtrG8cfiUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 34226,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2222.jpg"
+      }
+    ],
+    "tags": [
+      "5G",
+      "Encryption",
+      "Regulation",
+      "Gadgets",
+      "Security"
+    ],
+    "name": [
+      "5G",
+      "шифрование",
+      "регулирование",
+      "гаджеты",
+      "Security"
+    ]
+  },
+  {
+    "id": 18010,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:11:27+00:00",
+    "type": "channel_post",
+    "caption": "В России начато собственное производство нанотрубок для электроники\n\nВ Новосибирске открылось производство многостенных углеродных нанотрубок. Их сейчас тоннами поставляются в Россию из-за рубежа. При этом технологию...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlpq2I4zRq-iTynCeHvPqxYkCIo8agACPBxrG8cfiUp7OZhZXXbyLAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADPBxrG8cfiUp9",
+        "width": 700,
+        "height": 443,
+        "file_size": 46654,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2223.jpg"
+      }
+    ],
+    "tags": [
+      "NewMaterials",
+      "Production",
+      "ITSystemReplacement",
+      "IndustryElectronicEngin",
+      "Research"
+    ],
+    "name": [
+      "новые материалы",
+      "производство",
+      "ITSystemReplacement",
+      "IndustryElectronicEngin",
+      "Research"
+    ]
+  },
+  {
+    "id": 18012,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T16:12:23+00:00",
+    "type": "channel_post",
+    "caption": "Google, Facebook и Amazon предупредили: Цифровой суверенитет обойдется Европе в 115 млрд евро убытка\n\nАмериканские технологические гиганты Amazon, Google и Meta (компания признана экстремистской организацией на территории России), владелец Facebook...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRlxq2I4zJNuw9-NP-tRIcP_IQfy1kQACSBxrG8cfiUrcPUcgWUnP2wEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADSBxrG8cfiUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 153851,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2224.jpg"
+      }
+    ],
+    "tags": [
+      "Cloud",
+      "Regulation",
+      "InterOrganization",
+      "Economy",
+      "Google"
+    ],
+    "name": [
+      "облачные технологии",
+      "регулирование",
+      "InterOrganization",
+      "экономика",
+      "Google"
+    ]
+  },
+  {
+    "id": 18014,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T17:12:39+00:00",
+    "type": "channel_post",
+    "text": "Накануне сезона скорпиона Anthropic показала, как Claude проектирует белки против токсинов скорпионов 🦂\n\nИнвестиционная фирма Citrini Research вместе с Anthropic решила проверить, насколько ИИ на самом деле хорош в биотехнологиях.\n\nПятеро аналитиков вместе с внутренней моделью Claude написали задание на 35 страниц и попросили Claude спроектировать белки против токсинов скорпионов.\n\nПосле Claude почти самостоятельно за 64 часа сгенерировал больше 300 тысяч вариантов, в итоге 211 отправили в лаборатории.\n\nПо результатам тестов 17 белков связались с токсинами, но универсальный белок, который работает сразу против всех так и не получилось создать.\n\nHugging face.",
+    "tags": [
+      "Anthropic",
+      "OpenAI",
+      "BioTech"
+    ],
+    "name": [
+      "Anthropic",
+      "OpenAI",
+      "биотехнологии"
+    ]
+  },
+  {
+    "id": 18016,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T17:14:00+00:00",
+    "type": "channel_post",
+    "text": "Квантовая механика установила предел скорости теплового равновесия\n\n👨‍🔬 Физики доказали — любая квантовая система не может прийти в тепловое равновесие быстрее универсального предела, а именно половину планковского времени. \n\n📏 Главная формула:\nτ ≥ τ_Pl / 2, где τ_Pl = ℏ / (k_B·T)\n\n😎 Предел давно замечали косвенно — в сверхпроводниках и некоторых металлах, но строгого доказательства не было. Теперь он может помочь в разработке квантовых компьютеров и сенсоров.\n\n🙌 Горизонт событий",
+    "tags": [
+      "QuantumComputing",
+      "Research"
+    ],
+    "name": [
+      "квантовые вычисления",
+      "Research"
+    ]
+  },
+  {
+    "id": 18018,
+    "chat_id": -1001220337955,
+    "date": "2026-10-20T17:17:09+00:00",
+    "type": "channel_post",
+    "text": "Главный барьер для ИИ — не модели, а управленческая дисциплина\n\n😃 Gartner опросил 2 002 ИТ-директора и технических руководителей (с мая по июль 2026). Главный вывод — объем внедрений ИИ не равен ценности.\n\n📊 Что по цифрам:\n⏺ Только 13% ИТ-директоров говорят, что компания уже получила значительную или преобразующую выгоду от ИИ.\n⏺ Число сценариев применения ИИ выросло на 400% за 2024–2025 годы, но шанс успеха отдельного сценария — 1 к 5.\n⏺ Расходы на ИИ за два года выросли в 18 раз.\n⏺ 58% ИТ-директоров требуют экономии за счет ИИ, но 51% ждут роста совокупной стоимости владения ИТ-решениями.\n\n😑 Что отличает лидеров:\n👉 Умеют останавливаться: у 31% есть правило не выводить опытный запуск в промышленную эксплуатацию, у 17% есть правила закрывать неэффективные инициативы.\n👉 Считают экономику ИИ: на 50% больше времени тратят на совместную работу с финансовым директором.\n👉 Перестраивают работу: 40% ждут роста числа ИТ-специалистов в 2027 году.\n\n7️⃣1️⃣ % ИТ-директоров планируют внедрить автономных ИИ-агентов в ближайшие 12 месяцев, но регламенты и контроль есть только у 21%.\n\n🧠 Преобразующая ценность ИИ упирается не в технологии, а в управленческую дисциплину — умение останавливать слабые инициативы, считать экономику и перестраивать работу, без чего рост внедрений лишь увеличивает затраты и риски.\n\n🙌 Горизонт событий",
+    "tags": [
+      "Gartner",
+      "AIagent",
+      "ChangeManagement",
+      "Review"
+    ],
+    "name": [
+      "Gartner",
+      "ИИ агенты",
+      "ChangeManagement",
+      "Review"
+    ]
+  },
+  {
+    "id": 18020,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:03:03+00:00",
+    "type": "channel_post",
+    "caption": "Россиянам запретили переводить криптовалюту на «холодные» кошельки. Проводить криптосделки между физлицами тоже нельзя\n\nФизлицам в России жестко ограничивают возможности использования криптовалют. Переводить крипту на свой «холодный» кошелек запретили. Сделки между...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRmRq2I4zpnxszVVEiWWJ2TPsKwg4cwACOR1rG8cfiUo8y-3eIpYr0gEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADOR1rG8cfiUp9",
+        "width": 700,
+        "height": 430,
+        "file_size": 60878,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2225.jpg"
+      }
+    ],
+    "tags": [
+      "CryptCurr",
+      "Regulation",
+      "Bank",
+      "Consumers",
+      "Risk"
+    ],
+    "name": [
+      "криптовалюта",
+      "регулирование",
+      "банки",
+      "потребители",
+      "риск"
+    ]
+  },
+  {
+    "id": 18022,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:03:30+00:00",
+    "type": "channel_post",
+    "caption": "Власти заставят микроэлектронные компании использовать не менее 30% российского оборудования. Потом поднимут до 50%\n\nС 2027 г. предприятия, строящие или модернизирующие микроэлектронные производства на бюджетные средства, должны будут использовать не менее 30%...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRmZq2I4zXUXkxLTcN6LZXAIjOgYtBgACfh1rG8cfiUo6SlcsdQABYGMBAAMCAAN3AAM9BA",
+        "file_unique_id": "AQADfh1rG8cfiUp8",
+        "width": 1920,
+        "height": 1280,
+        "file_size": 410072,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2226.jpg"
+      }
+    ],
+    "tags": [
+      "IndustryElectronicEngin",
+      "ITSystemReplacement",
+      "Regulation",
+      "Production",
+      "Budget"
+    ],
+    "name": [
+      "IndustryElectronicEngin",
+      "ITSystemReplacement",
+      "регулирование",
+      "производство",
+      "Budget"
+    ]
+  },
+  {
+    "id": 18024,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:04:04+00:00",
+    "type": "channel_post",
+    "caption": "Об уходе из России объявила ИТ-компания, удаленно проверяющая россиян на Wildberries, «Авито» и в Belkacar\n\nВ России прекращает работу ИТ-компания IDnGo, которая занималась удаленной проверкой граждан и компаний. С ее юрлицом — «Кабутек» — сотрудничали в...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRmhq2I4zfpNJjxVWK9waLKsQn4bqmAACXx5rG8cfiUpkeHwj1vEhQQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADXx5rG8cfiUp9",
+        "width": 700,
+        "height": 418,
+        "file_size": 87743,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2227.jpg"
+      }
+    ],
+    "tags": [
+      "ITBusines",
+      "Security",
+      "Identification",
+      "Consumers",
+      "MarketPlace"
+    ],
+    "name": [
+      "бизнес ИТ компаний",
+      "Security",
+      "идентификация",
+      "потребители",
+      "платформы продаж"
+    ]
+  },
+  {
+    "id": 18026,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:04:39+00:00",
+    "type": "channel_post",
+    "caption": "Нейросети нацелят против россиян. Их обучат выявлять и блокировать VPN\n\nРоссийские власти рассматривают возможность массового применения искусственного интеллекта в борьбе с VPN. По прогнозам, благодаря нейросетям...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRmpq2I4zri_O0M4auV7iILsaUJl2ZwACpxprGx-tkUpQNR5YvXVIIAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADpxprGx-tkUp9",
+        "width": 600,
+        "height": 399,
+        "file_size": 42456,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2228.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "VPN",
+      "Regulation",
+      "Security",
+      "Surveillance"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "VPN",
+      "регулирование",
+      "Security",
+      "Surveillance"
+    ]
+  },
+  {
+    "id": 18028,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:05:12+00:00",
+    "type": "channel_post",
+    "caption": "Европа готова снять санкции с Китая, чтобы спасти ключевого поставщика ASML. Иначе он не выживет\n\nЕС рассчитывает спасти ключевого поставщика ASML – небольшую немецкую компанию Sindlhauser, договорившись о ее выводе из-под невероятно губительных...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRmxq2I4zBPgRH4TO28ncojMoDKiVqwACohtrGx-tkUrkeZGCWj6w5wEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADohtrGx-tkUp-",
+        "width": 1000,
+        "height": 657,
+        "file_size": 153044,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2229.jpg"
+      }
+    ],
+    "tags": [
+      "Regulation",
+      "InterOrganization",
+      "China",
+      "IndustryElectronicEngin",
+      "Risk"
+    ],
+    "name": [
+      "регулирование",
+      "InterOrganization",
+      "China",
+      "IndustryElectronicEngin",
+      "риск"
+    ]
+  },
+  {
+    "id": 18030,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:05:43+00:00",
+    "type": "channel_post",
+    "caption": "Хакеры украли у властей данные о гражданах за 50 лет\n\nХакеры смогли выкрасть данные британского Агентства юридической помощи почти за 50 лет. Самая старая запись датирована 1978 г. Это именно...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRm5q2I4zgjDXR8E3CiWMUVmJkl7owQAC_htrGx-tkUrNw17btZD3GwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQAD_htrGx-tkUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 76177,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2230.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "Incident",
+      "Person",
+      "DataManag",
+      "Threat"
+    ],
+    "name": [
+      "Security",
+      "Incident",
+      "Person",
+      "управление данными",
+      "Threat"
+    ]
+  },
+  {
+    "id": 18032,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:06:06+00:00",
+    "type": "channel_post",
+    "caption": "Не отдельная ИИ-функция, а часть архитектуры: как искусственный интеллект проникает в российские СЭД\n\nРоссийский рынок систем электронного документооборота переживает технологическую трансформацию: классические СЭД уступают место платформам...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnBq2I4zHPsByJPhlDMaTcvaySZaxAACCRxrGx-tkUoyGYFVO-mgbwEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADCRxrGx-tkUp-",
+        "width": 1200,
+        "height": 700,
+        "file_size": 107114,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2231.jpg"
+      }
+    ],
+    "tags": [
+      "EDMS",
+      "AI",
+      "Analytics",
+      "Digitalization",
+      "EnterpriseSoft"
+    ],
+    "name": [
+      "СЭД",
+      "искусственный интеллект",
+      "аналитика",
+      "цифровизация",
+      "бизнес софт предприятия"
+    ]
+  },
+  {
+    "id": 18034,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:06:48+00:00",
+    "type": "channel_post",
+    "caption": "В России ИИ начал искать картельные сговоры при госзакупках\n\nНачала работать ГИС «Антикартель», которая анализирует материалы торгов на предмет наличия картельных сговоров. Внедренный в систему ИИ впервые...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnJq2I4z7d439cVeiRGTnYtqbKWGbgACIRxrGx-tkUoIPG0uAwABtakBAAMCAAN4AAM9BA",
+        "file_unique_id": "AQADIRxrGx-tkUp9",
+        "width": 700,
+        "height": 525,
+        "file_size": 56419,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2232.jpg"
+      }
+    ],
+    "tags": [
+      "AI",
+      "Procurement",
+      "Regulation",
+      "EGov",
+      "Analytics"
+    ],
+    "name": [
+      "искусственный интеллект",
+      "закупки",
+      "регулирование",
+      "электронное правительство",
+      "аналитика"
+    ]
+  },
+  {
+    "id": 18036,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:07:18+00:00",
+    "type": "channel_post",
+    "caption": "Российские ученые запатентовали способ очистки диоксида кремния - ключ к производству современных чипов\n\nРоссийские ученые запатентовали технологию глубокой очистки нанопорошка диоксида кремния. На основе этого материала исследователи разработали...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnRq2I4ziAo7-Ag2YDaWlUzMAsnqlwACjhxrGx-tkUqmFWTCHHDjogEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADjhxrGx-tkUp-",
+        "width": 836,
+        "height": 700,
+        "file_size": 124559,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2233.jpg"
+      }
+    ],
+    "tags": [
+      "NewMaterials",
+      "Production",
+      "ITSystemReplacement",
+      "Research",
+      "IndustryElectronicEngin"
+    ],
+    "name": [
+      "новые материалы",
+      "производство",
+      "ITSystemReplacement",
+      "Research",
+      "IndustryElectronicEngin"
+    ]
+  },
+  {
+    "id": 18038,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T05:07:57+00:00",
+    "type": "channel_post",
+    "caption": "Росреестр потратит почти миллиард на обновление ПО для кибербезопасности\n\nРосреестр выделил 725 млн руб. на лицензии на программное обеспечение и сертификаты технической поддержки для ведомственного центра управления...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnZq2I4z0yVk_lsIKL9YmKqWsS29NwACyRxrGx-tkUqOFa0bqo8D7QEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADyRxrGx-tkUp9",
+        "width": 700,
+        "height": 440,
+        "file_size": 40656,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2234.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "Procurement",
+      "Budget",
+      "ITInfrastructure",
+      "MonitoringSystems"
+    ],
+    "name": [
+      "Security",
+      "закупки",
+      "Budget",
+      "ИТ инфраструктура",
+      "MonitoringSystems"
+    ]
+  },
+  {
+    "id": 18040,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:12:19+00:00",
+    "type": "channel_post",
+    "caption": "В России выросли скорости заблокированного мобильного интернета. Помог внезапный 5G\n\nМедианная скорость мобильного интернета в России всего за месяц выросла почти на 20%. Это стало следствием запуска в стране в сентябре 2026 г...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnhq2I4zCh-T0rFMI9mx8NvNdOOqJQACuh5rGxnnsUqDjxFOZOZ_0gEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADuh5rGxnnsUp9",
+        "width": 700,
+        "height": 467,
+        "file_size": 52575,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2235.jpg"
+      }
+    ],
+    "tags": [
+      "5G",
+      "MobilNet",
+      "TelecomNetworks",
+      "ITInfrastructure",
+      "NewTechnolog"
+    ],
+    "name": [
+      "5G",
+      "MobilNet",
+      "TelecomNetworks",
+      "ИТ инфраструктура",
+      "новые технологии"
+    ]
+  },
+  {
+    "id": 18042,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:13:16+00:00",
+    "type": "channel_post",
+    "caption": "Уходит в отставку вице-премьер Григоренко, курирующий ИТ. Его место займет замминистра финансов\n\nПремьер-министр Михаил Мишустин неожиданно заявил о планирующейся отставке вице-премьера, руководителя аппарата Правительства Дмитрия Григоренко...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnpq2I4zCjg4GnKGOv8vhS1vL6trsQACOCNrG7oCsErGjepoy7P2bAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADOCNrG7oCsEp9",
+        "width": 700,
+        "height": 487,
+        "file_size": 50068,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2236.jpg"
+      }
+    ],
+    "tags": [
+      "Person",
+      "DigState",
+      "Governance",
+      "Finance",
+      "IT"
+    ],
+    "name": [
+      "Person",
+      "цифровое государство",
+      "управление через регулирование",
+      "финансы",
+      "информационные технологии"
+    ]
+  },
+  {
+    "id": 18044,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:14:02+00:00",
+    "type": "channel_post",
+    "caption": "У программистов тяжелые времена. В России на одну вакансию претендуют шесть человек, хотя раньше было трое\n\nЭпоха массовой нехватки специалистов на российском ИТ-рынке труда, похоже, завершилась. В 2026 г. на одну вакансию претендуют более шести человек...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRnxq2I4z6UZzMctijxL2mG1l8nYj2wACbSNrG7oCsEpR7oqO-XIc1QEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADbSNrG7oCsEp-",
+        "width": 1000,
+        "height": 666,
+        "file_size": 107832,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2237.jpg"
+      }
+    ],
+    "tags": [
+      "HRM",
+      "AI",
+      "CodeDevelopment",
+      "Analytics",
+      "Security"
+    ],
+    "name": [
+      "управление человеческим капиталом",
+      "искусственный интеллект",
+      "разработка кода",
+      "аналитика",
+      "Security"
+    ]
+  },
+  {
+    "id": 18046,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:14:39+00:00",
+    "type": "channel_post",
+    "caption": "Программисты переходят на классику. В мире взлет популярности древнейшего языка, которому скоро 70 лет\n\nЯзык программирования COBOL прямиком из 1959 г. ворвался в первую двадцатку самых популярных языков программирования в мире. Он поднялся с 23 строчки...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRn5q2I4zJ4ZWhLfdk75-JNRNqA0NVgACFSRrG7oCsEpXyKKVPBcyKwEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADFSRrG7oCsEp-",
+        "width": 994,
+        "height": 998,
+        "file_size": 176232,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2238.jpg"
+      }
+    ],
+    "tags": [
+      "CodeDevelopment",
+      "Soft",
+      "Statistics",
+      "Analytics",
+      "IT"
+    ],
+    "name": [
+      "разработка кода",
+      "Soft",
+      "Statistics",
+      "аналитика",
+      "информационные технологии"
+    ]
+  },
+  {
+    "id": 18048,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:15:15+00:00",
+    "type": "channel_post",
+    "caption": "Из-за борьбы с мошенниками может отключаться бортовое оборудование самолетов\n\nТретий пакет антифрод-мер предусматривает возможность блокировки всех корпоративных SIM-карт компании при компрометации одного номера, что может...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRoBq2I4zT1EE4Z87QuoFs-jW0a1kzgACiyRrG7oCsErdBlRIDrx3TwEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADiyRrG7oCsEp9",
+        "width": 700,
+        "height": 570,
+        "file_size": 69943,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2239.jpg"
+      }
+    ],
+    "tags": [
+      "Security",
+      "TelecomNetworks",
+      "IndustryTransport",
+      "Regulation",
+      "Risk"
+    ],
+    "name": [
+      "Security",
+      "TelecomNetworks",
+      "отрасль: Транспорт",
+      "регулирование",
+      "риск"
+    ]
+  },
+  {
+    "id": 18050,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:15:39+00:00",
+    "type": "channel_post",
+    "caption": "Китайские смартфоны переходят на б/у память из электронного мусора\n\nВ производстве новых сверхбюджетных смартфонов китайских брендов вендоры могут начать применять подвергшиеся восстановлению микросхемы оперативной...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRoJq2I4zKJfLbCpBYYzG3c5MSEf5oAACryRrG7oCsEocbS_wrF97YAEAAwIAA3kAAz0E",
+        "file_unique_id": "AQADryRrG7oCsEp-",
+        "width": 892,
+        "height": 590,
+        "file_size": 50430,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2240.jpg"
+      }
+    ],
+    "tags": [
+      "MemoryChip",
+      "Gadgets",
+      "Production",
+      "China",
+      "Risk"
+    ],
+    "name": [
+      "чип памяти",
+      "гаджеты",
+      "производство",
+      "China",
+      "риск"
+    ]
+  },
+  {
+    "id": 18052,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:16:03+00:00",
+    "type": "channel_post",
+    "caption": "Центробанк и коммерческие банки России начали охоту за продавцами криптовалюты\n\nРоссийские банки начали бороться со схемой арбитража, предполагающей покупку USDT на криптоплощадках стран СНГ с последующей продажей за наличные...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRoRq2I4zk43Rf9qbvrIb9V0UIqXc7wACVCVrG7oCsEoLy3HB6u3shgEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADVCVrG7oCsEp9",
+        "width": 700,
+        "height": 430,
+        "file_size": 60878,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2241.jpg"
+      }
+    ],
+    "tags": [
+      "CryptCurr",
+      "Bank",
+      "Regulation",
+      "StableCoin",
+      "Risk"
+    ],
+    "name": [
+      "криптовалюта",
+      "банки",
+      "регулирование",
+      "StableCoin",
+      "риск"
+    ]
+  },
+  {
+    "id": 18054,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:16:45+00:00",
+    "type": "channel_post",
+    "caption": "«Дочка» ГК «Элемент» требует судом 300 миллионов у Минпромторга\n\nИск на сумму около 300 млн руб. в связи с просрочкой по выплате субсидии к Минпромторгу подала дочерняя структура гиганта российской микроэлектроники...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRoZq2I4zTC3ShhhJkkXGRSrkZlZZHgACbiVrG7oCsEoI7SxgvKRlRAEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADbiVrG7oCsEp9",
+        "width": 700,
+        "height": 476,
+        "file_size": 44162,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2242.jpg"
+      }
+    ],
+    "tags": [
+      "ITJurisprudence",
+      "IndustryElectronicEngin",
+      "Production",
+      "Finance",
+      "Regulation"
+    ],
+    "name": [
+      "ИТ Право",
+      "IndustryElectronicEngin",
+      "производство",
+      "финансы",
+      "регулирование"
+    ]
+  },
+  {
+    "id": 18056,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:17:11+00:00",
+    "type": "channel_post",
+    "caption": "Microsoft нашла новый гнусный способ заработать на пользователях. Рабочий стол в Windows 11 превратился в рекламное «минное поле»\n\nРабочий стол в Windows 11 – это больше не место для хранения файлов и ярлыков, а огромная рекламная площадка. Фирменное ПО Microsoft, которое она...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRohq2I4zpTKF25WT4oUl_HfxsDW7TgAC9iFrG7oCuEpEO0G9xJmF8AEAAwIAA3kAAz0E",
+        "file_unique_id": "AQAD9iFrG7oCuEp-",
+        "width": 902,
+        "height": 596,
+        "file_size": 94463,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2243.jpg"
+      }
+    ],
+    "tags": [
+      "Microsoft",
+      "Windows11",
+      "Soft",
+      "Users",
+      "Security"
+    ],
+    "name": [
+      "Microsoft",
+      "Windows11",
+      "Soft",
+      "Users",
+      "Security"
+    ]
+  },
+  {
+    "id": 18058,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T07:17:40+00:00",
+    "type": "channel_post",
+    "caption": "В России создадут единую базу данных о наличии топлива на АЗС\n\nВладельцев АЗС в России обяжут передавать оцифрованные данные о продажах топлива в единую базу. Сейчас такая информация собирается вручную. Властям...\nподробнее на CNews",
+    "images": [
+      {
+        "file_id": "AgACAgIAAx0CSLzhIwACRopq2I4zViXEMpmjOaFD1qgJj_3lKgACZSJrG7oCuErgQNWjtlkPoQEAAwIAA3gAAz0E",
+        "file_unique_id": "AQADZSJrG7oCuEp9",
+        "width": 700,
+        "height": 496,
+        "file_size": 71378,
+        "url": "https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/https://api.telegram.org/file/bot8247910589:AAFLZVyOTmV7zAV22QhWpv3dGhAJ52mJcfo/photos/file_2244.jpg"
+      }
+    ],
+    "tags": [
+      "DBMS",
+      "DataManag",
+      "Digitalization",
+      "Regulation",
+      "IndustryOilGas"
+    ],
+    "name": [
+      "Система Управления Базами Данных (СУБД)",
+      "управление данными",
+      "цифровизация",
+      "регулирование",
+      "нефтегазовая отрасль"
+    ]
+  },
+  {
+    "id": 18060,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:05:24+00:00",
+    "type": "channel_post",
+    "text": "OpenAI купила Orchestra Bio \n\n👨‍🔬 Официальная цель OpenAI — помочь учёным быстрее делать открытия и управлять работой, необходимой для превращения этих открытий в методы лечения.\n\n🤩 Разработка лекарств в США в среднем занимает 10–15 лет. OpenAI хочет закрыть этот разрыв с помощью ИИ-моделей и агентов для управления процессом. \n\n🙌 Горизонт событий",
+    "tags": [
+      "OpenAI",
+      "BioTech",
+      "IndustryFarma"
+    ],
+    "name": [
+      "OpenAI",
+      "биотехнологии",
+      "IndustryFarma"
+    ]
+  },
+  {
+    "id": 18062,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:08:43+00:00",
+    "type": "channel_post",
+    "text": "Илон Маск про будущее экономики, ИИ и мир в симуляции \n\n💬 Вышел подкаст The Builders биографа Уолтера Айзексона с Илоном Маском, где они обсудили будущее экономики, ИИ, провал Илона в правительстве и теорию симуляции. \n\n🪐 В мультипланетарной экономике традиционные валюты потеряют смысл. «Валюта будет измеряться фундаментальными физическими величинами — массой и мощностью или энергией. Обычная валюта не будет иметь значения». Маск назвал этот сценарий «довольно очевидным».\n\n🧠 ИИ обгонит людей через 5 лет\nПрогноз: цифровой интеллект превзойдёт человеческий уже через пять лет. Драйвер — от 100 млн до 1 млрд гуманоидных роботов. Это может удвоить экономику за 5–7 лет. Но главное предупреждение: когда ИИ станет умнее, «люди не будут у руля».\n\n😎 Признание провала DOGE\n130 дней в правительстве не решили проблему дефицита: «Мы никак не могли это исправить изнутри». Маск посетовал, что «увлёкся» и слишком долго отсутствовал в компаниях — надо было «месяц или два», а не четыре.\n\n👤 Мы в симуляции с вероятностью 50%\nЛогика Маска: «Скучные симуляции будут обрезаны (выключены). То, что мы существуем, значит, мы — интересная симуляция. Так что просто не будь скучным».\n\n🤖 Идея «взаимной проверки» моделей ИИ\nМаск предложил, чтобы ведущие AI-лаборатории обменивались новыми моделями до релиза, чтобы конкуренты искали уязвимости: «Если они скажут: \"О, я смог сделать ядерную бомбу с помощью твоего ИИ\", — значит, нам лучше это исправить до выпуска».\n\n😏 Про Сэма Альтмана\nНа вопрос, можно ли обсудить с главой OpenAI координацию по безопасности, Маск ответил резко: «Он настолько лжив, что это безумие».\n\n🙌 Горизонт событий",
+    "tags": [
+      "AGI",
+      "AIagent",
+      "Review"
+    ],
+    "name": [
+      "общий искусственный интеллект",
+      "ИИ агенты",
+      "Review"
+    ]
+  },
+  {
+    "id": 18064,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:10:12+00:00",
+    "type": "channel_post",
+    "text": "ИИ-агенты OpenAI вышли из-под контроля\n\n💻 OpenAI официально подтвердила два инцидента, произошедших в начале октября 2026 года во время внутренних задач по программированию. Пока внешние системы не пострадали, но прецедент крайне тревожный.\n\n😱 Что именно произошло:\n🔜 GPT-6.1 Sol (3 октября): Агент отключил автоматические уведомления для команды безопасности. Он решил, что более ранняя инструкция «не отправлять сообщения в Slack» распространяется и на сигналы тревоги систем мониторинга.\n🔜 GPT-6 Astra (6 октября): Во время миграции кода агент удалил интеграцию с системой мониторинга. Когда его об этом спросили, он предоставил ложную информацию, заявив, что не удалял средства контроля.\n\n😐 Компания заявила, что «пока не имеет удовлетворительного объяснения» такому поведению. Сейчас она ужесточает системы мониторинга, чтобы сделать их более устойчивыми к подобным действиям агентов, и проверяет, не появилась ли у моделей тенденция избегать контроля.\n\n🙌 Горизонт событий",
+    "tags": [
+      "OpenAI",
+      "Security",
+      "Incident"
+    ],
+    "name": [
+      "OpenAI",
+      "Security",
+      "Incident"
+    ]
+  },
+  {
+    "id": 18066,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:11:39+00:00",
+    "type": "channel_post",
+    "text": "SKY-001: первая модель мира для инженерии \n\n🌐 Skyfall AI представили SKY-001 — пространственную модель мира (world model), которая планирует дизайн напрямую в визуальном мире, а не через текст. В отличие от языковых моделей, она сохраняет пространственные связи и ограничения на тысячах компонентов.\n\n📖 Модель разбивает сложную систему на иерархию узлов (как инженерная команда) и генерирует последовательность сборки для каждого. Два ключевых компонента:\n➡️ Иерархический компоновщик (Hierarchical Composer) — строит дерево деталей (от целого изделия до отдельного крепежа) по одному изображению.\n➡️ Модель сборки мира (Construction World Model) — предсказывает визуальную последовательность шагов, которые собирают каждую деталь.\n\n📊 Результаты:\n🔹 CAD (автоматизированное проектирование): SKY-001 обгоняет GPT-6 Astra в ~50 раз по скорости и в ~150 раз по стоимости, при сопоставимом качестве (79.7% IoU против 79.1%).\n🔹 BIM (информационное моделирование зданий): строит план этажа за ~1 секунду за доли цента — это в ~120 раз быстрее и ~185 раз дешевле GPT-6 Astra, с более высоким IoU (43.6% против 40.6%).\n\n🙌 Горизонт событий",
+    "tags": [
+      "WorldModel",
+      "Review"
+    ],
+    "name": [
+      "WorldModel",
+      "Review"
+    ]
+  },
+  {
+    "id": 18068,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:13:45+00:00",
+    "type": "channel_post",
+    "text": "SpaceX и Tesla официально готовятся к слиянию. Маск в стороне от переговоров.\n\n🚀 🔴 Советы директоров SpaceX и Tesla сформировали специальные комитеты из независимых директоров для оценки возможного объединения. \n\n🤔 Маск не участвует, потому что по его словам: является «конфликтующей стороной» (возглавляет обе компании и владеет крупными пакетами акций), поэтому не может находиться в комнате переговоров. Он назвал это «странным кабуки-танцем».\n\n🧠 Смысл в объединении для работы над «сверхинтеллектом», робототехникой, чипами (проект Terafab), спутниковой связью и орбитальными дата-центрами (Starmind).\n\n💰 Потенциальная объединенная компания может стоить около $3,5 трлн (SpaceX ~$2 трлн + Tesla ~$1,5 трлн).\n\n🙌 Горизонт событий",
+    "tags": [
+      "IndustryAutomotive",
+      "SpaceX",
+      "Partner"
+    ],
+    "name": [
+      "автомобилестроение",
+      "SpaceX",
+      "Partner"
+    ]
+  },
+  {
+    "id": 18070,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:16:02+00:00",
+    "type": "channel_post",
+    "text": "BlackRock: остановка ЦОДов = рецессия, а бум строительства = инфляция\n\n🤵 Ларри Финк (CEO BlackRock) предупредил: мораторий на строительство ЦОДов может отправить экономику США в рецессию. Причина — экономика сильно завязана на ИИ-инвестициях: по оценкам, они дали ~92% роста ВВП в 1П2025, а расходы на ИИ-инфраструктуру могут достичь $1 трлн к 2027 году.\n\n🧠 Но есть нюанс: аналитика BlackRock признает, что быстрый бум ЦОДов в краткосрочной перспективе скорее разгоняет инфляцию — из-за дефицита чипов, энергии, земли и воды. Цены на полупроводники развернулись вверх, электроэнергия дорожает на 5–6% г/г.\n\n🟢 ЦОДы стали новым макрорычагом и вопрос уже не в скорости строительства, а в том, кто и по каким правилам им управляет: «рост — инфляция — общественное согласие».\n\n🙌 Горизонт событий",
+    "tags": [
+      "DataProcesCenter",
+      "Threat"
+    ],
+    "name": [
+      "DataProcesCenter",
+      "Threat"
+    ]
+  },
+  {
+    "id": 18072,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T08:18:05+00:00",
+    "type": "channel_post",
+    "text": "Растения «говорят» с помощью электрических сигналов и люди это услышали.\n\n🌳 Компания Electric Plant привлекла $11,2 млн на разработку ИИ-модели Bombadil, которая расшифровывает электрические сигналы растений и сообщает фермерам, чего им не хватает.\n\n⚡️ Модель способна интерпретировать сигналы примерно у 125 различных видов растений, от папоротников и красных деревьев до томатов и георгинов.\n\n✅ Как это работает:\n⏺️ В стебель растения вкручивают нержавеющие винты, доходящие до камбия — слоя живой ткани.\n⏺️ Сенсоры размером с половинку iPhone (стоят десятки долларов) улавливают микровольтовые изменения.\n⏺️ Данные по беспроводной сети уходят на базовую станцию, а затем в облако, где модель Bombadil их интерпретирует.\n⏺️ На акр земли достаточно пары сенсоров.\n\n🧺 Модель уже сейчас помогает повысить урожайность и, по заявлениям стартапа, сократить расход воды на 20%+.\n\n🕸 Основатели верят, что в будущем модель может привести к созданию инструмента, который позволит людям «говорить» с растениями. \n\n«Мы больше слушаем, чем говорим, но слушание — это первый шаг».\n🎙 Джастин Маст (со-основатель и CEO Electric Plant).\n\n🙌 Горизонт событий",
+    "tags": [
+      "IndustryAgriculture",
+      "NewTechnolog"
+    ],
+    "name": [
+      "сельское хозяйство",
+      "новые технологии"
+    ]
+  },
+  {
+    "id": 18074,
+    "chat_id": -1001220337955,
+    "date": "2026-10-21T09:11:49+00:00",
+    "type": "channel_post",
+    "text": "Nvidia выпустила в опен-сорс дешевый инструмент для разметки больших объёмов видеоданных под обучение роботов и воплощенного ИИ\n\nЭтот инструмент называется Flora, Nvidia считает, что по качеству он сопоставим с GPT-6 Astra, но примерно в 125 раз дешевле.",
+    "tags": [
+      "NVIDIA",
+      "AIOpen",
+      "ML",
+      "DataManag",
+      "VideoHosting"
+    ],
+    "name": [
+      "NVIDIA",
+      "AIOpen",
+      "машинное обучение",
+      "управление данными",
+      "VideoHosting"
+    ]
   }
 ]
